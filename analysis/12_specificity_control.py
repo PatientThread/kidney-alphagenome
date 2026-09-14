@@ -109,6 +109,11 @@ def main() -> None:
             print(f"  {i+1}/{len(bench)}  ({time.time()-t0:.0f}s)")
 
     d = pd.DataFrame(rows)
+    # Persist the per-variant matrix, not only the per-tissue summary: the
+    # paired-uncertainty and pairwise-prediction analyses in script 13 need it,
+    # and a summary cannot be un-summarised.
+    d.to_csv(RESULTS / "specificity_predictions.tsv.gz", sep="\t",
+             index=False, compression="gzip")
     print(f"\nscored {len(d)}/{len(bench)}, {fails} failures\n")
 
     tissues = [c for c in d.columns

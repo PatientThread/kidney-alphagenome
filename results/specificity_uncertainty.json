@@ -1,0 +1,29 @@
+{
+  "n_pairs": 58,
+  "n_tracks": 55,
+  "bootstrap_iterations": 10000,
+  "resampling": "with replacement over the 58 variant-gene pairs, paired across tracks",
+  "kidney_rho": 0.5054292657417947,
+  "tracks_distinguishable_from_kidney": 11,
+  "best_track": "Pituitary",
+  "best_diff": 0.06081397930067296,
+  "best_diff_ci": [
+    -0.035593033519854884,
+    0.19428872593457827
+  ],
+  "pairwise_prediction_rho": {
+    "median": 0.8268171890860994,
+    "iqr": [
+      0.7029130394659941,
+      0.9115321910855456
+    ],
+    "min": 0.316250884370482,
+    "max": 0.997785228705897
+  },
+  "kidney_vs_others_rho": {
+    "median": 0.9007044203143746,
+    "min": 0.6018948598849551,
+    "max": 0.990033529176536
+  },
+  "verdict": "Tracks are highly but not perfectly correlated. Outputs are largely shared with some tissue-level variation."
+}
