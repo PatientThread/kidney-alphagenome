@@ -5,8 +5,8 @@ make_figures.py  -  publication figures for the kidney representation paper.
 THREE FIGURES, EACH CARRYING ONE CLAIM.
 
   Figure 1  what the model contains for kidney, by modality
-  Figure 2  the evidence gap: precision against sample size, kidney as outlier
-  Figure 3  per-tissue performance with confidence intervals (forest plot)
+  Figure 2  per-tissue performance with confidence intervals (forest plot)
+  Figure 3  the evidence gap: precision against sample size, kidney as outlier
 
 DESIGN DECISIONS, stated so they are not re-litigated.
 
@@ -144,50 +144,6 @@ def figure1() -> None:
 
 # --------------------------------------------------------------- figure 2
 def figure2() -> None:
-    """Precision against evidence. The money figure."""
-    m = pd.read_csv(RESULTS / "per_tissue_metrics.csv")
-    kid = m[m["sample_group"] == "kidney_cortex"]
-    oth = m[m["sample_group"] != "kidney_cortex"]
-
-    fig, ax = plt.subplots(figsize=(4.6, 3.4))
-    ax.scatter(oth["n"], oth["spearman_ci_width"], s=26, color=NEUTRAL,
-               edgecolor=SURFACE, linewidth=0.6, zorder=3, label="Other tissues")
-    ax.scatter(kid["n"], kid["spearman_ci_width"], s=110, color=ACCENT,
-               marker="D", edgecolor=SURFACE, linewidth=1.0, zorder=5,
-               label="Kidney cortex")
-
-    ax.set_xscale("log")
-    ax.set_xlabel("Successfully scored variant-gene pairs (log scale)")
-    ax.set_ylabel("Width of 95% CI on Spearman's $\\rho$")
-    ax.grid(color=GRID, linewidth=0.5, zorder=0)
-    ax.set_axisbelow(True)
-
-    if len(kid):
-        k = kid.iloc[0]
-        ax.annotate(f"Kidney cortex\nn = {int(k['n'])}, CI width {k['spearman_ci_width']:.2f}",
-                    xy=(k["n"], k["spearman_ci_width"]),
-                    xytext=(k["n"] * 1.9, k["spearman_ci_width"] - 0.02),
-                    fontsize=7.2, color=ACCENT, fontweight="bold",
-                    arrowprops=dict(arrowstyle="-", color=ACCENT, linewidth=0.8))
-        med = oth["spearman_ci_width"].median()
-        ax.axhline(med, color=INK2, linewidth=0.7, linestyle=(0, (4, 3)), zorder=2)
-        # Put the label at the LEFT end of the line. Both ends of the right-hand
-        # side are occupied: the large-n tissues sit just below the line and the
-        # mid-n tissues just above it. At the left the only mark is the kidney
-        # diamond, far above, so this band is genuinely empty.
-        x0 = ax.get_xlim()[0]
-        ax.text(x0 * 1.06, med + 0.008,
-                f"median across other tissues  {med:.2f}",
-                ha="left", va="bottom", fontsize=6.8, color=INK2)
-
-    ax.legend(loc="upper right", fontsize=7.2)
-    ax.set_title("Kidney cortex has the smallest benchmark and widest interval",
-                 loc="left", pad=8, fontweight="bold")
-    save(fig, "figure2")
-
-
-# --------------------------------------------------------------- figure 3
-def figure3() -> None:
     """Forest plot of per-tissue Spearman with 95% CIs."""
     m = pd.read_csv(RESULTS / "per_tissue_metrics.csv").sort_values("n")
     # .capitalize() lowercases the rest of the string, so acronyms must be
@@ -230,7 +186,7 @@ def figure3() -> None:
     # y=0 is the BOTTOM in matplotlib and the sort is ascending, so the tissue
     # with fewest variants is at the bottom. Say that, do not invert the claim.
     # scored sample size printed beside each tissue, so the ordering is
-    # self-explanatory without consulting Figure 2
+    # self-explanatory without consulting Figure 3
     xr = ax.get_xlim()
     for i, nn in enumerate(m["n"]):
         ax.text(xr[1] + 0.004 * (xr[1] - xr[0]), i, f"{int(nn)}",
@@ -241,9 +197,53 @@ def figure3() -> None:
     ax.set_xlabel("Spearman's $\\rho$, predicted vs observed eQTL effect\n"
                   "tissues ordered by scored pairs, fewest at the bottom",
                   linespacing=1.7)
+    save(fig, "figure2")
+
+
+
+
+# --------------------------------------------------------------- figure 3
+def figure3() -> None:
+    """Precision against evidence. The money figure."""
+    m = pd.read_csv(RESULTS / "per_tissue_metrics.csv")
+    kid = m[m["sample_group"] == "kidney_cortex"]
+    oth = m[m["sample_group"] != "kidney_cortex"]
+
+    fig, ax = plt.subplots(figsize=(4.6, 3.4))
+    ax.scatter(oth["n"], oth["spearman_ci_width"], s=26, color=NEUTRAL,
+               edgecolor=SURFACE, linewidth=0.6, zorder=3, label="Other tissues")
+    ax.scatter(kid["n"], kid["spearman_ci_width"], s=110, color=ACCENT,
+               marker="D", edgecolor=SURFACE, linewidth=1.0, zorder=5,
+               label="Kidney cortex")
+
+    ax.set_xscale("log")
+    ax.set_xlabel("Successfully scored variant-gene pairs (log scale)")
+    ax.set_ylabel("Width of 95% CI on Spearman's $\\rho$")
+    ax.grid(color=GRID, linewidth=0.5, zorder=0)
+    ax.set_axisbelow(True)
+
+    if len(kid):
+        k = kid.iloc[0]
+        ax.annotate(f"Kidney cortex\nn = {int(k['n'])}, CI width {k['spearman_ci_width']:.2f}",
+                    xy=(k["n"], k["spearman_ci_width"]),
+                    xytext=(k["n"] * 1.9, k["spearman_ci_width"] - 0.02),
+                    fontsize=7.2, color=ACCENT, fontweight="bold",
+                    arrowprops=dict(arrowstyle="-", color=ACCENT, linewidth=0.8))
+        med = oth["spearman_ci_width"].median()
+        ax.axhline(med, color=INK2, linewidth=0.7, linestyle=(0, (4, 3)), zorder=2)
+        # Put the label at the LEFT end of the line. Both ends of the right-hand
+        # side are occupied: the large-n tissues sit just below the line and the
+        # mid-n tissues just above it. At the left the only mark is the kidney
+        # diamond, far above, so this band is genuinely empty.
+        x0 = ax.get_xlim()[0]
+        ax.text(x0 * 1.06, med + 0.008,
+                f"median across other tissues  {med:.2f}",
+                ha="left", va="bottom", fontsize=6.8, color=INK2)
+
+    ax.legend(loc="upper right", fontsize=7.2)
+    ax.set_title("Kidney cortex has the smallest benchmark and widest interval",
+                 loc="left", pad=8, fontweight="bold")
     save(fig, "figure3")
-
-
 
 
 # --------------------------------------------------------------- figure 4
