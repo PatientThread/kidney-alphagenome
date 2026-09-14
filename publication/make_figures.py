@@ -48,12 +48,24 @@ RESULTS = ROOT / "results"
 FIGS = ROOT / "publication" / "figures"
 FIGS.mkdir(parents=True, exist_ok=True)
 
-ACCENT = "#2a78d6"
-NEUTRAL = "#85857f"
-SURFACE = "#fcfcfb"
+# EJHG artwork guidelines give two permitted widths. Sizing to them now avoids
+# production rescaling the figures, which is what shrinks labels below the 5pt
+# floor and undoes the spacing work.
+MM = 1 / 25.4
+ONE_COL = 88 * MM      # 3.46 in
+TWO_COL = 180 * MM     # 7.09 in
+
+# GREYSCALE BY DESIGN. EJHG charges for colour in print, which its terms tie to
+# the online PDF as well: four colour figures is £1,303 plus VAT on the otherwise
+# free subscription route. Identity here was never carried by hue alone anyway,
+# it is carried by marker shape (diamond vs circle), line weight and label
+# weight, so dropping to ink-on-grey costs the figures nothing and saves the fee.
+ACCENT = "#111111"      # kidney: near-black against mid-grey
+NEUTRAL = "#8a8a84"     # every other tissue
+SURFACE = "#ffffff"     # white, not off-white, for print
 INK = "#0b0b0b"
 INK2 = "#52514e"
-GRID = "#dededa"
+GRID = "#d8d8d4"
 
 mpl.rcParams.update({
     "figure.facecolor": SURFACE,
@@ -61,11 +73,12 @@ mpl.rcParams.update({
     "savefig.facecolor": SURFACE,
     "font.family": "sans-serif",
     "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
-    "font.size": 8,
-    "axes.labelsize": 8.5,
-    "axes.titlesize": 9.5,
-    "xtick.labelsize": 7.5,
-    "ytick.labelsize": 7.5,
+    # EJHG artwork guidelines: Helvetica or Arial, maximum 7pt, minimum 5pt.
+    "font.size": 7,
+    "axes.labelsize": 7,
+    "axes.titlesize": 7,
+    "xtick.labelsize": 6.5,
+    "ytick.labelsize": 6.5,
     "axes.edgecolor": INK2,
     "axes.linewidth": 0.6,
     "xtick.color": INK2,
@@ -75,15 +88,23 @@ mpl.rcParams.update({
     "legend.frameon": False,
     "axes.spines.top": False,
     "axes.spines.right": False,
+    "pdf.fonttype": 42,
+    "ps.fonttype": 42,
 })
 
 
 def save(fig, name: str) -> None:
-    for ext in ("png", "tif"):
-        fig.savefig(FIGS / f"{name}.{ext}", dpi=600, bbox_inches="tight",
-                    pil_kwargs={"compression": "tiff_lzw"} if ext == "tif" else None)
+    """PDF for submission, PNG for reading on screen.
+
+    EJHG rejects TIFF for line art: "We cannot use bitmapped file types such as
+    BMP, GIF, GIMP, JPG, PNG, Tex or TIFF for vector art." Plots are vector art,
+    so the submission file is PDF. Fonts are embedded as TrueType (42) rather
+    than the default Type 3, which many production systems reject.
+    """
+    fig.savefig(FIGS / f"{name}.pdf", bbox_inches="tight")
+    fig.savefig(FIGS / f"{name}.png", dpi=600, bbox_inches="tight")
     plt.close(fig)
-    print(f"  wrote {name}.png and {name}.tif")
+    print(f"  wrote {name}.pdf (submission) and {name}.png (screen)")
 
 
 # --------------------------------------------------------------- figure 1
@@ -111,7 +132,7 @@ def figure1() -> None:
     }
     names = [labels.get(i, i) for i in t.index]
 
-    fig, ax = plt.subplots(figsize=(4.6, 3.2))
+    fig, ax = plt.subplots(figsize=(ONE_COL, 2.9))
     y = np.arange(len(t))
     ax.barh(y, t["pct"], color=NEUTRAL, height=0.62, zorder=3)
     # highlight the two that carry the claim
@@ -152,8 +173,8 @@ def figure2() -> None:
               .str.replace("gej", "GEJ", regex=False)
               .str.replace("Lcl", "LCL", regex=False))
 
-    h = max(4.2, 0.135 * len(m) + 1.3)
-    fig, ax = plt.subplots(figsize=(5.0, h))
+    h = max(4.2, 0.115 * len(m) + 1.2)
+    fig, ax = plt.subplots(figsize=(TWO_COL, h))
     y = np.arange(len(m))
 
     for i, r in enumerate(m.itertuples()):
@@ -209,7 +230,7 @@ def figure3() -> None:
     kid = m[m["sample_group"] == "kidney_cortex"]
     oth = m[m["sample_group"] != "kidney_cortex"]
 
-    fig, ax = plt.subplots(figsize=(4.6, 3.4))
+    fig, ax = plt.subplots(figsize=(ONE_COL, 2.9))
     ax.scatter(oth["n"], oth["spearman_ci_width"], s=26, color=NEUTRAL,
                edgecolor=SURFACE, linewidth=0.6, zorder=3, label="Other tissues")
     ax.scatter(kid["n"], kid["spearman_ci_width"], s=110, color=ACCENT,
@@ -261,7 +282,7 @@ def figure4() -> None:
     oth = m[m["tissue_track"] != "Kidney_Cortex"]
 
     fig, (axA, axB) = plt.subplots(
-        2, 1, figsize=(4.8, 4.3), gridspec_kw={"height_ratios": [1, 2.1]})
+        2, 1, figsize=(TWO_COL, 4.6), gridspec_kw={"height_ratios": [1, 2.1]})
 
     # ---- A: distribution
     axA.scatter(oth["spearman"], np.zeros(len(oth)), s=22, color=NEUTRAL,
