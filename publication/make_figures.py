@@ -132,13 +132,13 @@ def figure1() -> None:
 
     ax.set_title("Kidney representation across AlphaGenome output modalities",
                  loc="left", pad=8, fontweight="bold")
-    # annotation sits inside the plot, clear of the axis
-    ax.annotate("all 4 kidney TF tracks are CTCF;\nHEK293 alone carries 111",
-                xy=(t.loc["CHIP_TF", "pct"], list(t.index).index("CHIP_TF")),
-                xytext=(2.05, list(t.index).index("CHIP_TF") + 1.15),
-                fontsize=6.8, color=ACCENT, va="center",
-                arrowprops=dict(arrowstyle="-", color=ACCENT, linewidth=0.7,
-                                shrinkA=0, shrinkB=3))
+
+    # No leader line: it ran from the bar tip straight through the "4/1617"
+    # count label. The text names the modality outright, and sits on that row,
+    # so the pointer was redundant as well as untidy.
+    ax.text(2.05, list(t.index).index("CHIP_TF"),
+            "all 4 kidney TF tracks are CTCF;\nHEK293 alone carries 111",
+            fontsize=6.8, color=ACCENT, va="center")
     save(fig, "figure1")
 
 
@@ -171,12 +171,14 @@ def figure2() -> None:
                     arrowprops=dict(arrowstyle="-", color=ACCENT, linewidth=0.8))
         med = oth["spearman_ci_width"].median()
         ax.axhline(med, color=INK2, linewidth=0.7, linestyle=(0, (4, 3)), zorder=2)
-        # Sit the label ABOVE the line at the right-hand edge. Below the line on
-        # that side is where the large-n, narrow-interval tissues are, and the
-        # text landed on top of them.
-        ax.text(oth["n"].max() * 1.02, med + 0.010,
+        # Put the label at the LEFT end of the line. Both ends of the right-hand
+        # side are occupied: the large-n tissues sit just below the line and the
+        # mid-n tissues just above it. At the left the only mark is the kidney
+        # diamond, far above, so this band is genuinely empty.
+        x0 = ax.get_xlim()[0]
+        ax.text(x0 * 1.06, med + 0.008,
                 f"median across other tissues  {med:.2f}",
-                ha="right", va="bottom", fontsize=6.8, color=INK2)
+                ha="left", va="bottom", fontsize=6.8, color=INK2)
 
     ax.legend(loc="upper right", fontsize=7.2)
     ax.set_title("Kidney cortex has the smallest benchmark and widest interval",

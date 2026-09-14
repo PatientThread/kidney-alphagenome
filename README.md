@@ -23,14 +23,15 @@ the thirteen numbered analysis scripts that produce every number and figure.
 2. **Kidney is the least well evidenced tissue in this benchmark.** Kidney cortex
    yields 59 usable fine-mapped eQTLs against a median of 616, and is the
    smallest tissue at all 36 threshold settings tested.
-3. **Kidney performance is insensitive to the choice of tissue output.** Scoring
-   the same kidney variants with every tissue track in turn, the kidney track
-   ranks 6th of 54, and no higher-ranked track is distinguishable from it by
-   paired bootstrap over the same 58 pairs. Kidney was nonetheless better than 10
-   of 53 comparators, and the tracks' prediction vectors are substantially but
-   not wholly shared (median pairwise rank correlation 0.827). Whether the
-   insensitivity reflects genuinely shared regulatory effects or limited tissue
-   resolution cannot be separated by this design.
+3. **No comparator output predicted kidney eQTLs better than the kidney output.**
+   Scoring the same kidney variants with every tissue track in turn, the kidney
+   track ranks 6th of 54. No comparator showed a significantly higher correlation
+   in paired bootstrap over the same 58 pairs. Kidney's own advantage excluded
+   zero against 10 of 53 comparators, on intervals unadjusted for multiplicity,
+   so those are nominal differences. The tracks' prediction vectors are
+   substantially but not wholly shared (median pairwise rank correlation 0.827).
+   Whether that pattern reflects genuinely shared regulatory effects or limited
+   tissue resolution cannot be separated by this design.
 
 ## What this repository does *not* claim
 
