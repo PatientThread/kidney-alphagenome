@@ -1,3 +1,25 @@
+SCOPE OF THIS LICENCE
+================================================================================
+The MIT licence below applies ONLY to the analysis code in this repository: the
+Python files under analysis/ and publication/, and the scripts and documentation
+written by the author.
+
+It does NOT apply to the AlphaGenome-derived data and prediction files, which
+carry non-commercial restrictions that the MIT licence would otherwise appear to
+override. Those files, and the restrictions on them, are listed in
+LEGALLY_BINDING_TERMS_OF_USE.txt in this directory. Read that file before using
+anything in data/ or results/.
+
+Nothing in this MIT licence grants any right to use AlphaGenome Output or Output
+Derivatives commercially.
+
+Third-party data redistributed here remains under the licence of its source:
+the EMBL-EBI eQTL Catalogue under CC BY 4.0, ENCODE and GTEx under their own
+terms, and AlphaGenome material as set out in LEGALLY_BINDING_TERMS_OF_USE.txt.
+
+================================================================================
+
+
 MIT License
 
 Copyright (c) 2026 Christopher Lawrence

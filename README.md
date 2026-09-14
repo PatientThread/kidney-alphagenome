@@ -93,16 +93,30 @@ Everything else needed is here.
 | EMBL-EBI eQTL Catalogue | benchmark ground truth, 49 GTEx tissues | CC BY 4.0 |
 | GTEx | tissue sample sizes and eGene counts | no commercial restriction |
 | ENCODE | kidney experiment inventory | free to download, analyse and publish |
-| AlphaGenome | model predictions | non-commercial research terms; weights not redistributed |
+| AlphaGenome | model predictions and track metadata | **non-commercial only**; see `LEGALLY_BINDING_TERMS_OF_USE.txt`; weights not redistributed |
 
 This is a secondary analysis of public summary-level data. No individual-level
 clinical data were accessed and no participants were recruited.
 
-## Licence
+## Licence: read this before reusing anything
 
-Analysis code in this repository is released under the MIT licence. Data files
-redistributed here remain under the licences of their original sources, listed
-above. AlphaGenome model weights are not redistributed.
+**The code and the data are under different licences, and one of them forbids
+commercial use.**
+
+The MIT licence in `LICENSE` covers the **analysis code only**.
+
+The AlphaGenome-derived files in `data/` and `results/`, and the figures built
+from them, are **AlphaGenome Output or Output Derivatives** and are available for
+**non-commercial use only**. The shipped track manifest is CC BY-NC 4.0. The
+binding restrictions, the list of exactly which files they cover, and the
+notice of how the raw predictions were transformed, are in
+**`LEGALLY_BINDING_TERMS_OF_USE.txt`**.
+
+By using that material you agree to the AlphaGenome Output Terms of Use at
+http://deepmind.google.com/science/alphagenome/output-terms
+
+AlphaGenome model weights are not redistributed and were never accessed. Other
+redistributed data remains under its source licence, listed above.
 
 ## Citation
 

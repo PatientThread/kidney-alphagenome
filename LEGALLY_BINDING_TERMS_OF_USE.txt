@@ -1,0 +1,118 @@
+LEGALLY BINDING TERMS OF USE
+================================================================================
+
+By using this information, you agree to AlphaGenome Output Terms of Use found at
+http://deepmind.google.com/science/alphagenome/output-terms
+
+
+WHAT THIS FILE COVERS
+--------------------------------------------------------------------------------
+
+Parts of this repository are AlphaGenome Output or Output Derivatives, as those
+terms are defined by Google DeepMind. They are NOT covered by the MIT licence in
+LICENSE, which applies to the analysis code only. The files governed by the
+AlphaGenome Output Terms of Use are:
+
+  results/scores/**                       per-variant model predictions
+  results/specificity_predictions.tsv.gz  per-variant predictions, every tissue output
+  results/specificity_by_tissue.csv       derived from those predictions
+  results/specificity_paired.csv          derived from those predictions
+  results/specificity_pairwise.csv        derived from those predictions
+  results/specificity_control.json        derived from those predictions
+  results/specificity_uncertainty.json    derived from those predictions
+  results/per_tissue_metrics.csv          derived from those predictions
+  results/evaluation.json                 derived from those predictions
+  results/review_robustness.json          derived from those predictions
+  results/scoring_log.csv                 accounting for the scoring run
+  publication/figures/*                   visual representations of the above
+  data/alphagenome_live_api_tracks.csv    retrieved via client.output_metadata()
+  results/live_api_crosscheck.json        derived from the above
+
+The following file is redistributed from google-deepmind/alphagenome_research
+under the Creative Commons Attribution-NonCommercial 4.0 International Licence
+(CC BY-NC 4.0), per that repository's README, which places all materials other
+than software and documentation under that licence:
+
+  data/OutputMetadataResponse_ORGANISM_HOMO_SAPIENS.textproto
+  data/alphagenome_tracks_human_raw.csv   (derived from the above)
+
+In every case the restriction is NON-COMMERCIAL. Nothing in the MIT licence in
+this repository grants you any right to use these files commercially, and the
+MIT licence must not be read as doing so.
+
+
+USE RESTRICTIONS
+--------------------------------------------------------------------------------
+
+Reproduced verbatim from the AlphaGenome Output Terms of Use (effective 25 June
+2025), as that document requires, as an enforceable provision of this
+distribution:
+
+  "The AlphaGenome API belongs to us. We make Output available free of charge,
+  for non-commercial use only, in accordance with the following use
+  restrictions. You must not use nor allow others to use Output or Derivatives:
+
+  On behalf of a commercial organization or in connection with any commercial
+  activities, including research on behalf of commercial organizations or
+  sharing or using Output or Derivatives in a manner that will grant a
+  commercial organization any rights in Output or Derivatives, in each case
+  aside from indirectly via a scientific publication, open source release or to
+  support journalism.
+
+  To train machine learning models or related technology, except that you may
+  use Output and Output Derivatives to train models that function in a similar
+  manner to AlphaGenome provided the model weights and parameters for those
+  models are used in accordance with and governed by the AlphaGenome Model
+  Parameters Terms of Use.
+
+  Without providing conspicuous notice that any Output or Derivatives you
+  publish or distribute are provided under and subject to these Terms and of any
+  modifications you make to Output.
+
+  To misinform, misrepresent or mislead, including: misrepresenting your
+  relationship with us; misrepresenting the origin of Output or Derivatives;
+  distributing misleading claims of expertise or capability made particularly in
+  sensitive areas (e.g., health); or making decisions in domains that affect
+  material or individual rights or well-being (e.g., healthcare).
+
+  To perform or facilitate dangerous, illegal or malicious activities, including
+  promoting or facilitating the sale of, or providing instructions for
+  synthesizing or accessing, illegal substances, goods or services."
+
+If you redistribute any of the files listed above, or anything substantially
+derived from them, you must carry this notice and this "Use restrictions"
+section forward, and give clear notice to your own users that the material
+remains subject to these restrictions.
+
+
+MODIFICATIONS MADE TO OUTPUT
+--------------------------------------------------------------------------------
+
+The Terms require notice of modifications. The predictions redistributed here
+are not raw API responses. They were transformed as follows, and the code that
+did so is in analysis/ :
+
+  - For each variant, the predicted effect was taken for one target gene only,
+    selected by matching the eQTL Catalogue molecular_trait_id, and averaged
+    across the tracks belonging to a named GTEx tissue (analysis/09, analysis/12).
+  - Values were joined to observed eQTL effect sizes from the EMBL-EBI eQTL
+    Catalogue and reduced to rank correlations, sign agreement and bootstrap
+    intervals (analysis/10, analysis/11, analysis/13).
+  - No model weights or parameters are redistributed, and none were accessed.
+
+Raw per-variant predictions as returned for the scored gene are retained in
+results/ so that the transformations above can be checked.
+
+
+ATTRIBUTION
+--------------------------------------------------------------------------------
+
+AlphaGenome:
+  Avsec Z, Latysheva N, Cheng J, et al. Advancing regulatory variant effect
+  prediction with AlphaGenome. Nature 2026; 649: 1206-1218.
+  doi:10.1038/s41586-025-10014-0
+
+eQTL Catalogue (the observed effect sizes, CC BY 4.0):
+  Kerimov N, Hayhurst JD, Peikova K, et al. A compendium of uniformly processed
+  human gene expression and splicing quantitative trait loci. Nat Genet 2021;
+  53: 1290-1299. doi:10.1038/s41588-021-00924-w
