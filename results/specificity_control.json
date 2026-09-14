@@ -1,0 +1,14 @@
+{
+  "n_variants": 58,
+  "n_tissue_tracks": 55,
+  "kidney_rank": 6,
+  "kidney_rho": 0.5054292657417947,
+  "kidney_percentile": 90.9,
+  "best_track": "Pituitary",
+  "best_rho": 0.5659663477806146,
+  "spread_sd": 0.05680256594331216,
+  "range": [
+    0.32024977698483503,
+    0.5659663477806146
+  ]
+}

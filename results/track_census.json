@@ -1,0 +1,169 @@
+{
+  "headline": {
+    "total_human_tracks": 5563,
+    "total_biosamples": 715,
+    "kidney_parenchyma_tracks": 103,
+    "kidney_parenchyma_pct": 1.85,
+    "kidney_parenchyma_biosamples": 20,
+    "urinary_tract_tracks": 25,
+    "kidney_cell_line_tracks": 116,
+    "excluded_false_positive_tracks": 31
+  },
+  "guard": {
+    "substring_matching_tracks": 275,
+    "unclassified_names": [],
+    "ok": true
+  },
+  "by_modality": {
+    "CHIP_TF": {
+      "KIDNEY_PARENCHYMA": 4,
+      "URINARY_TRACT": 0,
+      "KIDNEY_CELL_LINE": 111,
+      "OTHER": 1500,
+      "EXCLUDED_FALSE_POSITIVE": 2,
+      "TOTAL": 1617,
+      "kidney_pct": 0.25
+    },
+    "CHIP_HISTONE": {
+      "KIDNEY_PARENCHYMA": 8,
+      "URINARY_TRACT": 0,
+      "KIDNEY_CELL_LINE": 3,
+      "OTHER": 1099,
+      "EXCLUDED_FALSE_POSITIVE": 6,
+      "TOTAL": 1116,
+      "kidney_pct": 0.72
+    },
+    "SPLICE_SITE_USAGE": {
+      "KIDNEY_PARENCHYMA": 28,
+      "URINARY_TRACT": 8,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 692,
+      "EXCLUDED_FALSE_POSITIVE": 6,
+      "TOTAL": 734,
+      "kidney_pct": 3.81
+    },
+    "RNA_SEQ": {
+      "KIDNEY_PARENCHYMA": 23,
+      "URINARY_TRACT": 5,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 633,
+      "EXCLUDED_FALSE_POSITIVE": 6,
+      "TOTAL": 667,
+      "kidney_pct": 3.45
+    },
+    "CAGE": {
+      "KIDNEY_PARENCHYMA": 12,
+      "URINARY_TRACT": 2,
+      "KIDNEY_CELL_LINE": 2,
+      "OTHER": 524,
+      "EXCLUDED_FALSE_POSITIVE": 6,
+      "TOTAL": 546,
+      "kidney_pct": 2.2
+    },
+    "SPLICE_JUNCTIONS": {
+      "KIDNEY_PARENCHYMA": 14,
+      "URINARY_TRACT": 4,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 346,
+      "EXCLUDED_FALSE_POSITIVE": 3,
+      "TOTAL": 367,
+      "kidney_pct": 3.81
+    },
+    "DNASE": {
+      "KIDNEY_PARENCHYMA": 13,
+      "URINARY_TRACT": 5,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 286,
+      "EXCLUDED_FALSE_POSITIVE": 1,
+      "TOTAL": 305,
+      "kidney_pct": 4.26
+    },
+    "ATAC": {
+      "KIDNEY_PARENCHYMA": 1,
+      "URINARY_TRACT": 1,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 164,
+      "EXCLUDED_FALSE_POSITIVE": 1,
+      "TOTAL": 167,
+      "kidney_pct": 0.6
+    },
+    "CONTACT_MAPS": {
+      "KIDNEY_PARENCHYMA": 0,
+      "URINARY_TRACT": 0,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 28,
+      "EXCLUDED_FALSE_POSITIVE": 0,
+      "TOTAL": 28,
+      "kidney_pct": 0.0
+    },
+    "PROCAP": {
+      "KIDNEY_PARENCHYMA": 0,
+      "URINARY_TRACT": 0,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 12,
+      "EXCLUDED_FALSE_POSITIVE": 0,
+      "TOTAL": 12,
+      "kidney_pct": 0.0
+    },
+    "SPLICE_SITES": {
+      "KIDNEY_PARENCHYMA": 0,
+      "URINARY_TRACT": 0,
+      "KIDNEY_CELL_LINE": 0,
+      "OTHER": 4,
+      "EXCLUDED_FALSE_POSITIVE": 0,
+      "TOTAL": 4,
+      "kidney_pct": 0.0
+    }
+  },
+  "tf_contrast": {
+    "kidney_parenchyma_tf_tracks": 4,
+    "kidney_parenchyma_distinct_tfs": [
+      "CTCF"
+    ],
+    "cell_line_tf_tracks": 111,
+    "cell_line_distinct_tf_count": 110,
+    "total_tf_tracks": 1617
+  },
+  "distal_nephron_present": {
+    "collecting duct": false,
+    "thick ascending limb": false,
+    "loop of Henle": false,
+    "distal convoluted tubule": false,
+    "principal cell": false,
+    "intercalated cell": false,
+    "macula densa": false,
+    "juxtaglomerular": false,
+    "parietal epithelial cell": false,
+    "connecting tubule": false,
+    "inner medulla of kidney": false,
+    "renal papilla": false
+  },
+  "life_stage": {
+    "kidney_parenchyma": {
+      "unknown": 38,
+      "embryonic": 30,
+      "adult": 26,
+      "unknown,embryonic": 4,
+      "embryonic,newborn": 4,
+      "child": 1
+    },
+    "all_tracks": {
+      "adult": 2582,
+      "unknown": 1295,
+      "embryonic": 799,
+      "child": 732,
+      "newborn": 121,
+      "child,adult": 9,
+      "unknown,embryonic": 8,
+      "adult,unknown": 5,
+      "embryonic,newborn": 4,
+      "embryonic,unknown": 4,
+      "adult,child": 4
+    }
+  },
+  "gtex_kidney_tissues": [
+    "Kidney_Cortex",
+    "Kidney_Medulla"
+  ],
+  "gtex_tissues_total": 54
+}

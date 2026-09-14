@@ -1,0 +1,593 @@
+accession,assay,biosample,classification,target,summary,date_released,is_cell_line
+ENCSR432YKA,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female adult (47 years),2021-02-20,False
+ENCSR503UNA,DNase-seq,nephron progenitor cell,in vitro differentiated cells,,Homo sapiens nephron progenitor cell,2021-02-27,False
+ENCSR337IRF,DNase-seq,RCC,cell line,,Homo sapiens RCC,2018-05-09,True
+ENCSR634YVQ,DNase-seq,HK-2,cell line,,Homo sapiens HK-2,2018-05-09,True
+ENCSR128PFN,Control ChIP-seq,HEK293T,cell line,,Homo sapiens HEK293T,2020-09-28,True
+ENCSR000EVB,TF ChIP-seq,HEK293,cell line,ELK4,Homo sapiens HEK293,2011-10-29,True
+ENCSR526QVD,PRO-cap,ureter,tissue,,Homo sapiens ureter tissue female adult (53 years),2025-12-11,False
+ENCSR503DHX,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (105 days),2026-01-26,False
+ENCSR247GVU,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue male embryo (96 days),2026-01-26,False
+ENCSR137BTX,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (96 days),2026-01-26,False
+ENCSR324XFA,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue male embryo (87 days),2026-01-26,False
+ENCSR941IFA,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (105 days),2026-01-26,False
+ENCSR961RJV,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (105 days),2026-01-26,False
+ENCSR469YWQ,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (85 days),2026-01-26,False
+ENCSR346RPY,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (108 days),2025-09-30,False
+ENCSR558FSR,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (105 days),2026-01-26,False
+ENCSR000ABZ,DNAme array,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell,2011-12-01,False
+ENCSR300AUI,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue male embryo (115 days),2026-01-26,False
+ENCSR709ZJR,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (105 days),2026-01-26,False
+ENCSR655VWF,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (115 days),2026-01-26,False
+ENCSR057UZA,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (89 days),2026-01-26,False
+ENCSR229ICS,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (120 days),2026-01-26,False
+ENCSR520PUD,PRO-cap,HEK293,cell line,,Homo sapiens HEK293,2025-12-11,True
+ENCSR000AGO,RAMPAGE,metanephros,tissue,,Homo sapiens metanephros tissue female embryo (20 weeks) and female embryo (24 weeks),2014-06-30,False
+ENCSR000ABB,DNAme array,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2011-12-01,False
+ENCSR000FCH,Histone ChIP-seq,HEK293,cell line,H3K27ac,Homo sapiens HEK293,2014-07-07,True
+ENCSR000AFU,small RNA-seq,metanephros,tissue,,Homo sapiens metanephros tissue female embryo (20 weeks) and female embryo (24 weeks),2014-06-30,False
+ENCSR000EUY,TF ChIP-seq,HEK293,cell line,TCF7L2,Homo sapiens HEK293,2011-10-29,True
+ENCSR000DMD,Control ChIP-seq,kidney,tissue,,Homo sapiens kidney tissue male adult (27 years),2012-08-27,False
+ENCSR000DXD,TF ChIP-seq,epithelial cell of proximal tubule,primary cell,CTCF,Homo sapiens epithelial cell of proximal tubule,2012-01-17,False
+ENCSR000DVG,Histone ChIP-seq,kidney epithelial cell,primary cell,H3K4me3,Homo sapiens kidney epithelial cell,2011-02-11,False
+ENCSR515EWI,DNase-seq,Caki2,cell line,,Homo sapiens Caki2,2015-08-18,True
+ENCSR269SIA,DNase-seq,G401,cell line,,Homo sapiens G401,2015-08-18,True
+ENCSR373BDG,total RNA-seq,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell male embryo (22 weeks) and male newborn,2015-05-18,False
+ENCSR000DCV,FAIRE-seq,G401.6,cell line,,Homo sapiens G401.6,2012-09-19,True
+ENCSR000EUZ,TF ChIP-seq,HEK293,cell line,TRIM28,Homo sapiens HEK293,2011-10-29,True
+ENCSR000AAQ,total RNA-seq,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell female adult (69 years) and male adult (84 years),2014-06-30,False
+ENCSR000ACL,DNAme array,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2011-12-01,False
+ENCSR000ACB,DNAme array,HEK293,cell line,,Homo sapiens HEK293,2011-12-01,True
+ENCSR660UDB,PRO-cap,kidney,tissue,,Homo sapiens kidney tissue female adult (53 years),2025-12-11,False
+ENCSR000EVA,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2011-10-29,True
+ENCSR865HXK,TF ChIP-seq,HEK293,cell line,PBX3,Homo sapiens HEK293 genetically modified (insertion) using CRISPR targeting H. sapiens PBX3,2022-09-30,True
+ENCSR733DAS,PRO-cap,HEK293T,cell line,,Homo sapiens HEK293T genetically modified (insertion) using CRISPR targeting H. sapiens ZNF143 treated with 500 nM dTAGV-1 for 6 hours,2026-01-16,True
+ENCSR000AFA,total RNA-seq,metanephros,tissue,,Homo sapiens metanephros tissue female embryo (20 weeks) and female embryo (24 weeks),2014-06-30,False
+ENCSR000FCK,Histone ChIP-seq,HEK293,cell line,H3K36me3,Homo sapiens HEK293,2014-07-07,True
+ENCSR000CZF,RNA microarray,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2011-04-01,False
+ENCSR748LKJ,DNase-seq,RCC,cell line,,Homo sapiens RCC,2025-09-19,True
+ENCSR000EOL,DNase-seq,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2010-12-16,False
+ENCSR794HFF,RRBS,HEK293,cell line,,Homo sapiens HEK293,2010-12-15,True
+ENCSR473KVF,PRO-cap,HEK293T,cell line,,Homo sapiens HEK293T genetically modified (insertion) using CRISPR targeting H. sapiens ZNF143,2026-01-16,True
+ENCSR861MQP,RAMPAGE,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2015-08-18,False
+ENCSR785BDQ,DNase-seq,glomerular visceral epithelial cell,primary cell,,Homo sapiens glomerular visceral epithelial cell child (3 years),2016-05-11,False
+ENCSR847PFO,TF ChIP-seq,HEK293,cell line,HOXB7,Homo sapiens HEK293 genetically modified (insertion) using CRISPR targeting H. sapiens HOXB7,2022-09-30,True
+ENCSR071ZMO,polyA plus RNA-seq,kidney,tissue,,Homo sapiens kidney tissue male adult (41 years),2014-12-08,False
+ENCSR148MVL,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2022-08-31,True
+ENCSR000AZB,genotyping array,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell,2011-08-16,False
+ENCSR186JMM,TF ChIP-seq,HEK293,cell line,MEIS1,Homo sapiens HEK293 genetically modified (insertion) using CRISPR targeting H. sapiens MEIS1,2022-10-03,True
+ENCSR000BWK,DNAme array,kidney,tissue,,Homo sapiens kidney tissue female adult (83 years),2011-10-19,False
+ENCSR418XXL,TF ChIP-seq,HEK293,cell line,HOXD13,Homo sapiens HEK293 genetically modified (insertion) using CRISPR targeting H. sapiens HOXD13,2022-08-23,True
+ENCSR245JDY,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2022-07-25,True
+ENCSR000EZB,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2011-10-29,True
+ENCSR000DTW,TF ChIP-seq,HEK293,cell line,CTCF,Homo sapiens HEK293,2011-03-17,True
+ENCSR097BWW,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (59 days) and male embryo (91 days),2015-08-31,False
+ENCSR000DXE,Control ChIP-seq,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2011-11-17,False
+ENCSR000FCI,TF ChIP-seq,HEK293,cell line,ZNF274,Homo sapiens HEK293,2014-07-07,True
+ENCSR000DBQ,RNA microarray,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2011-04-01,False
+ENCSR000FCJ,Histone ChIP-seq,HEK293,cell line,H3K9me3,Homo sapiens HEK293,2014-07-07,True
+ENCSR000CZB,RNA microarray,glomerular endothelial cell,primary cell,,Homo sapiens glomerular endothelial cell,2011-04-01,False
+ENCSR302UOZ,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (113 days),2026-01-26,False
+ENCSR125NGM,polyA plus RNA-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR746DTB,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (96 days),2026-01-26,False
+ENCSR851ZFT,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (89 days),2013-07-31,False
+ENCSR606UAR,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (96 days),2013-07-31,False
+ENCSR729EEX,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (107 days),2026-01-26,False
+ENCSR422PVL,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (147 days),2013-07-31,False
+ENCSR261AYY,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (105 days),2026-01-26,False
+ENCSR016THC,DNase-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR720KOH,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (103 days),2026-01-26,False
+ENCSR321AWD,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (108 days),2026-01-26,False
+ENCSR424TSZ,polyA plus RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (91 days),2013-07-31,False
+ENCSR847IOQ,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (96 days),2026-01-26,False
+ENCSR885ASQ,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (89 days),2026-01-26,False
+ENCSR136KEL,DNase-seq,kidney glomerular epithelial cell,primary cell,,Homo sapiens kidney glomerular epithelial cell male adult (43 years) and male adult (62 years),2018-05-09,False
+ENCSR986HEN,DNase-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR555RBI,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (147 days),2026-01-26,False
+ENCSR774RCO,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (105 days),2013-07-31,False
+ENCSR414ZUA,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (108 days),2013-07-31,False
+ENCSR160UAZ,polyA plus RNA-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR870FIJ,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (105 days),2026-01-26,False
+ENCSR337PJI,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (113 days),2026-01-26,False
+ENCSR656QYL,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (103 days),2013-07-31,False
+ENCSR281RTT,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (85 days),2026-01-26,False
+ENCSR295DUI,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (87 days),2013-07-31,False
+ENCSR896QPD,polyA plus RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (85 days),2013-07-31,False
+ENCSR320SVK,DNase-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (120 days),2013-07-31,False
+ENCSR364TKL,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (97 days),2013-07-31,False
+ENCSR437KLY,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (85 days),2013-07-31,False
+ENCSR227LUE,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (108 days),2026-01-26,False
+ENCSR990XXC,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (115 days),2013-07-31,False
+ENCSR436ZKE,polyA plus RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (97 days),2013-07-31,False
+ENCSR619DQO,total RNA-seq,ureter,tissue,,Homo sapiens ureter tissue female adult (47 years),2023-01-25,False
+ENCSR953JVX,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (105 days),2013-07-31,False
+ENCSR352GCS,polyA plus RNA-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR254AGA,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (91 days),2013-07-31,False
+ENCSR082JCE,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (121 days),2013-07-31,False
+ENCSR543TQW,polyA plus RNA-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (120 days),2013-07-31,False
+ENCSR495UXA,polyA plus RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (108 days),2013-07-31,False
+ENCSR204XBB,polyA plus RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (105 days),2013-07-31,False
+ENCSR929KRW,polyA plus RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (97 days),2013-07-31,False
+ENCSR029FTY,polyA plus RNA-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR899SWV,polyA plus RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (120 days),2013-07-31,False
+ENCSR100NLN,RAMPAGE,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell male embryo (22 weeks) and male newborn,2015-08-18,False
+ENCSR928CEQ,polyA plus RNA-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR953XJU,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (107 days),2013-07-31,False
+ENCSR120LVW,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (98 days),2013-07-31,False
+ENCSR469ZUS,RAMPAGE,glomerular endothelial cell,primary cell,,Homo sapiens glomerular endothelial cell female embryo (22 weeks) and male embryo (22 weeks),2015-08-18,False
+ENCSR765BSU,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (117 days),2013-07-31,False
+ENCSR039ZVQ,DNase-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (120 days),2013-07-31,False
+ENCSR022ECC,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (96 days),2013-07-31,False
+ENCSR761ZFA,DNase-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR752NTF,DNase-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR400DJE,polyA plus RNA-seq,right renal cortex interstitium,tissue,,Homo sapiens right renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR645GJD,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (113 days),2013-07-31,False
+ENCSR554WUJ,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (103 days),2013-07-31,False
+ENCSR600RAA,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue male embryo (87 days),2013-07-31,False
+ENCSR928SYE,DNase-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR534XJP,DNase-seq,cortex of kidney,tissue,,Homo sapiens cortex of kidney tissue male adult (70 years),2025-09-19,False
+ENCSR212AMA,polyA plus RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (105 days),2013-07-31,False
+ENCSR096EZX,Histone ChIP-seq,kidney,tissue,H3K4me3,Homo sapiens kidney tissue female embryo (120 days),2013-07-31,False
+ENCSR717QID,DNase-seq,kidney tubule cell,primary cell,,Homo sapiens kidney tubule cell male adult,2025-09-20,False
+ENCSR653DFZ,total RNA-seq,G401,cell line,,Homo sapiens G401,2014-11-20,True
+ENCSR761KZV,Histone ChIP-seq,kidney,tissue,H3K27me3,Homo sapiens kidney tissue female embryo (120 days),2013-07-31,False
+ENCSR558SJC,Histone ChIP-seq,kidney,tissue,H3K36me3,Homo sapiens kidney tissue male adult (67 years),2013-07-31,False
+ENCSR643ULB,Histone ChIP-seq,kidney,tissue,H3K9ac,Homo sapiens kidney tissue male adult (67 years),2013-07-31,False
+ENCSR000EVC,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2011-10-29,True
+ENCSR000AZC,genotyping array,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2011-08-16,False
+ENCSR044YKV,intact Hi-C,kidney,tissue,,Homo sapiens kidney tissue female adult (47 years),2022-11-08,False
+ENCSR548HED,snRNA-seq,kidney,tissue,,Homo sapiens kidney tissue nuclear fraction female adult (47 years),2022-03-25,False
+ENCSR024CQN,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (105 days),2026-01-26,False
+ENCSR728OMS,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (120 days),2026-01-26,False
+ENCSR390AHP,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (91 days),2026-01-26,False
+ENCSR332ZOH,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (108 days),2026-01-26,False
+ENCSR091MZX,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (105 days),2026-01-26,False
+ENCSR465CKP,snATAC-seq,ureter,tissue,,Homo sapiens ureter tissue nuclear fraction female adult (47 years),2022-03-23,False
+ENCSR176MGF,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (97 days),2026-01-26,False
+ENCSR448TJV,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (147 days),2026-01-26,False
+ENCSR397AFD,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (105 days),2026-01-26,False
+ENCSR000DTV,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2011-02-11,True
+ENCSR000EOK,DNase-seq,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell,2011-04-07,False
+ENCSR639PHC,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (97 days),2026-01-26,False
+ENCSR000DCN,FAIRE-seq,kidney,tissue,,Homo sapiens kidney tissue female adult (30 years) and male adult (54 years),2012-09-19,False
+ENCSR000DMC,TF ChIP-seq,kidney,tissue,CTCF,Homo sapiens kidney tissue male adult (22 years) and male adult (27 years) and male adult (35 years),2012-08-27,False
+ENCSR000DVH,TF ChIP-seq,kidney epithelial cell,primary cell,CTCF,Homo sapiens kidney epithelial cell,2011-03-17,False
+ENCSR219CXA,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (120 days),2026-01-26,False
+ENCSR000DVD,Control ChIP-seq,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2011-03-17,False
+ENCSR000EPW,DNase-seq,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2011-05-04,False
+ENCSR476STT,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (105 days),2026-01-26,False
+ENCSR822NSX,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (98 days),2026-01-26,False
+ENCSR793ODF,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (96 days),2026-01-26,False
+ENCSR600SMN,TF ChIP-seq,HEK293,cell line,HOXA7,Homo sapiens HEK293 genetically modified (insertion) using CRISPR targeting H. sapiens HOXA7,2022-09-30,True
+ENCSR000DEZ,RRBS,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2010-12-15,False
+ENCSR000DEP,RRBS,kidney,tissue,,Homo sapiens kidney tissue female adult (83 years),2011-09-30,False
+ENCSR260VXZ,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (87 days),2026-01-26,False
+ENCSR964JZN,snRNA-seq,ureter,tissue,,Homo sapiens ureter tissue nuclear fraction female adult (47 years),2022-03-25,False
+ENCSR856JRV,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (120 days),2026-01-26,False
+ENCSR005ESF,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (105 days),2026-01-26,False
+ENCSR281BDV,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (107 days),2026-01-26,False
+ENCSR660EZD,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (87 days),2026-01-26,False
+ENCSR054SPN,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (108 days),2026-01-26,False
+ENCSR446EHC,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (108 days),2026-01-26,False
+ENCSR704QAK,DNase-seq,kidney glomerular epithelial cell,primary cell,,Homo sapiens kidney glomerular epithelial cell female adult (90 or above years),2025-09-19,False
+ENCSR457PDH,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (105 days),2026-01-26,False
+ENCSR270XWF,long read RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (110 days),2026-01-26,False
+ENCSR907BCF,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (98 days),2026-01-26,False
+ENCSR272WXU,microRNA-seq,kidney,tissue,,Homo sapiens kidney tissue female adult (47 years),2020-09-24,False
+ENCSR267ZNP,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (108 days),2026-01-26,False
+ENCSR799GBH,long read RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (121 days),2026-01-26,False
+ENCSR760VAB,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (91 days),2026-01-26,False
+ENCSR604VIY,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female adult (47 years),2025-09-30,False
+ENCSR000DVF,Histone ChIP-seq,kidney epithelial cell,primary cell,H3K27me3,Homo sapiens kidney epithelial cell,2011-02-11,False
+ENCSR619DRM,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (105 days),2013-07-31,False
+ENCSR155NPL,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (113 days),2013-07-31,False
+ENCSR540PVZ,DNase-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (120 days),2013-07-31,False
+ENCSR332BSB,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (87 days),2013-07-31,False
+ENCSR301RCD,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (127 days),2013-07-31,False
+ENCSR268QCH,DNase-seq,right renal cortex interstitium,tissue,,Homo sapiens right renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR000FCG,Histone ChIP-seq,HEK293,cell line,H3K4me1,Homo sapiens HEK293,2014-07-07,True
+ENCSR294SAK,TF ChIP-seq,HEK293,cell line,HOXC10,Homo sapiens HEK293 genetically modified (insertion) using CRISPR targeting H. sapiens HOXC10,2023-01-06,True
+ENCSR151LCI,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2022-12-20,True
+ENCSR845JAP,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (105 days),2026-01-26,False
+ENCSR000DDB,FAIRE-seq,RCC 7860,cell line,,Homo sapiens RCC 7860,2012-09-19,True
+ENCSR000DVE,Histone ChIP-seq,kidney epithelial cell,primary cell,H3K36me3,Homo sapiens kidney epithelial cell,2011-02-11,False
+ENCSR000DFR,RRBS,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2010-12-15,False
+ENCSR861CLZ,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (87 days),2026-01-26,False
+ENCSR645EEX,long read RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (105 days),2026-01-26,False
+ENCSR382JPG,long read RNA-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (120 days),2026-01-26,False
+ENCSR000DXF,Histone ChIP-seq,epithelial cell of proximal tubule,primary cell,H3K4me3,Homo sapiens epithelial cell of proximal tubule,2011-11-17,False
+ENCSR857YQI,Control ChIP-seq,kidney,tissue,,Homo sapiens kidney tissue male adult (67 years),2013-07-31,False
+ENCSR378HAM,Histone ChIP-seq,kidney,tissue,H3K9me3,Homo sapiens kidney tissue male adult (50 years),2013-07-31,False
+ENCSR257CIZ,DNase-seq,kidney tubule cell,primary cell,,Homo sapiens kidney tubule cell female adult (80 years) treated with 5 μM cisplatin,2018-05-09,False
+ENCSR146TGM,Histone ChIP-seq,kidney,tissue,H3K9ac,Homo sapiens kidney tissue male adult (50 years),2013-07-31,False
+ENCSR366AOJ,Histone ChIP-seq,kidney,tissue,H3K36me3,Homo sapiens kidney tissue female embryo (120 days),2013-07-31,False
+ENCSR317MKR,Histone ChIP-seq,kidney,tissue,H3K9ac,Homo sapiens kidney tissue female embryo (120 days),2013-07-31,False
+ENCSR538RDA,TF ChIP-seq,HEK293,cell line,ZNF560,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF560,2017-03-16,True
+ENCSR559IOZ,TF ChIP-seq,HEK293,cell line,ZXDB,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZXDB,2016-10-07,True
+ENCSR233MWH,TF ChIP-seq,HEK293,cell line,ZNF670,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF670,2016-12-19,True
+ENCSR770PQN,TF ChIP-seq,HEK293,cell line,BCL11B,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens BCL11B,2016-10-07,True
+ENCSR721QZV,TF ChIP-seq,HEK293,cell line,ZSCAN18,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN18,2016-12-19,True
+ENCSR279KDC,TF ChIP-seq,HEK293,cell line,ZNF677,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF677,2018-07-12,True
+ENCSR194KWL,TF ChIP-seq,HEK293,cell line,ZNF704,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF704,2016-12-19,True
+ENCSR909TSW,TF ChIP-seq,HEK293,cell line,ZNF547,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF547,2016-10-07,True
+ENCSR675ZDM,Control ChIP-seq,kidney,tissue,,Homo sapiens kidney tissue male adult (50 years),2013-07-31,False
+ENCSR028EGI,TF ChIP-seq,HEK293,cell line,ZNF26,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF26,2016-12-19,True
+ENCSR906PCS,TF ChIP-seq,HEK293,cell line,ZNF223,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF223,2016-12-19,True
+ENCSR451CYX,TF ChIP-seq,HEK293,cell line,ZNF280D,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF280D,2016-10-14,True
+ENCSR504VDV,TF ChIP-seq,HEK293,cell line,ZNF654,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF654,2016-10-07,True
+ENCSR605MGM,TF ChIP-seq,HEK293,cell line,SCRT1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SCRT1,2016-10-25,True
+ENCSR811JJM,TF ChIP-seq,HEK293,cell line,ZNF19,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF19,2016-12-19,True
+ENCSR635NOQ,TF ChIP-seq,HEK293,cell line,KLF8,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens KLF8,2016-10-07,True
+ENCSR211GNP,TF ChIP-seq,HEK293,cell line,ZSCAN4,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN4,2017-02-21,True
+ENCSR617IFZ,TF ChIP-seq,HEK293,cell line,CTCF,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens CTCF,2016-10-07,True
+ENCSR000DTU,Histone ChIP-seq,HEK293,cell line,H3K4me3,Homo sapiens HEK293,2011-02-11,True
+ENCSR460MBI,TF ChIP-seq,HEK293,cell line,ZBTB20,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB20,2016-12-19,True
+ENCSR000DFY,RRBS,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell,2011-09-30,False
+ENCSR459GCS,Histone ChIP-seq,kidney,tissue,H3K4me1,Homo sapiens kidney tissue female embryo (120 days),2013-07-31,False
+ENCSR768OLL,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (91 days),2016-05-09,False
+ENCSR175IWT,DNase-seq,kidney tubule cell,primary cell,,Homo sapiens kidney tubule cell female adult (80 years) and male adult (62 years),2018-05-09,False
+ENCSR000DBR,RNA microarray,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell,2011-04-01,False
+ENCSR076KZW,TF ChIP-seq,HEK293,cell line,ZNF280C,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF280C,2016-12-19,True
+ENCSR997GPO,TF ChIP-seq,HEK293T,cell line,NFRKB,Homo sapiens HEK293T,2016-11-17,True
+ENCSR036VRV,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (107 days),2013-07-31,False
+ENCSR106OKX,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (120 days),2013-07-31,False
+ENCSR000EVD,TF ChIP-seq,HEK293,cell line,ZNF263,Homo sapiens HEK293,2011-10-29,True
+ENCSR000EJR,DNase-seq,HEK293T,cell line,,Homo sapiens HEK293T,2012-03-28,True
+ENCSR184DFF,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue male embryo (96 days),2013-07-31,False
+ENCSR632SIM,TF ChIP-seq,HEK293,cell line,ZFHX2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFHX2,2016-12-19,True
+ENCSR410DUZ,polyA plus RNA-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (120 days),2013-07-31,False
+ENCSR014VAC,DNase-seq,right renal cortex interstitium,tissue,,Homo sapiens right renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR258IBL,DNase-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR754SOI,TF ChIP-seq,HEK293,cell line,ZNF529,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF529,2017-11-28,True
+ENCSR413LXW,polyA plus RNA-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR000BWL,DNAme array,kidney,tissue,,Homo sapiens kidney tissue male adult (71 years),2011-10-19,False
+ENCSR129KIV,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (108 days),2013-07-31,False
+ENCSR822AOE,polyA plus RNA-seq,right renal cortex interstitium,tissue,,Homo sapiens right renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR670ZSA,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue male embryo (96 days),2013-07-31,False
+ENCSR017TFH,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (87 days),2013-07-31,False
+ENCSR000BAU,genotyping array,HEK293,cell line,,Homo sapiens HEK293,2011-08-16,True
+ENCSR941DTJ,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (108 days),2013-07-31,False
+ENCSR000BFE,RNA microarray,HEK293T,cell line,,Homo sapiens HEK293T,2012-04-04,True
+ENCSR966ULI,TF ChIP-seq,HEK293,cell line,PATZ1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens PATZ1,2016-10-14,True
+ENCSR080CST,TF ChIP-seq,HEK293,cell line,ZNF639,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF639,2016-10-07,True
+ENCSR859RAO,TF ChIP-seq,HEK293,cell line,YY1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens YY1,2018-01-29,True
+ENCSR141PZA,TF ChIP-seq,HEK293,cell line,SP3,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SP3,2016-10-07,True
+ENCSR000EOM,DNase-seq,glomerular endothelial cell,primary cell,,Homo sapiens glomerular endothelial cell,2011-05-04,False
+ENCSR631WAA,TF ChIP-seq,HEK293,cell line,ZBTB17,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB17,2016-10-25,True
+ENCSR896UBV,TF ChIP-seq,HEK293,cell line,REST,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens REST,2016-10-07,True
+ENCSR503DPC,TF ChIP-seq,HEK293,cell line,ZNF513,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF513,2018-07-11,True
+ENCSR440COG,TF ChIP-seq,HEK293,cell line,ZNF239,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF239,2016-10-07,True
+ENCSR397DQC,TF ChIP-seq,HEK293,cell line,KLF16,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens KLF16,2017-04-05,True
+ENCSR159GFL,TF ChIP-seq,HEK293,cell line,ZNF518A,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF518A,2016-10-25,True
+ENCSR224QDY,TF ChIP-seq,HEK293,cell line,ZNF121,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF121,2016-10-25,True
+ENCSR580OAH,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (91 days),2013-07-31,False
+ENCSR864VJE,TF ChIP-seq,HEK293,cell line,ZSCAN16,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN16,2016-10-07,True
+ENCSR768LIO,TF ChIP-seq,HEK293,cell line,OVOL3,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens OVOL3,2016-10-07,True
+ENCSR738SLS,TF ChIP-seq,HEK293,cell line,ZNF449,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF449,2017-11-28,True
+ENCSR468IJT,TF ChIP-seq,HEK293,cell line,SP7,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SP7,2016-10-07,True
+ENCSR382GSF,TF ChIP-seq,HEK293,cell line,INSM2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens INSM2,2016-10-07,True
+ENCSR134QIE,TF ChIP-seq,HEK293,cell line,ZFP3,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP3,2016-10-07,True
+ENCSR595FAO,TF ChIP-seq,HEK293,cell line,ZNF510,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF510,2018-01-30,True
+ENCSR290SSQ,TF ChIP-seq,HEK293,cell line,MAZ,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens MAZ,2016-10-07,True
+ENCSR070HWF,TF ChIP-seq,HEK293,cell line,ZNF768,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF768,2018-01-29,True
+ENCSR977HTH,TF ChIP-seq,HEK293,cell line,ZNF18,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF18,2016-10-07,True
+ENCSR892QHR,TF ChIP-seq,HEK293,cell line,PRDM6,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens PRDM6,2017-04-06,True
+ENCSR827NWO,TF ChIP-seq,HEK293,cell line,FEZF1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens FEZF1,2016-10-14,True
+ENCSR464KFG,TF ChIP-seq,HEK293,cell line,ZNF140,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF140,2016-10-14,True
+ENCSR707BNG,TF ChIP-seq,HEK293,cell line,MYNN,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens MYNN,2016-10-07,True
+ENCSR304AMN,TF ChIP-seq,HEK293,cell line,IKZF3,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens IKZF3,2018-07-12,True
+ENCSR769JRS,TF ChIP-seq,HEK293,cell line,AEBP2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens AEBP2,2016-10-07,True
+ENCSR194BBY,TF ChIP-seq,HEK293,cell line,ZNF221,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF221,2017-11-28,True
+ENCSR592OXC,long read RNA-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (117 days),2026-01-26,False
+ENCSR017QBI,TF ChIP-seq,HEK293,cell line,ZNF600,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF600,2016-10-07,True
+ENCSR668HOP,TF ChIP-seq,HEK293,cell line,ZNF580,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF580,2016-10-07,True
+ENCSR020UPN,TF ChIP-seq,HEK293,cell line,ZNF184,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF184,2018-07-11,True
+ENCSR344SBD,TF ChIP-seq,HEK293,cell line,ZNF596,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF596,2018-07-12,True
+ENCSR418MKG,TF ChIP-seq,HEK293,cell line,ZNF692,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF692,2016-10-14,True
+ENCSR445PDR,TF ChIP-seq,HEK293,cell line,GFI1B,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens GFI1B,2016-10-07,True
+ENCSR006GAQ,TF ChIP-seq,HEK293,cell line,KLF10,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens KLF10,2018-07-11,True
+ENCSR996FYT,TF ChIP-seq,HEK293,cell line,ZNF202,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF202,2016-10-14,True
+ENCSR862PNL,TF ChIP-seq,HEK293T,cell line,L3MBTL2,Homo sapiens HEK293T,2016-11-21,True
+ENCSR604CNJ,TF ChIP-seq,HEK293,cell line,ZNF416,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF416,2016-12-19,True
+ENCSR854IPI,TF ChIP-seq,HEK293,cell line,ZNF707,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF707,2016-10-07,True
+ENCSR298QUH,TF ChIP-seq,HEK293,cell line,MZF1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens MZF1,2017-11-28,True
+ENCSR701RXW,TF ChIP-seq,HEK293,cell line,ZNF530,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF530,2016-12-19,True
+ENCSR715QNO,TF ChIP-seq,HEK293,cell line,ZNF362,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF362,2016-10-25,True
+ENCSR714LZQ,TF ChIP-seq,HEK293,cell line,ZNF664,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF664,2016-10-07,True
+ENCSR441UBA,TF ChIP-seq,HEK293,cell line,RBAK,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens RBAK,2016-12-19,True
+ENCSR093HXE,TF ChIP-seq,HEK293,cell line,ZNF16,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF16,2016-10-07,True
+ENCSR138RCE,TF ChIP-seq,HEK293,cell line,ZNF132,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF132,2017-04-06,True
+ENCSR381VYR,TF ChIP-seq,HEK293,cell line,ZFP69B,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP69B,2016-10-14,True
+ENCSR950ACO,TF ChIP-seq,HEK293,cell line,ZNF785,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF785,2016-12-19,True
+ENCSR357QJR,TF ChIP-seq,HEK293,cell line,ZSCAN5A,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN5A,2016-10-07,True
+ENCSR878DES,TF ChIP-seq,HEK293,cell line,ZNF624,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF624,2017-04-06,True
+ENCSR401TBQ,in situ Hi-C,Caki2,cell line,,Homo sapiens Caki2,2016-05-13,True
+ENCSR778QLY,TF ChIP-seq,HEK293T,cell line,ELF4,Homo sapiens HEK293T,2017-01-31,True
+ENCSR669GUM,TF ChIP-seq,HEK293,cell line,ZNF404,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF404,2017-02-13,True
+ENCSR146NLL,TF ChIP-seq,HEK293,cell line,REPIN1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens REPIN1,2017-03-07,True
+ENCSR753GIA,TF ChIP-seq,HEK293T,cell line,TARDBP,Homo sapiens HEK293T,2016-11-17,True
+ENCSR365DQH,TF ChIP-seq,HEK293,cell line,ZNF211,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF211,2016-12-19,True
+ENCSR773REP,TF ChIP-seq,HEK293,cell line,ZBTB7A,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB7A,2016-10-07,True
+ENCSR237TFX,TF ChIP-seq,HEK293T,cell line,CTBP1,Homo sapiens HEK293T,2016-11-17,True
+ENCSR466VYP,TF ChIP-seq,HEK293,cell line,ZNF266,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF266,2016-12-19,True
+ENCSR065WUF,TF ChIP-seq,HEK293,cell line,KLF17,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens KLF17,2016-10-07,True
+ENCSR223TAV,TF ChIP-seq,HEK293,cell line,PRDM10,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens PRDM10,2016-10-07,True
+ENCSR966PJJ,TF ChIP-seq,HEK293,cell line,WT1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens WT1,2016-10-07,True
+ENCSR705ASR,TF ChIP-seq,HEK293,cell line,ZSCAN23,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN23,2016-10-07,True
+ENCSR482BBZ,TF ChIP-seq,HEK293,cell line,GLIS1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens GLIS1,2016-10-07,True
+ENCSR447ZTA,TF ChIP-seq,HEK293,cell line,ZNF558,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF558,2016-10-07,True
+ENCSR984MDV,TF ChIP-seq,HEK293,cell line,ZNF24,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF24,2016-10-07,True
+ENCSR775HFF,TF ChIP-seq,HEK293,cell line,ZNF791,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF791,2016-12-19,True
+ENCSR604VWJ,TF ChIP-seq,HEK293,cell line,KLF7,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens KLF7,2016-10-07,True
+ENCSR762DQP,TF ChIP-seq,HEK293,cell line,ZNF658,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF658,2016-12-19,True
+ENCSR872BOU,TF ChIP-seq,HEK293T,cell line,FOXK2,Homo sapiens HEK293T,2016-11-18,True
+ENCSR217WRC,TF ChIP-seq,HEK293,cell line,TSHZ1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens TSHZ1,2016-10-07,True
+ENCSR803GYT,TF ChIP-seq,HEK293,cell line,HIC1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens HIC1,2016-10-25,True
+ENCSR090ZDO,TF ChIP-seq,HEK293T,cell line,SUZ12,Homo sapiens HEK293T,2016-11-18,True
+ENCSR283DOU,TF ChIP-seq,HEK293,cell line,ZNF660,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF660,2018-07-11,True
+ENCSR682SDS,Mint-ChIP-seq,nephron progenitor cell,in vitro differentiated cells,H3K4me3,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2021-05-14,False
+ENCSR892ZTO,TF ChIP-seq,HEK293,cell line,ZNF548,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF548,2016-12-19,True
+ENCSR691TXI,TF ChIP-seq,HEK293,cell line,ZNF610,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF610,2016-10-07,True
+ENCSR351NON,TF ChIP-seq,HEK293,cell line,ZNF629,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF629,2017-04-14,True
+ENCSR278MZO,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SALL4,2016-10-07,True
+ENCSR906PEI,TF ChIP-seq,HEK293T,cell line,SP1,Homo sapiens HEK293T,2017-05-18,True
+ENCSR851FFP,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens AEBP2,2016-10-07,True
+ENCSR537CWQ,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SP7,2016-10-07,True
+ENCSR211PZO,TF ChIP-seq,HEK293,cell line,GLI4,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens GLI4,2016-10-07,True
+ENCSR295BIP,TF ChIP-seq,HEK293,cell line,ZNF777,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF777,2017-04-06,True
+ENCSR072LQF,TF ChIP-seq,HEK293,cell line,ZNF76,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF76,2016-10-07,True
+ENCSR711UOA,TF ChIP-seq,HEK293,cell line,ZNF837,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF837,2016-10-07,True
+ENCSR004PLU,TF ChIP-seq,HEK293,cell line,ZBTB10,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB10,2016-12-19,True
+ENCSR228PGT,TF ChIP-seq,HEK293,cell line,ZNF292,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF292,2016-10-07,True
+ENCSR297VGU,ATAC-seq,kidney,tissue,,Homo sapiens kidney tissue female adult (47 years),2022-06-16,False
+ENCSR361UQO,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF707,2016-10-07,True
+ENCSR311DYU,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF800,2016-10-07,True
+ENCSR163RYW,TF ChIP-seq,HEK293,cell line,ZNF189,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF189,2017-11-28,True
+ENCSR007GUS,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens CTCF,2016-10-07,True
+ENCSR066WZJ,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue embryo (80 days),2016-05-09,False
+ENCSR049NDP,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF572,2016-10-07,True
+ENCSR665KYH,TF ChIP-seq,HEK293,cell line,ZNF521,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF521,2017-04-06,True
+ENCSR331CRR,Histone ChIP-seq,kidney,tissue,H3K36me3,Homo sapiens kidney tissue male adult (50 years),2013-07-31,False
+ENCSR716YIT,Histone ChIP-seq,kidney,tissue,H3K4me3,Homo sapiens kidney tissue male adult (67 years),2013-07-31,False
+ENCSR768VNZ,TF ChIP-seq,HEK293,cell line,ZSCAN30,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN30,2018-07-12,True
+ENCSR118TVR,total RNA-seq,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2015-06-17,False
+ENCSR000DAB,RNA microarray,HEK293,cell line,,Homo sapiens HEK293,2011-04-01,True
+ENCSR138GPO,DNAme array,HEK293,cell line,,Homo sapiens HEK293,2017-06-15,True
+ENCSR103GAK,TF ChIP-seq,HEK293,cell line,ZNF175,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF175,2016-10-07,True
+ENCSR356VOK,RAMPAGE,mesangial cell,primary cell,,Homo sapiens mesangial cell female embryo (21 weeks),2015-08-18,False
+ENCSR520KEV,genotyping array,G401,cell line,,Homo sapiens G401,2016-08-05,True
+ENCSR860UAT,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens PRDM12,2016-10-07,True
+ENCSR873PPH,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP64,2016-10-07,True
+ENCSR283SJF,Mint-ChIP-seq,nephron,organoid,H3K27ac,"Homo sapiens nephron organoid, 35 days post differentiation",2020-07-30,False
+ENCSR047QDF,DNAme array,G401,cell line,,Homo sapiens G401,2017-06-15,True
+ENCSR157LMX,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZEB2,2016-10-07,True
+ENCSR260MAS,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB1,2016-10-07,True
+ENCSR011CKE,TF ChIP-seq,HEK293,cell line,ZNF2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF2,2016-10-25,True
+ENCSR094NBC,Mint-ChIP-seq,nephron,organoid,H3K27me3,"Homo sapiens nephron organoid, 49 days post differentiation",2021-05-14,False
+ENCSR714LYA,TF ChIP-seq,HEK293,cell line,PRDM2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens PRDM2,2016-10-25,True
+ENCSR248DHY,Mint-ChIP-seq,nephron,organoid,H3K36me3,"Homo sapiens nephron organoid, 35 days post differentiation",2021-05-18,False
+ENCSR425YBK,Control Mint-ChIP-seq,nephron progenitor cell,in vitro differentiated cells,,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2020-07-06,False
+ENCSR943WLE,Mint-ChIP-seq,nephron progenitor cell,in vitro differentiated cells,H3K36me3,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2021-05-14,False
+ENCSR736BTL,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SP2,2016-10-07,True
+ENCSR688NWK,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP62,2016-10-07,True
+ENCSR236FPN,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZEB2,2016-10-07,True
+ENCSR357TLJ,Mint-ChIP-seq,nephron progenitor cell,in vitro differentiated cells,H3K27me3,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2021-11-18,False
+ENCSR800RLR,genotyping array,Caki2,cell line,,Homo sapiens Caki2,2016-08-05,True
+ENCSR792LOV,Mint-ChIP-seq,nephron progenitor cell,in vitro differentiated cells,H3K4me1,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2021-05-14,False
+ENCSR354FNX,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF18,2016-10-07,True
+ENCSR675IVH,DNAme array,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2017-06-15,False
+ENCSR421QXA,TF ChIP-seq,HEK293,cell line,ZNF571,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF571,2017-04-06,True
+ENCSR767XSF,TF ChIP-seq,HEK293,cell line,ZNF555,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF555,2017-03-16,True
+ENCSR363XBR,TF ChIP-seq,HEK293,cell line,ZNF488,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF488,2016-10-07,True
+ENCSR499QIO,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN4,2016-10-07,True
+ENCSR210MET,TF ChIP-seq,HEK293,cell line,ZNF391,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF391,2016-10-07,True
+ENCSR547TGL,TF ChIP-seq,HEK293,cell line,ZNF701,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF701,2016-12-19,True
+ENCSR153QIM,Mint-ChIP-seq,nephron,organoid,H3K4me1,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2021-11-18,False
+ENCSR871APX,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (147 days),2013-07-31,False
+ENCSR318JAA,DNase-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR092WMD,DNase-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR814PLO,Mint-ChIP-seq,nephron,organoid,H3K4me1,"Homo sapiens nephron organoid, 49 days post differentiation",2020-07-30,False
+ENCSR781EQJ,TF ChIP-seq,HEK293,cell line,ZBTB48,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB48,2016-12-19,True
+ENCSR519AVF,Mint-ChIP-seq,nephron,organoid,H3K27ac,"Homo sapiens nephron organoid, 49 days post differentiation",2020-07-30,False
+ENCSR044FMM,TF ChIP-seq,HEK293,cell line,SALL2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SALL2,2017-04-06,True
+ENCSR736ZKL,TF ChIP-seq,HEK293,cell line,ZNF148,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF148,2017-02-21,True
+ENCSR338SEM,TF ChIP-seq,HEK293,cell line,ZNF248,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF248,2017-04-06,True
+ENCSR429LAP,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SP7,2016-10-07,True
+ENCSR274OGE,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens CTCF,2016-10-07,True
+ENCSR386FAB,Control ChIP-seq,HEK293T,cell line,,Homo sapiens HEK293T,2016-11-01,True
+ENCSR371LLY,TF ChIP-seq,HEK293,cell line,ZNF37A,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF37A,2018-07-11,True
+ENCSR398JUP,DNase-seq,ureter,tissue,,Homo sapiens ureter tissue female adult (47 years),2020-10-02,False
+ENCSR397RWM,Control Mint-ChIP-seq,nephron,organoid,,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2020-07-06,False
+ENCSR852EKS,Mint-ChIP-seq,nephron,organoid,H3K4me1,"Homo sapiens nephron organoid, 35 days post differentiation",2020-07-30,False
+ENCSR103RLW,Mint-ChIP-seq,nephron,organoid,H3K27me3,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2021-11-18,False
+ENCSR167XFW,TF ChIP-seq,HEK293,cell line,ZNF544,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF544,2017-05-17,True
+ENCSR522LDJ,TF ChIP-seq,HEK293T,cell line,HDGF,Homo sapiens HEK293T,2017-04-14,True
+ENCSR096LNY,Mint-ChIP-seq,nephron,organoid,H3K9me3,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2021-05-18,False
+ENCSR096LSN,TF ChIP-seq,HEK293,cell line,ZNF311,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF311,2017-04-06,True
+ENCSR274LVQ,TF ChIP-seq,HEK293,cell line,ZNF776,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF776,2017-02-21,True
+ENCSR858FAN,TF ChIP-seq,HEK293,cell line,ZNF621,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF621,2017-04-06,True
+ENCSR676ZEF,TF ChIP-seq,HEK293,cell line,ZNF398,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF398,2017-04-06,True
+ENCSR218GSN,TF ChIP-seq,HEK293T,cell line,ZFX,Homo sapiens HEK293T,2017-07-21,True
+ENCSR519LKT,Control Mint-ChIP-seq,nephron,organoid,,"Homo sapiens nephron organoid, 35 days post differentiation",2020-07-06,False
+ENCSR910LIE,Histone ChIP-seq,HEK293,cell line,H3K36me3,Homo sapiens HEK293,2017-06-01,True
+ENCSR840JVQ,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP41,2016-10-07,True
+ENCSR324LTM,TF ChIP-seq,HEK293,cell line,OSR2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens OSR2,2016-10-07,True
+ENCSR862INW,Mint-ChIP-seq,nephron,organoid,H3K4me3,"Homo sapiens nephron organoid, 49 days post differentiation",2020-07-30,False
+ENCSR513WQN,genotyping array,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2016-08-05,False
+ENCSR679WSJ,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF32,2016-10-07,True
+ENCSR603CJM,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF423,2016-10-07,True
+ENCSR461ZJT,TF ChIP-seq,HEK293,cell line,ZNF501,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF501,2016-10-25,True
+ENCSR477OJI,TF ChIP-seq,HEK293,cell line,ZNF423,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF423,2016-10-07,True
+ENCSR185QFX,TF ChIP-seq,HEK293,cell line,ZNF549,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF549,2018-07-11,True
+ENCSR328SUD,TF ChIP-seq,HEK293,cell line,ZNF335,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF335,2016-10-07,True
+ENCSR882ICT,TF ChIP-seq,HEK293T,cell line,ZNF384,Homo sapiens HEK293T,2016-11-17,True
+ENCSR289NSN,TF ChIP-seq,HEK293,cell line,ZNF354C,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF354C,2016-10-07,True
+ENCSR897RVP,TF ChIP-seq,HEK293,cell line,ZNF514,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF514,2016-12-19,True
+ENCSR619OUC,TF ChIP-seq,HEK293,cell line,ZBTB6,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB6,2017-11-30,True
+ENCSR543KOA,TF ChIP-seq,HEK293,cell line,ZBTB12,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB12,2017-11-28,True
+ENCSR011XCI,TF ChIP-seq,HEK293,cell line,ZNF585B,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF585B,2016-10-07,True
+ENCSR727PIC,TF ChIP-seq,HEK293,cell line,ZNF34,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF34,2017-03-07,True
+ENCSR348ONY,TF ChIP-seq,HEK293,cell line,ZFP41,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP41,2016-10-07,True
+ENCSR076STQ,TF ChIP-seq,HEK293,cell line,ZBTB44,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB44,2018-07-11,True
+ENCSR022IZK,TF ChIP-seq,HEK293,cell line,ZNF623,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF623,2016-10-07,True
+ENCSR224NFP,TF ChIP-seq,HEK293,cell line,ZNF426,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF426,2017-03-16,True
+ENCSR032HXK,genotyping array,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell,2016-08-05,False
+ENCSR661AXW,TF ChIP-seq,HEK293,cell line,ZNF169,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF169,2016-12-19,True
+ENCSR927UJQ,TF ChIP-seq,HEK293,cell line,ZBTB1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB1,2016-10-07,True
+ENCSR988YKR,DNase-seq,kidney capillary endothelial cell,primary cell,,Homo sapiens kidney capillary endothelial cell female embryo (113 days),2018-05-09,False
+ENCSR513MGG,TF ChIP-seq,HEK293,cell line,ZNF302,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF302,2016-12-19,True
+ENCSR079VIJ,in situ Hi-C,G401,cell line,,Homo sapiens G401,2016-05-13,True
+ENCSR882ZTS,TF ChIP-seq,HEK293,cell line,ZBTB11,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB11,2016-10-07,True
+ENCSR736TYA,Mint-ChIP-seq,nephron,organoid,H3K9me3,"Homo sapiens nephron organoid, 49 days post differentiation",2021-05-18,False
+ENCSR978EQY,TF ChIP-seq,HEK293,cell line,GLI2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens GLI2,2017-04-06,True
+ENCSR125ULS,TF ChIP-seq,HEK293,cell line,ZNF561,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF561,2018-07-11,True
+ENCSR098YLE,TF ChIP-seq,HEK293,cell line,PRDM1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens PRDM1,2016-10-07,True
+ENCSR229DYF,TF ChIP-seq,HEK293,cell line,ZBTB26,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB26,2016-12-13,True
+ENCSR369SUW,Mint-ChIP-seq,nephron,organoid,H3K36me3,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2020-09-05,False
+ENCSR994BPD,Histone ChIP-seq,kidney,tissue,H3K4me1,Homo sapiens kidney tissue male adult (50 years),2013-07-31,False
+ENCSR751PNN,TF ChIP-seq,HEK293,cell line,ZNF112,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF112,2017-04-06,True
+ENCSR000HPR,Histone ChIP-seq,kidney,tissue,H3K9me3,Homo sapiens kidney tissue male adult (67 years),2013-07-31,False
+ENCSR094WHO,TF ChIP-seq,HEK293T,cell line,FOXA1,Homo sapiens HEK293T,2016-11-17,True
+ENCSR909HMT,TF ChIP-seq,HEK293,cell line,ZEB1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZEB1,2016-10-07,True
+ENCSR185FOY,TF ChIP-seq,HEK293,cell line,ZNF341,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF341,2016-10-07,True
+ENCSR443MVV,TF ChIP-seq,HEK293,cell line,PRDM4,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens PRDM4,2017-02-10,True
+ENCSR283MWQ,TF ChIP-seq,HEK293,cell line,ZNF133,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF133,2016-12-19,True
+ENCSR859BMR,TF ChIP-seq,HEK293,cell line,KLF1,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens KLF1,2016-10-07,True
+ENCSR076EZB,TF ChIP-seq,HEK293,cell line,KLF9,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens KLF9,2016-10-07,True
+ENCSR924GRG,TF ChIP-seq,HEK293,cell line,ZBTB49,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB49,2016-10-07,True
+ENCSR692HSE,TF ChIP-seq,HEK293,cell line,YY2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens YY2,2016-12-19,True
+ENCSR533DRE,Histone ChIP-seq,kidney,tissue,H3K9me3,Homo sapiens kidney tissue female embryo (120 days),2013-07-31,False
+ENCSR100OZR,Histone ChIP-seq,kidney,tissue,H3K4me3,Homo sapiens kidney tissue male adult (50 years),2013-07-31,False
+ENCSR728MWW,TF ChIP-seq,HEK293,cell line,ZIC2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZIC2,2016-12-19,True
+ENCSR535DIA,TF ChIP-seq,HEK293,cell line,GLIS2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens GLIS2,2016-10-07,True
+ENCSR919CZU,TF ChIP-seq,HEK293,cell line,EGR2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens EGR2,2016-10-07,True
+ENCSR021DJC,TF ChIP-seq,HEK293,cell line,BCL11A,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens BCL11A,2016-10-25,True
+ENCSR588MQZ,TF ChIP-seq,HEK293,cell line,ZNF626,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF626,2018-01-29,True
+ENCSR125DNC,TF ChIP-seq,HEK293,cell line,ZNF394,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF394,2016-10-31,True
+ENCSR497IAS,TF ChIP-seq,HEK293,cell line,ZNF747,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF747,2016-12-19,True
+ENCSR789GVU,TF ChIP-seq,HEK293T,cell line,BHLHE40,Homo sapiens HEK293T,2016-11-18,True
+ENCSR731AGO,TF ChIP-seq,HEK293,cell line,ZSCAN5C,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN5C,2017-04-06,True
+ENCSR679STZ,TF ChIP-seq,HEK293,cell line,ZNF792,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF792,2016-11-02,True
+ENCSR776LDJ,TF ChIP-seq,HEK293,cell line,ZNF645,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens CBLL2,2016-12-19,True
+ENCSR178QVJ,TF ChIP-seq,HEK293,cell line,ZNF274,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF274,2016-12-19,True
+ENCSR907KDH,polyA plus RNA-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (87 days),2013-07-31,False
+ENCSR328PVI,polyA plus RNA-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (91 days),2013-07-31,False
+ENCSR499PZA,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (105 days),2013-07-31,False
+ENCSR141DMX,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (96 days),2013-07-31,False
+ENCSR037PGI,DNase-seq,RCC 7860,cell line,,Homo sapiens RCC 7860,2015-10-14,True
+ENCSR702IMR,polyA plus RNA-seq,left kidney,tissue,,Homo sapiens left kidney tissue male embryo (96 days),2013-07-31,False
+ENCSR783VHL,Mint-ChIP-seq,nephron,organoid,H3K4me3,"Homo sapiens nephron organoid, 35 days post differentiation",2020-07-30,False
+ENCSR911YVV,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue female embryo (89 days),2013-07-31,False
+ENCSR262QJC,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (87 days),2013-07-31,False
+ENCSR552YAE,polyA plus RNA-seq,right renal pelvis,tissue,,Homo sapiens right renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR887BNC,DNase-seq,right renal cortex interstitium,tissue,,Homo sapiens right renal cortex interstitium tissue male embryo (120 days),2013-07-31,False
+ENCSR801BWR,TF ChIP-seq,HEK293,cell line,ZNF155,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF155,2016-12-19,True
+ENCSR689YFA,TF ChIP-seq,HEK293,cell line,ZNF146,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF146,2016-10-07,True
+ENCSR974TXT,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue female embryo (110 days),2013-07-31,False
+ENCSR071SPR,Mint-ChIP-seq,nephron,organoid,H3K4me3,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2020-07-30,False
+ENCSR821YOI,Control ChIP-seq,HEK293T,cell line,,Homo sapiens HEK293T,2017-02-08,True
+ENCSR866NTZ,Mint-ChIP-seq,nephron,organoid,H3K27me3,"Homo sapiens nephron organoid, 35 days post differentiation",2021-11-18,False
+ENCSR501NSC,TF ChIP-seq,HEK293,cell line,ZSCAN26,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN26,2017-04-06,True
+ENCSR795YGE,Control ChIP-seq,nephron progenitor cell,in vitro differentiated cells,,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2020-07-06,False
+ENCSR993DED,TF ChIP-seq,HEK293,cell line,ZNF214,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF214,2017-11-28,True
+ENCSR517DDU,TF ChIP-seq,HEK293,cell line,ZNF48,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF48,2016-10-14,True
+ENCSR586BRJ,TF ChIP-seq,HEK293,cell line,ZNF433,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF433,2016-12-19,True
+ENCSR567XAM,TF ChIP-seq,HEK293,cell line,ZNF473,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF473,2017-04-06,True
+ENCSR868TAH,Repli-seq,Caki2,cell line,,Homo sapiens Caki2 early S phase,2017-07-17,True
+ENCSR242BGR,TF ChIP-seq,HEK293,cell line,ZNF770,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF770,2018-01-29,True
+ENCSR516VQK,TF ChIP-seq,HEK293,cell line,ZNF174,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF174,2017-04-06,True
+ENCSR869SPM,Repli-seq,Caki2,cell line,,Homo sapiens Caki2 late S phase,2017-07-17,True
+ENCSR854ORP,TF ChIP-seq,HEK293,cell line,ZNF350,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF350,2017-04-06,True
+ENCSR828RNY,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (108 days),2013-07-31,False
+ENCSR884EVS,polyA plus RNA-seq,right renal cortex interstitium,tissue,,Homo sapiens right renal cortex interstitium tissue male embryo (120 days),2013-07-31,False
+ENCSR759WPF,polyA plus RNA-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (120 days),2013-07-31,False
+ENCSR524DWS,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (120 days),2013-07-31,False
+ENCSR884MCZ,DNase-seq,right kidney,tissue,,Homo sapiens right kidney tissue female embryo (98 days),2013-07-31,False
+ENCSR588JXI,DNase-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR550UWM,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (97 days),2013-07-31,False
+ENCSR015EMF,polyA plus RNA-seq,left renal cortex interstitium,tissue,,Homo sapiens left renal cortex interstitium tissue male embryo (105 days),2013-07-31,False
+ENCSR272LXW,Control ChIP-seq,HEK293T,cell line,,Homo sapiens HEK293T,2016-11-01,True
+ENCSR106EBH,TF ChIP-seq,HEK293,cell line,ZNF366,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF366,2016-10-25,True
+ENCSR307CKC,TF ChIP-seq,HEK293,cell line,ZNF680,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF680,2016-10-07,True
+ENCSR417VWF,TF ChIP-seq,HEK293,cell line,ZEB2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZEB2,2016-10-07,True
+ENCSR768HOH,TF ChIP-seq,HEK293,cell line,ZNF324,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF324,2016-10-07,True
+ENCSR123TVS,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP62,2016-10-07,True
+ENCSR233FAG,TF ChIP-seq,HEK293T,cell line,PKNOX1,Homo sapiens HEK293T,2016-11-17,True
+ENCSR217HTK,TF ChIP-seq,HEK293,cell line,ATF2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ATF2,2016-10-07,True
+ENCSR019WUS,TF ChIP-seq,HEK293,cell line,ZNF10,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF10,2017-04-06,True
+ENCSR807LQP,TF ChIP-seq,HEK293,cell line,SP2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SP2,2016-10-07,True
+ENCSR679KXF,TF ChIP-seq,HEK293,cell line,ZNF23,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF23,2016-12-19,True
+ENCSR342AGU,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN5A,2016-10-07,True
+ENCSR564YYW,TF ChIP-seq,HEK293,cell line,ZNF157,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF157,2016-12-19,True
+ENCSR450CSM,Mint-ChIP-seq,nephron progenitor cell,in vitro differentiated cells,H3K27ac,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2021-05-14,False
+ENCSR551KAP,TF ChIP-seq,HEK293,cell line,ZNF138,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF138,2016-10-07,True
+ENCSR481FEC,TF ChIP-seq,HEK293,cell line,ZBTB8A,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB8A,2016-10-07,True
+ENCSR502KPJ,TF ChIP-seq,HEK293,cell line,ZNF843,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF843,2016-12-19,True
+ENCSR760UKJ,TF ChIP-seq,HEK293T,cell line,ARNT,Homo sapiens HEK293T,2017-04-14,True
+ENCSR831EIW,TF ChIP-seq,HEK293T,cell line,FOXM1,Homo sapiens HEK293T,2017-04-14,True
+ENCSR873ANE,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (76 days) and male embryo (76 days),2017-12-13,False
+ENCSR253CKN,TF ChIP-seq,HEK293,cell line,ZSCAN21,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN21,2017-04-05,True
+ENCSR244HUE,DNAme array,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2017-06-15,False
+ENCSR338DGO,TF ChIP-seq,HEK293,cell line,SCRT2,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens SCRT2,2016-10-25,True
+ENCSR245GTY,DNAme array,Caki2,cell line,,Homo sapiens Caki2,2017-06-15,True
+ENCSR008HBN,Control ChIP-seq,nephron,organoid,,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2020-07-06,False
+ENCSR194WQV,TF ChIP-seq,nephron,organoid,CTCF,"Homo sapiens nephron organoid, 49 days post differentiation",2021-04-13,False
+ENCSR966OUM,TF ChIP-seq,nephron,organoid,CTCF,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2021-04-13,False
+ENCSR846POB,Control ChIP-seq,nephron,organoid,,"Homo sapiens nephron organoid, 35 days post differentiation",2020-07-06,False
+ENCSR618HNF,TF ChIP-seq,HEK293,cell line,TRIM28,Homo sapiens HEK293,2017-06-01,True
+ENCSR963NNG,DNAme array,renal cortical epithelial cell,primary cell,,Homo sapiens renal cortical epithelial cell,2017-06-15,False
+ENCSR523KUQ,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ATF2,2016-10-07,True
+ENCSR782QKO,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens MAZ,2016-10-07,True
+ENCSR688KJU,Mint-ChIP-seq,nephron progenitor cell,in vitro differentiated cells,H3K9me3,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2021-05-14,False
+ENCSR316OQD,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF655,2016-10-07,True
+ENCSR969YUG,WGS,Caki2,cell line,,Homo sapiens Caki2,2019-08-23,True
+ENCSR913NYL,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (108 days),2013-07-31,False
+ENCSR543YPH,DNase-seq,left kidney,tissue,,Homo sapiens left kidney tissue male embryo (115 days),2013-07-31,False
+ENCSR365GRX,TF ChIP-seq,HEK293,cell line,ZFP37,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZFP37,2016-10-25,True
+ENCSR321MSF,TF ChIP-seq,HEK293,cell line,ZBTB21,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZBTB21,2017-03-07,True
+ENCSR110ZVM,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF264,2016-10-07,True
+ENCSR468NLK,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF165,2016-10-07,True
+ENCSR398UVH,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZSCAN5A,2016-10-07,True
+ENCSR516SDJ,genotyping array,HEK293,cell line,,Homo sapiens HEK293,2016-08-05,True
+ENCSR342REK,genotyping array,kidney epithelial cell,primary cell,,Homo sapiens kidney epithelial cell,2016-08-05,False
+ENCSR277AIN,Repli-seq,G401,cell line,,Homo sapiens G401 early S phase,2017-07-17,True
+ENCSR198TKA,total RNA-seq,mesangial cell,primary cell,,Homo sapiens mesangial cell NONE and female embryo (21 weeks),2015-05-18,False
+ENCSR584JXD,total RNA-seq,Caki2,cell line,,Homo sapiens Caki2,2014-11-20,True
+ENCSR934CYB,ChIA-PET,HEK293,cell line,POLR2A,Homo sapiens HEK293,2020-12-16,True
+ENCSR773XVD,ChIA-PET,HEK293T,cell line,POLR2A,Homo sapiens HEK293T,2020-12-16,True
+ENCSR676KCF,ChIA-PET,HEK293T,cell line,CTCF,Homo sapiens HEK293T,2021-01-25,True
+ENCSR878EUT,total RNA-seq,glomerular endothelial cell,primary cell,,Homo sapiens glomerular endothelial cell female embryo (22 weeks) and male embryo (22 weeks),2015-06-17,False
+ENCSR410UHV,ChIA-PET,HEK293,cell line,CTCF,Homo sapiens HEK293,2021-01-25,True
+ENCSR257BGZ,DNase-seq,ACHN,cell line,,Homo sapiens ACHN,2015-08-31,True
+ENCSR438SPO,Histone ChIP-seq,kidney,tissue,H3K27ac,Homo sapiens kidney tissue male adult (50 years),2013-07-31,False
+ENCSR241FEX,Control ChIP-seq,kidney,tissue,,Homo sapiens kidney tissue female embryo (117 days),2013-07-31,False
+ENCSR230BWN,Histone ChIP-seq,kidney,tissue,H3K27ac,Homo sapiens kidney tissue male adult (67 years),2013-07-31,False
+ENCSR009MUF,Histone ChIP-seq,kidney,tissue,H3K4me1,Homo sapiens kidney tissue male adult (67 years),2013-07-31,False
+ENCSR087IEW,RRBS,HEK293,cell line,,Homo sapiens HEK293,2010-12-15,True
+ENCSR000AZR,genotyping array,epithelial cell of proximal tubule,primary cell,,Homo sapiens epithelial cell of proximal tubule,2011-08-16,False
+ENCSR321ROU,polyA plus RNA-seq,left renal pelvis,tissue,,Homo sapiens left renal pelvis tissue male embryo (105 days),2013-07-31,False
+ENCSR757EPJ,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue male embryo (85 days),2013-07-31,False
+ENCSR932DHT,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue female embryo (96 days),2013-07-31,False
+ENCSR849OKE,DNase-seq,renal cortex interstitium,tissue,,Homo sapiens renal cortex interstitium tissue male embryo (127 days),2013-07-31,False
+ENCSR956ZHU,DNase-seq,renal pelvis,tissue,,Homo sapiens renal pelvis tissue male embryo (113 days),2013-07-31,False
+ENCSR781DPA,TF ChIP-seq,HEK293,cell line,ZNF830,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF830,2018-12-04,True
+ENCSR499OOH,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF18,2016-10-07,True
+ENCSR787TGS,Repli-seq,G401,cell line,,Homo sapiens G401 late S phase,2017-07-17,True
+ENCSR814RGG,ATAC-seq,ureter,tissue,,Homo sapiens ureter tissue female adult (47 years),2022-06-16,False
+ENCSR938LXW,Control ChIP-seq,HEK293,cell line,,Homo sapiens HEK293,2017-06-01,True
+ENCSR892LBU,total RNA-seq,kidney,tissue,,Homo sapiens kidney tissue female adult (47 years),2021-01-04,False
+ENCSR850MVW,Mint-ChIP-seq,nephron,organoid,H3K9me3,"Homo sapiens nephron organoid, 35 days post differentiation",2020-09-02,False
+ENCSR673SGK,TF ChIP-seq,HEK293,cell line,BCL6B,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens BCL6B,2017-05-17,True
+ENCSR799GJD,TF ChIP-seq,nephron progenitor cell,in vitro differentiated cells,CTCF,"Homo sapiens nephron progenitor cell, 8 days post differentiation",2021-04-13,False
+ENCSR348AGV,TF ChIP-seq,HEK293,cell line,SETDB1,Homo sapiens HEK293,2017-06-01,True
+ENCSR643EOZ,snATAC-seq,kidney,tissue,,Homo sapiens kidney tissue nuclear fraction female adult (47 years),2022-03-16,False
+ENCSR985MYI,TF ChIP-seq,HEK293,cell line,ZNF114,Homo sapiens HEK293 genetically modified (insertion) using site-specific recombination targeting H. sapiens ZNF114,2017-05-17,True
+ENCSR792ZXA,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue embryo (59 days) and female embryo (59 days),2017-12-13,False
+ENCSR801AJD,Control Mint-ChIP-seq,nephron,organoid,,"Homo sapiens nephron organoid, 49 days post differentiation",2020-07-06,False
+ENCSR007ZSS,Mint-ChIP-seq,nephron,organoid,H3K27ac,"Homo sapiens nephron organoid, 21 days post differentiation originated from H9",2020-09-05,False
+ENCSR007HIL,Mint-ChIP-seq,nephron,organoid,H3K36me3,"Homo sapiens nephron organoid, 49 days post differentiation",2021-05-18,False
+ENCSR206OJJ,DNase-seq,kidney,tissue,,Homo sapiens kidney tissue female adult (47 years),2020-09-28,False
+ENCSR343VKT,in situ Hi-C,ACHN,cell line,,Homo sapiens ACHN,2017-08-15,True
+ENCSR959CIX,Control ChIP-seq,nephron,organoid,,"Homo sapiens nephron organoid, 49 days post differentiation",2020-07-06,False
+ENCSR266ZUX,TF ChIP-seq,nephron,organoid,CTCF,"Homo sapiens nephron organoid, 35 days post differentiation",2021-04-13,False
+ENCSR240XWM,TF ChIP-seq,HEK293T,cell line,LEF1,Homo sapiens HEK293T,2017-04-14,True

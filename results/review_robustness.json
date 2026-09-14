@@ -1,0 +1,32 @@
+{
+  "independence": {
+    "kidney_n": 58,
+    "kidney_genes": 58,
+    "kidney_cs": 58,
+    "rho": 0.5054292657417947,
+    "parametric_ci": [
+      0.269,
+      0.684
+    ],
+    "cluster_bootstrap_ci": [
+      0.29,
+      0.662
+    ],
+    "median_obs_per_gene_all_tissues": 1.075
+  },
+  "downsampling": {
+    "kidney_n": 58,
+    "kidney_rho": 0.5054292657417947,
+    "kidney_ci_width": 0.41521230582999413,
+    "matched_rho_median": 0.4906641237811068,
+    "matched_width_median": 0.4215804216308441,
+    "kidney_rho_percentile": 55.7,
+    "kidney_width_percentile": 44.3,
+    "replicates": 9600
+  },
+  "max_selection": {
+    "kidney_agreement": 0.7758620689655172,
+    "pooled_rate": 0.6931796830963863,
+    "p_kidney_is_max_by_chance": 0.1894
+  }
+}

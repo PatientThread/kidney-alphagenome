@@ -1,0 +1,79 @@
+{
+  "manifest_rows_raw": 6126,
+  "manifest_padding_rows": 563,
+  "manifest_real_tracks": 5563,
+  "csv_total_tracks": 5563,
+  "padding_by_modality": {
+    "PROCAP": 116,
+    "RNA_SEQ": 101,
+    "CAGE": 94,
+    "ATAC": 89,
+    "DNASE": 79,
+    "CHIP_TF": 47,
+    "CHIP_HISTONE": 36,
+    "SPLICE_SITES": 1
+  },
+  "manifest_real_equals_csv": true,
+  "per_modality_agreement": {
+    "ATAC": {
+      "manifest_real": 167,
+      "csv": 167,
+      "match": true
+    },
+    "CAGE": {
+      "manifest_real": 546,
+      "csv": 546,
+      "match": true
+    },
+    "CHIP_HISTONE": {
+      "manifest_real": 1116,
+      "csv": 1116,
+      "match": true
+    },
+    "CHIP_TF": {
+      "manifest_real": 1617,
+      "csv": 1617,
+      "match": true
+    },
+    "CONTACT_MAPS": {
+      "manifest_real": 28,
+      "csv": 28,
+      "match": true
+    },
+    "DNASE": {
+      "manifest_real": 305,
+      "csv": 305,
+      "match": true
+    },
+    "PROCAP": {
+      "manifest_real": 12,
+      "csv": 12,
+      "match": true
+    },
+    "RNA_SEQ": {
+      "manifest_real": 667,
+      "csv": 667,
+      "match": true
+    },
+    "SPLICE_JUNCTIONS": {
+      "manifest_real": 367,
+      "csv": 367,
+      "match": true
+    },
+    "SPLICE_SITES": {
+      "manifest_real": 4,
+      "csv": 4,
+      "match": true
+    },
+    "SPLICE_SITE_USAGE": {
+      "manifest_real": 734,
+      "csv": 734,
+      "match": true
+    }
+  },
+  "kidney_parenchyma_real": 103,
+  "kidney_parenchyma_in_padding": 0,
+  "csv_kidney_parenchyma": 103,
+  "kidney_pct_correct_denominator": 1.85,
+  "kidney_pct_if_padding_wrongly_included": 1.68
+}

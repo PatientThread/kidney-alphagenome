@@ -1,0 +1,65 @@
+{
+  "encode_human_kidney_organ_experiments": 592,
+  "tissue_or_primary_cell": 284,
+  "cell_line": 308,
+  "distinct_biosamples_tissue": 23,
+  "distinct_biosamples_cell_line": 9,
+  "top_cell_line_biosamples": {
+    "HEK293": 258,
+    "HEK293T": 27,
+    "Caki2": 8,
+    "G401": 7,
+    "RCC": 2,
+    "RCC 7860": 2,
+    "ACHN": 2,
+    "HK-2": 1
+  },
+  "top_tissue_biosamples": {
+    "kidney": 65,
+    "renal cortex interstitium": 30,
+    "renal pelvis": 29,
+    "nephron": 27,
+    "right kidney": 18,
+    "left kidney": 18,
+    "kidney epithelial cell": 14,
+    "epithelial cell of proximal tubule": 12,
+    "nephron progenitor cell": 10,
+    "renal cortical epithelial cell": 8,
+    "left renal cortex interstitium": 8,
+    "left renal pelvis": 8
+  },
+  "assays_tissue_only": {
+    "DNase-seq": 85,
+    "long read RNA-seq": 58,
+    "polyA plus RNA-seq": 27,
+    "Mint-ChIP-seq": 24,
+    "Histone ChIP-seq": 22,
+    "Control ChIP-seq": 10,
+    "DNAme array": 8,
+    "total RNA-seq": 8,
+    "TF ChIP-seq": 7,
+    "genotyping array": 6,
+    "RAMPAGE": 5,
+    "RNA microarray": 4,
+    "RRBS": 4,
+    "Control Mint-ChIP-seq": 4,
+    "PRO-cap": 2,
+    "snRNA-seq": 2,
+    "snATAC-seq": 2,
+    "ATAC-seq": 2,
+    "intact Hi-C": 1,
+    "FAIRE-seq": 1,
+    "microRNA-seq": 1,
+    "small RNA-seq": 1
+  },
+  "tf_chip": {
+    "total_experiments": 228,
+    "in_tissue_or_primary": 7,
+    "in_cell_line": 221,
+    "distinct_targets_in_tissue": [
+      "CTCF"
+    ],
+    "n_distinct_targets_in_tissue": 1,
+    "n_distinct_targets_in_cell_line": 218
+  }
+}

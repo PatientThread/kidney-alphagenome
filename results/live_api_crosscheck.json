@@ -1,0 +1,71 @@
+{
+  "live_total_tracks": 5563,
+  "static_total_tracks": 5563,
+  "totals_match": true,
+  "per_modality": {
+    "ATAC": {
+      "live": 167,
+      "static": 167,
+      "match": true
+    },
+    "CAGE": {
+      "live": 546,
+      "static": 546,
+      "match": true
+    },
+    "CHIP_HISTONE": {
+      "live": 1116,
+      "static": 1116,
+      "match": true
+    },
+    "CHIP_TF": {
+      "live": 1617,
+      "static": 1617,
+      "match": true
+    },
+    "CONTACT_MAPS": {
+      "live": 28,
+      "static": 28,
+      "match": true
+    },
+    "DNASE": {
+      "live": 305,
+      "static": 305,
+      "match": true
+    },
+    "PROCAP": {
+      "live": 12,
+      "static": 12,
+      "match": true
+    },
+    "RNA_SEQ": {
+      "live": 667,
+      "static": 667,
+      "match": true
+    },
+    "SPLICE_JUNCTIONS": {
+      "live": 367,
+      "static": 367,
+      "match": true
+    },
+    "SPLICE_SITES": {
+      "live": 4,
+      "static": 4,
+      "match": true
+    },
+    "SPLICE_SITE_USAGE": {
+      "live": 734,
+      "static": 734,
+      "match": true
+    }
+  },
+  "all_modalities_match": true,
+  "kidney_parenchyma_live": 103,
+  "kidney_parenchyma_static": 103,
+  "kidney_match": true,
+  "kidney_pct_live": 1.85,
+  "kidney_tf_tracks_live": 4,
+  "kidney_tf_targets_live": [
+    "CTCF"
+  ]
+}

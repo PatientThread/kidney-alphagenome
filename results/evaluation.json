@@ -1,0 +1,30 @@
+{
+  "tissues_evaluated": 49,
+  "variants_total": 31934,
+  "unweighted_mean_spearman": 0.4915,
+  "egene_weighted_mean_spearman": 0.491,
+  "difference": 0.0005,
+  "mean_sign_agreement": 0.6912,
+  "tissues_with_weights": 49,
+  "spearman_spread": {
+    "min": 0.3952,
+    "max": 0.5604,
+    "sd": 0.0399
+  },
+  "kidney": {
+    "n": 58,
+    "spearman": 0.5054,
+    "ci": [
+      0.2691,
+      0.6843
+    ],
+    "ci_width": 0.4152,
+    "sign_agreement": 0.7759,
+    "sign_ci": [
+      0.6534,
+      0.8641
+    ],
+    "rank_by_spearman": 32,
+    "median_ci_width_other_tissues": 0.1282
+  }
+}

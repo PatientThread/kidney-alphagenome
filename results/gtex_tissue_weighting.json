@@ -1,0 +1,138 @@
+{
+  "gtex_v8": {
+    "gtex_release": "gtex_v8",
+    "tissues_total": 54,
+    "tissues_with_eqtls": 49,
+    "kidney_cortex": {
+      "eqtl_n": 73,
+      "rnaseq_n": 85,
+      "egenes": 1260,
+      "rank_by_sample_size": 1,
+      "rank_by_egenes": 1,
+      "is_smallest_by_sample_size": true,
+      "is_smallest_by_egenes": true,
+      "weight_in_egene_weighted_mean": 0.00265,
+      "weight_if_unweighted": 0.02041,
+      "down_weighted_fold": 7.71
+    },
+    "kidney_medulla": {
+      "rnaseq_n": 4,
+      "eqtl_n": 4,
+      "has_egenes": false
+    },
+    "median_eqtl_n": 233,
+    "median_egenes": 9642,
+    "smallest_five_by_sample_size": [
+      {
+        "tissue": "Kidney_Cortex",
+        "eqtl_n": 73,
+        "egenes": 1260
+      },
+      {
+        "tissue": "Brain_Substantia_nigra",
+        "eqtl_n": 114,
+        "egenes": 3301
+      },
+      {
+        "tissue": "Brain_Spinal_cord_cervical_c-1",
+        "eqtl_n": 126,
+        "egenes": 4483
+      },
+      {
+        "tissue": "Uterus",
+        "eqtl_n": 129,
+        "egenes": 3577
+      },
+      {
+        "tissue": "Brain_Amygdala",
+        "eqtl_n": 129,
+        "egenes": 3726
+      }
+    ],
+    "sensitivity": {
+      "kidney_deficit_0.05": {
+        "shift_in_egene_weighted_mean": 0.00013,
+        "shift_in_unweighted_mean": 0.00102,
+        "unweighted_reveals_x_more": 7.71
+      },
+      "kidney_deficit_0.10": {
+        "shift_in_egene_weighted_mean": 0.00026,
+        "shift_in_unweighted_mean": 0.00204,
+        "unweighted_reveals_x_more": 7.71
+      },
+      "kidney_deficit_0.20": {
+        "shift_in_egene_weighted_mean": 0.00053,
+        "shift_in_unweighted_mean": 0.00408,
+        "unweighted_reveals_x_more": 7.71
+      }
+    }
+  },
+  "gtex_v10": {
+    "gtex_release": "gtex_v10",
+    "tissues_total": 54,
+    "tissues_with_eqtls": 50,
+    "kidney_cortex": {
+      "eqtl_n": 103,
+      "rnaseq_n": 104,
+      "egenes": 2718,
+      "rank_by_sample_size": 2,
+      "rank_by_egenes": 2,
+      "is_smallest_by_sample_size": false,
+      "is_smallest_by_egenes": false,
+      "weight_in_egene_weighted_mean": 0.00448,
+      "weight_if_unweighted": 0.02,
+      "down_weighted_fold": 4.47
+    },
+    "kidney_medulla": {
+      "rnaseq_n": 11,
+      "eqtl_n": 0,
+      "has_egenes": false
+    },
+    "median_eqtl_n": 304,
+    "median_egenes": 12574,
+    "smallest_five_by_sample_size": [
+      {
+        "tissue": "Bladder",
+        "eqtl_n": 77,
+        "egenes": 1685
+      },
+      {
+        "tissue": "Kidney_Cortex",
+        "eqtl_n": 103,
+        "egenes": 2718
+      },
+      {
+        "tissue": "Uterus",
+        "eqtl_n": 152,
+        "egenes": 5030
+      },
+      {
+        "tissue": "Vagina",
+        "eqtl_n": 170,
+        "egenes": 4914
+      },
+      {
+        "tissue": "Brain_Amygdala",
+        "eqtl_n": 180,
+        "egenes": 6510
+      }
+    ],
+    "sensitivity": {
+      "kidney_deficit_0.05": {
+        "shift_in_egene_weighted_mean": 0.00022,
+        "shift_in_unweighted_mean": 0.001,
+        "unweighted_reveals_x_more": 4.47
+      },
+      "kidney_deficit_0.10": {
+        "shift_in_egene_weighted_mean": 0.00045,
+        "shift_in_unweighted_mean": 0.002,
+        "unweighted_reveals_x_more": 4.47
+      },
+      "kidney_deficit_0.20": {
+        "shift_in_egene_weighted_mean": 0.0009,
+        "shift_in_unweighted_mean": 0.004,
+        "unweighted_reveals_x_more": 4.47
+      }
+    }
+  }
+}

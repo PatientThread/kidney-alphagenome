@@ -1,0 +1,79 @@
+{
+  "kidney_n": 59,
+  "largest_n": 1756,
+  "largest_tissue": "thyroid",
+  "intervals": {
+    "rho_0.0": {
+      "kidney_ci": [
+        -0.256,
+        0.256
+      ],
+      "kidney_width": 0.512,
+      "largest_ci": [
+        -0.047,
+        0.047
+      ],
+      "largest_width": 0.094,
+      "width_ratio": 5.5
+    },
+    "rho_0.2": {
+      "kidney_ci": [
+        -0.062,
+        0.436
+      ],
+      "kidney_width": 0.498,
+      "largest_ci": [
+        0.154,
+        0.245
+      ],
+      "largest_width": 0.091,
+      "width_ratio": 5.5
+    },
+    "rho_0.4": {
+      "kidney_ci": [
+        0.15,
+        0.602
+      ],
+      "kidney_width": 0.451,
+      "largest_ci": [
+        0.358,
+        0.44
+      ],
+      "largest_width": 0.082,
+      "width_ratio": 5.5
+    },
+    "rho_0.6": {
+      "kidney_ci": [
+        0.387,
+        0.752
+      ],
+      "kidney_width": 0.365,
+      "largest_ci": [
+        0.566,
+        0.632
+      ],
+      "largest_width": 0.065,
+      "width_ratio": 5.6
+    },
+    "rho_0.8": {
+      "kidney_ci": [
+        0.663,
+        0.885
+      ],
+      "kidney_width": 0.223,
+      "largest_ci": [
+        0.78,
+        0.819
+      ],
+      "largest_width": 0.039,
+      "width_ratio": 5.7
+    }
+  },
+  "headline": {
+    "kidney_ci_at_rho_0.6": [
+      0.387,
+      0.752
+    ],
+    "kidney_ci_width_at_rho_0.6": 0.365
+  }
+}

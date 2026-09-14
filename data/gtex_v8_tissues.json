@@ -1,0 +1,2602 @@
+{
+ "data": [
+  {
+   "tissueSiteDetailId": "Adipose_Subcutaneous",
+   "colorHex": "FF6600",
+   "colorRgb": "255,102,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 15607,
+   "expressedGeneCount": 28830,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 581,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.0,
+     "count": 194
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.4,
+     "count": 387
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 663,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.5,
+     "count": 218
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.0,
+     "count": 445
+    }
+   },
+   "sGeneCount": 5113,
+   "samplingSite": "Subcutaneous tissue beneath the leg's skin sample.",
+   "tissueSite": "Adipose Tissue",
+   "tissueSiteDetail": "Adipose - Subcutaneous",
+   "tissueSiteDetailAbbr": "ADPSBQ",
+   "ontologyId": "UBERON:0002190",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002190"
+  },
+  {
+   "tissueSiteDetailId": "Adipose_Visceral_Omentum",
+   "colorHex": "FFAA00",
+   "colorRgb": "255,170,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 12482,
+   "expressedGeneCount": 28881,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 469,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.8,
+     "count": 149
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.8,
+     "count": 320
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 541,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.2,
+     "count": 170
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.2,
+     "count": 371
+    }
+   },
+   "sGeneCount": 4210,
+   "samplingSite": "Adipose tissue on the large fold of parietal peritoneum that hangs down from the greater curvature of the stomach, passing in front of the small intestines.",
+   "tissueSite": "Adipose Tissue",
+   "tissueSiteDetail": "Adipose - Visceral (Omentum)",
+   "tissueSiteDetailAbbr": "ADPVSC",
+   "ontologyId": "UBERON:0010414",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0010414"
+  },
+  {
+   "tissueSiteDetailId": "Adrenal_Gland",
+   "colorHex": "33DD33",
+   "colorRgb": "51,221,51",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 8123,
+   "expressedGeneCount": 28235,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 233,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.5,
+     "count": 94
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.9,
+     "count": 139
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 258,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.8,
+     "count": 101
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.3,
+     "count": 157
+    }
+   },
+   "sGeneCount": 2369,
+   "samplingSite": "Left, followed by the right if necessary for sufficient aliquots.",
+   "tissueSite": "Adrenal Gland",
+   "tissueSiteDetail": "Adrenal Gland",
+   "tissueSiteDetailAbbr": "ADRNLG",
+   "ontologyId": "UBERON:0002369",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002369"
+  },
+  {
+   "tissueSiteDetailId": "Artery_Aorta",
+   "colorHex": "FF5555",
+   "colorRgb": "255,85,85",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 12493,
+   "expressedGeneCount": 28025,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 387,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.1,
+     "count": 138
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.3,
+     "count": 249
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 432,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.5,
+     "count": 153
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.7,
+     "count": 279
+    }
+   },
+   "sGeneCount": 3740,
+   "samplingSite": "Ascending aorta or other thoracic regions (nonatherosclerotic).",
+   "tissueSite": "Blood Vessel",
+   "tissueSiteDetail": "Artery - Aorta",
+   "tissueSiteDetailAbbr": "ARTAORT",
+   "ontologyId": "UBERON:0001496",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001496"
+  },
+  {
+   "tissueSiteDetailId": "Artery_Coronary",
+   "colorHex": "FFAA99",
+   "colorRgb": "255,170,153",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 6296,
+   "expressedGeneCount": 28462,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 213,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.4,
+     "count": 84
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 53.6,
+     "count": 129
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 240,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.5,
+     "count": 94
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 54.3,
+     "count": 146
+    }
+   },
+   "sGeneCount": 2140,
+   "samplingSite": "Left and right, noncalcific regions only.",
+   "tissueSite": "Blood Vessel",
+   "tissueSiteDetail": "Artery - Coronary",
+   "tissueSiteDetailAbbr": "ARTCRN",
+   "ontologyId": "UBERON:0001621",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001621"
+  },
+  {
+   "tissueSiteDetailId": "Artery_Tibial",
+   "colorHex": "FF0000",
+   "colorRgb": "255,0,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 15008,
+   "expressedGeneCount": 27217,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 584,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.0,
+     "count": 187
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 51.6,
+     "count": 397
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 663,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.5,
+     "count": 209
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.1,
+     "count": 454
+    }
+   },
+   "sGeneCount": 4791,
+   "samplingSite": "Left Tibial. Peripheral tibial artery from gastrocnemius region",
+   "tissueSite": "Blood Vessel",
+   "tissueSiteDetail": "Artery - Tibial",
+   "tissueSiteDetailAbbr": "ARTTBL",
+   "ontologyId": "UBERON:0007610",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0007610"
+  },
+  {
+   "tissueSiteDetailId": "Bladder",
+   "colorHex": "AA0000",
+   "colorRgb": "170,0,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": null,
+   "expressedGeneCount": 28949,
+   "hasEGenes": false,
+   "hasSGenes": false,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 21,
+    "female": {
+     "ageMax": 59,
+     "ageMin": 27,
+     "ageMean": 43.6,
+     "count": 7
+    },
+    "male": {
+     "ageMax": 61,
+     "ageMin": 21,
+     "ageMean": 46.0,
+     "count": 14
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 21,
+    "female": {
+     "ageMax": 59,
+     "ageMin": 27,
+     "ageMean": 43.6,
+     "count": 7
+    },
+    "male": {
+     "ageMax": 61,
+     "ageMin": 21,
+     "ageMean": 46.0,
+     "count": 14
+    }
+   },
+   "sGeneCount": null,
+   "samplingSite": "Central posterior urinary bladder, trimming from the outer wall if necessary.",
+   "tissueSite": "Bladder",
+   "tissueSiteDetail": "Bladder",
+   "tissueSiteDetailAbbr": "BLDDER",
+   "ontologyId": "UBERON:0001255",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001255"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Amygdala",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 3726,
+   "expressedGeneCount": 28196,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 129,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 57.6,
+     "count": 37
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.2,
+     "count": 92
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 152,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 57.2,
+     "count": 45
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.9,
+     "count": 107
+    }
+   },
+   "sGeneCount": 892,
+   "samplingSite": "Amygdala (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Amygdala",
+   "tissueSiteDetailAbbr": "BRNAMY",
+   "ontologyId": "UBERON:0001876",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001876"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Anterior_cingulate_cortex_BA24",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 5640,
+   "expressedGeneCount": 28921,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 147,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.2,
+     "count": 42
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.2,
+     "count": 105
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 176,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.2,
+     "count": 48
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.8,
+     "count": 128
+    }
+   },
+   "sGeneCount": 1238,
+   "samplingSite": "Anterior cingulate cortex (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Anterior cingulate cortex (BA24)",
+   "tissueSiteDetailAbbr": "BRNACC",
+   "ontologyId": "UBERON:0009835",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0009835"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Caudate_basal_ganglia",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 8362,
+   "expressedGeneCount": 29230,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 194,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 56.8,
+     "count": 52
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 22,
+     "ageMean": 58.5,
+     "count": 142
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 246,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 56.9,
+     "count": 63
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 22,
+     "ageMean": 59.2,
+     "count": 183
+    }
+   },
+   "sGeneCount": 1809,
+   "samplingSite": "Caudate (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Caudate (basal ganglia)",
+   "tissueSiteDetailAbbr": "BRNCDT",
+   "ontologyId": "UBERON:0001873",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001873"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Cerebellar_Hemisphere",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 10027,
+   "expressedGeneCount": 29538,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 175,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.5,
+     "count": 51
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 57.5,
+     "count": 124
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 215,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.3,
+     "count": 58
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.5,
+     "count": 157
+    }
+   },
+   "sGeneCount": 2397,
+   "samplingSite": "Cerebellar hemisphere (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Cerebellar Hemisphere",
+   "tissueSiteDetailAbbr": "BRNCHB",
+   "ontologyId": "UBERON:0002037",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002037"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Cerebellum",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 11240,
+   "expressedGeneCount": 30106,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 209,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 58.7,
+     "count": 58
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 56.7,
+     "count": 151
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 241,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 58.3,
+     "count": 67
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 57.3,
+     "count": 174
+    }
+   },
+   "sGeneCount": 2786,
+   "samplingSite": "Right cerebellum (sampled at donor collection site and preserved in PAXgene fixative).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Cerebellum",
+   "tissueSiteDetailAbbr": "BRNCHA",
+   "ontologyId": "UBERON:0002037",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002037"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Cortex",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 9082,
+   "expressedGeneCount": 29560,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 205,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 58.2,
+     "count": 64
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 57.3,
+     "count": 141
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 255,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.8,
+     "count": 74
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.2,
+     "count": 181
+    }
+   },
+   "sGeneCount": 2048,
+   "samplingSite": "Right cerebral frontal pole cortex (sampled at donor collection site and preserved in PAXgene fixative).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Cortex",
+   "tissueSiteDetailAbbr": "BRNCTXA",
+   "ontologyId": "UBERON:0001870",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001870"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Frontal_Cortex_BA9",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 7335,
+   "expressedGeneCount": 29132,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 175,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 59.1,
+     "count": 48
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.6,
+     "count": 127
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 209,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 58.7,
+     "count": 56
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 59.1,
+     "count": 153
+    }
+   },
+   "sGeneCount": 1684,
+   "samplingSite": "Right cerebral frontal pole cortex (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Frontal Cortex (BA9)",
+   "tissueSiteDetailAbbr": "BRNCTXB",
+   "ontologyId": "UBERON:0009834",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0009834"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Hippocampus",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 5517,
+   "expressedGeneCount": 28625,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 165,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 58.9,
+     "count": 49
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.2,
+     "count": 116
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 197,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 58.3,
+     "count": 54
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.8,
+     "count": 143
+    }
+   },
+   "sGeneCount": 1185,
+   "samplingSite": "Hippocampus (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Hippocampus",
+   "tissueSiteDetailAbbr": "BRNHPP",
+   "ontologyId": "UBERON:0001954",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001954"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Hypothalamus",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 5499,
+   "expressedGeneCount": 29502,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 170,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 59.6,
+     "count": 47
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.7,
+     "count": 123
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 202,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 59.3,
+     "count": 55
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 59.0,
+     "count": 147
+    }
+   },
+   "sGeneCount": 1414,
+   "samplingSite": "Hypothalamus (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Hypothalamus",
+   "tissueSiteDetailAbbr": "BRNHPT",
+   "ontologyId": "UBERON:0001898",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001898"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Nucleus_accumbens_basal_ganglia",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 8198,
+   "expressedGeneCount": 29339,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 202,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.7,
+     "count": 55
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.2,
+     "count": 147
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 246,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.7,
+     "count": 64
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.8,
+     "count": 182
+    }
+   },
+   "sGeneCount": 1881,
+   "samplingSite": "Nucleus accumbens basal ganglia (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Nucleus accumbens (basal ganglia)",
+   "tissueSiteDetailAbbr": "BRNNCC",
+   "ontologyId": "UBERON:0001882",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001882"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Putamen_basal_ganglia",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 6902,
+   "expressedGeneCount": 28335,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 170,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 58.4,
+     "count": 42
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.1,
+     "count": 128
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 205,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 58.4,
+     "count": 49
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.5,
+     "count": 156
+    }
+   },
+   "sGeneCount": 1350,
+   "samplingSite": "Putamen basal ganglia (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Putamen (basal ganglia)",
+   "tissueSiteDetailAbbr": "BRNPTM",
+   "ontologyId": "UBERON:0001874",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001874"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Spinal_cord_cervical_c-1",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 4483,
+   "expressedGeneCount": 28352,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 126,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 58.2,
+     "count": 48
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 22,
+     "ageMean": 58.4,
+     "count": 78
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 159,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 28,
+     "ageMean": 58.1,
+     "count": 57
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 22,
+     "ageMean": 59.7,
+     "count": 102
+    }
+   },
+   "sGeneCount": 1144,
+   "samplingSite": "Spinal cord (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Spinal cord (cervical c-1)",
+   "tissueSiteDetailAbbr": "BRNSPC",
+   "ontologyId": "UBERON:0006469",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0006469"
+  },
+  {
+   "tissueSiteDetailId": "Brain_Substantia_nigra",
+   "colorHex": "EEEE00",
+   "colorRgb": "238,238,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 3301,
+   "expressedGeneCount": 28050,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 114,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 56.2,
+     "count": 33
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.6,
+     "count": 81
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 139,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 56.2,
+     "count": 38
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 59.3,
+     "count": 101
+    }
+   },
+   "sGeneCount": 814,
+   "samplingSite": "Substantia nigra (sampled at Miami Brain Bank and preserved as fresh frozen tissue).",
+   "tissueSite": "Brain",
+   "tissueSiteDetail": "Brain - Substantia nigra",
+   "tissueSiteDetailAbbr": "BRNSNG",
+   "ontologyId": "UBERON:0002038",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002038"
+  },
+  {
+   "tissueSiteDetailId": "Breast_Mammary_Tissue",
+   "colorHex": "33CCCC",
+   "colorRgb": "51,204,204",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 10872,
+   "expressedGeneCount": 29615,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 396,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.3,
+     "count": 151
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.7,
+     "count": 245
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 459,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.7,
+     "count": 168
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.4,
+     "count": 291
+    }
+   },
+   "sGeneCount": 4124,
+   "samplingSite": "Central breast subareolar region of the right breast, 1-2 cm under the skin surface of nipple region.",
+   "tissueSite": "Breast",
+   "tissueSiteDetail": "Breast - Mammary Tissue",
+   "tissueSiteDetailAbbr": "BREAST",
+   "ontologyId": "UBERON:0008367",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0008367"
+  },
+  {
+   "tissueSiteDetailId": "Cells_EBV-transformed_lymphocytes",
+   "colorHex": "CC66FF",
+   "colorRgb": "204,102,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 4934,
+   "expressedGeneCount": 27840,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 147,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.3,
+     "count": 53
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 22,
+     "ageMean": 49.4,
+     "count": 94
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 174,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.3,
+     "count": 62
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 22,
+     "ageMean": 50.0,
+     "count": 112
+    }
+   },
+   "sGeneCount": 2360,
+   "samplingSite": "Transformed lymphocytes.",
+   "tissueSite": "Blood Vessel",
+   "tissueSiteDetail": "Cells - EBV-transformed lymphocytes",
+   "tissueSiteDetailAbbr": "LCL",
+   "ontologyId": "UBERON:EFO_0000572",
+   "ontologyIri": "http://www.ebi.ac.uk/efo/EFO_0000572"
+  },
+  {
+   "tissueSiteDetailId": "Cells_Cultured_fibroblasts",
+   "colorHex": "AAEEFF",
+   "colorRgb": "170,238,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 15219,
+   "expressedGeneCount": 26297,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 483,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.5,
+     "count": 170
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.2,
+     "count": 313
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 504,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.5,
+     "count": 174
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.4,
+     "count": 330
+    }
+   },
+   "sGeneCount": 4586,
+   "samplingSite": "Cultured primary fibroblasts.",
+   "tissueSite": "Skin",
+   "tissueSiteDetail": "Cells - Cultured fibroblasts",
+   "tissueSiteDetailAbbr": "FIBRBLS",
+   "ontologyId": "UBERON:EFO_0002009",
+   "ontologyIri": "http://www.ebi.ac.uk/efo/EFO_0002009"
+  },
+  {
+   "tissueSiteDetailId": "Cervix_Ectocervix",
+   "colorHex": "FFCCCC",
+   "colorRgb": "255,204,204",
+   "datasetId": "gtex_v8",
+   "eGeneCount": null,
+   "expressedGeneCount": 29691,
+   "hasEGenes": false,
+   "hasSGenes": false,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 9,
+    "female": {
+     "ageMax": 68,
+     "ageMin": 27,
+     "ageMean": 47.2,
+     "count": 9
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 9,
+    "female": {
+     "ageMax": 68,
+     "ageMin": 27,
+     "ageMean": 47.2,
+     "count": 9
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "sGeneCount": null,
+   "samplingSite": "Ectocervix (squamous) from uterus. Bivalve uterus along the endocervical canal to open uterus and cervix from external os to fundus.",
+   "tissueSite": "Cervix Uteri",
+   "tissueSiteDetail": "Cervix - Ectocervix",
+   "tissueSiteDetailAbbr": "CVXECT",
+   "ontologyId": "UBERON:0012249",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0012249"
+  },
+  {
+   "tissueSiteDetailId": "Cervix_Endocervix",
+   "colorHex": "CCAADD",
+   "colorRgb": "204,170,221",
+   "datasetId": "gtex_v8",
+   "eGeneCount": null,
+   "expressedGeneCount": 30559,
+   "hasEGenes": false,
+   "hasSGenes": false,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 10,
+    "female": {
+     "ageMax": 61,
+     "ageMin": 27,
+     "ageMean": 49.5,
+     "count": 10
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 10,
+    "female": {
+     "ageMax": 61,
+     "ageMin": 27,
+     "ageMean": 49.5,
+     "count": 10
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "sGeneCount": null,
+   "samplingSite": "Endocervix (glandular) from uterus. Bivalve uterus along the endocervical canal to open uterus and cervix from external os to fundus.",
+   "tissueSite": "Cervix Uteri",
+   "tissueSiteDetail": "Cervix - Endocervix",
+   "tissueSiteDetailAbbr": "CVSEND",
+   "ontologyId": "UBERON:0000458",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0000458"
+  },
+  {
+   "tissueSiteDetailId": "Colon_Sigmoid",
+   "colorHex": "EEBB77",
+   "colorRgb": "238,187,119",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 10550,
+   "expressedGeneCount": 28454,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 318,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.1,
+     "count": 113
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 51.6,
+     "count": 205
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 373,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.7,
+     "count": 133
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.3,
+     "count": 240
+    }
+   },
+   "sGeneCount": 3269,
+   "samplingSite": "Sigmoid colon, Obtain muscularis only; discard mucosa.",
+   "tissueSite": "Colon",
+   "tissueSiteDetail": "Colon - Sigmoid",
+   "tissueSiteDetailAbbr": "CLNSGM",
+   "ontologyId": "UBERON:0001159",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001159"
+  },
+  {
+   "tissueSiteDetailId": "Colon_Transverse",
+   "colorHex": "CC9955",
+   "colorRgb": "204,153,85",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 11686,
+   "expressedGeneCount": 29574,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 368,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 48.9,
+     "count": 136
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.1,
+     "count": 232
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 406,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.3,
+     "count": 147
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.3,
+     "count": 259
+    }
+   },
+   "sGeneCount": 3459,
+   "samplingSite": "Transverse, Full thickness: mucosa and muscularis",
+   "tissueSite": "Colon",
+   "tissueSiteDetail": "Colon - Transverse",
+   "tissueSiteDetailAbbr": "CLNTRN",
+   "ontologyId": "UBERON:0001157",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001157"
+  },
+  {
+   "tissueSiteDetailId": "Esophagus_Gastroesophageal_Junction",
+   "colorHex": "8B7355",
+   "colorRgb": "139,115,85",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 10534,
+   "expressedGeneCount": 28219,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 330,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.3,
+     "count": 110
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 50.7,
+     "count": 220
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 375,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.8,
+     "count": 124
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 51.0,
+     "count": 251
+    }
+   },
+   "sGeneCount": 3286,
+   "samplingSite": "Muscularis propria in the lowest portion of the esophagus just proximal to the stomach.",
+   "tissueSite": "Esophagus",
+   "tissueSiteDetail": "Esophagus - Gastroesophageal Junction",
+   "tissueSiteDetailAbbr": "ESPGEJ",
+   "ontologyId": "UBERON:0004550",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0004550"
+  },
+  {
+   "tissueSiteDetailId": "Esophagus_Mucosa",
+   "colorHex": "552200",
+   "colorRgb": "85,34,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 14675,
+   "expressedGeneCount": 28332,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 497,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.0,
+     "count": 176
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 50.3,
+     "count": 321
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 555,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.4,
+     "count": 192
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 51.0,
+     "count": 363
+    }
+   },
+   "sGeneCount": 3986,
+   "samplingSite": "Squamous region (distal/lower third), at least 4 cm above gastroesophageal junction.",
+   "tissueSite": "Esophagus",
+   "tissueSiteDetail": "Esophagus - Mucosa",
+   "tissueSiteDetailAbbr": "ESPMCS",
+   "ontologyId": "UBERON:0006920",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0006920"
+  },
+  {
+   "tissueSiteDetailId": "Esophagus_Muscularis",
+   "colorHex": "BB9988",
+   "colorRgb": "187,153,136",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 14110,
+   "expressedGeneCount": 27982,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 465,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.5,
+     "count": 162
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 50.3,
+     "count": 303
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 515,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.0,
+     "count": 177
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 50.5,
+     "count": 338
+    }
+   },
+   "sGeneCount": 4088,
+   "samplingSite": "Squamous region (distal/lower third), at least 4 cm above gastroesophageal junction.",
+   "tissueSite": "Esophagus",
+   "tissueSiteDetail": "Esophagus - Muscularis",
+   "tissueSiteDetailAbbr": "ESPMSL",
+   "ontologyId": "UBERON:0004648",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0004648"
+  },
+  {
+   "tissueSiteDetailId": "Fallopian_Tube",
+   "colorHex": "FFCCCC",
+   "colorRgb": "255,204,204",
+   "datasetId": "gtex_v8",
+   "eGeneCount": null,
+   "expressedGeneCount": 29861,
+   "hasEGenes": false,
+   "hasSGenes": false,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 8,
+    "female": {
+     "ageMax": 60,
+     "ageMin": 27,
+     "ageMean": 45.9,
+     "count": 8
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 9,
+    "female": {
+     "ageMax": 60,
+     "ageMin": 27,
+     "ageMean": 46.4,
+     "count": 9
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "sGeneCount": null,
+   "samplingSite": "Left (and right if needed for sufficient aliquots) starting at, and to include, fimbriated end.",
+   "tissueSite": "Fallopian Tube",
+   "tissueSiteDetail": "Fallopian Tube",
+   "tissueSiteDetailAbbr": "FLLPNT",
+   "ontologyId": "UBERON:0003889",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0003889"
+  },
+  {
+   "tissueSiteDetailId": "Heart_Atrial_Appendage",
+   "colorHex": "9900FF",
+   "colorRgb": "153,0,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 10991,
+   "expressedGeneCount": 27818,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 372,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 54.7,
+     "count": 119
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 55.6,
+     "count": 253
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 429,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 55.0,
+     "count": 136
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 56.4,
+     "count": 293
+    }
+   },
+   "sGeneCount": 3055,
+   "samplingSite": "Right atrial appendage, tip (if fatty or discolored, take more proximally)",
+   "tissueSite": "Heart",
+   "tissueSiteDetail": "Heart - Atrial Appendage",
+   "tissueSiteDetailAbbr": "HRTAA",
+   "ontologyId": "UBERON:0006631",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0006631"
+  },
+  {
+   "tissueSiteDetailId": "Heart_Left_Ventricle",
+   "colorHex": "660099",
+   "colorRgb": "102,0,153",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 9642,
+   "expressedGeneCount": 26037,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 386,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.9,
+     "count": 122
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 54.2,
+     "count": 264
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 432,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.2,
+     "count": 138
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 54.9,
+     "count": 294
+    }
+   },
+   "sGeneCount": 2357,
+   "samplingSite": "Anterior left ventricle, 1 cm above apex and 1 cm from left anterior descending coronary artery.",
+   "tissueSite": "Heart",
+   "tissueSiteDetail": "Heart - Left Ventricle",
+   "tissueSiteDetailAbbr": "HRTLV",
+   "ontologyId": "UBERON:0006566",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0006566"
+  },
+  {
+   "tissueSiteDetailId": "Kidney_Cortex",
+   "colorHex": "22FFDD",
+   "colorRgb": "34,255,221",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 1260,
+   "expressedGeneCount": 29263,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 73,
+    "female": {
+     "ageMax": 69,
+     "ageMin": 30,
+     "ageMean": 56.8,
+     "count": 18
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 27,
+     "ageMean": 55.8,
+     "count": 55
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 85,
+    "female": {
+     "ageMax": 69,
+     "ageMin": 30,
+     "ageMean": 56.4,
+     "count": 19
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 27,
+     "ageMean": 56.3,
+     "count": 66
+    }
+   },
+   "sGeneCount": 547,
+   "samplingSite": "Left kidney cortex.",
+   "tissueSite": "Kidney",
+   "tissueSiteDetail": "Kidney - Cortex",
+   "tissueSiteDetailAbbr": "KDNCTX",
+   "ontologyId": "UBERON:0001225",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001225"
+  },
+  {
+   "tissueSiteDetailId": "Kidney_Medulla",
+   "colorHex": "33FFC2",
+   "colorRgb": "51,255,194",
+   "datasetId": "gtex_v8",
+   "eGeneCount": null,
+   "expressedGeneCount": 31935,
+   "hasEGenes": false,
+   "hasSGenes": false,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 4,
+    "female": {
+     "ageMax": 59,
+     "ageMin": 59,
+     "ageMean": 59.0,
+     "count": 1
+    },
+    "male": {
+     "ageMax": 50,
+     "ageMin": 22,
+     "ageMean": 33.0,
+     "count": 3
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 4,
+    "female": {
+     "ageMax": 59,
+     "ageMin": 59,
+     "ageMean": 59.0,
+     "count": 1
+    },
+    "male": {
+     "ageMax": 50,
+     "ageMin": 22,
+     "ageMean": 33.0,
+     "count": 3
+    }
+   },
+   "sGeneCount": null,
+   "samplingSite": "Left kidney medulla adjacent to Cortex.",
+   "tissueSite": "Kidney",
+   "tissueSiteDetail": "Kidney - Medulla",
+   "tissueSiteDetailAbbr": "KDNMDL",
+   "ontologyId": "UBERON:0001293",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001293"
+  },
+  {
+   "tissueSiteDetailId": "Liver",
+   "colorHex": "AABB66",
+   "colorRgb": "170,187,102",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 5734,
+   "expressedGeneCount": 26560,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 208,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 54.9,
+     "count": 62
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 54.2,
+     "count": 146
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 226,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 54.8,
+     "count": 65
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 54.5,
+     "count": 161
+    }
+   },
+   "sGeneCount": 1485,
+   "samplingSite": "Central right lobe, 1 cm below capsule.",
+   "tissueSite": "Liver",
+   "tissueSiteDetail": "Liver",
+   "tissueSiteDetailAbbr": "LIVER",
+   "ontologyId": "UBERON:0001114",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001114"
+  },
+  {
+   "tissueSiteDetailId": "Lung",
+   "colorHex": "99FF00",
+   "colorRgb": "153,255,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 14113,
+   "expressedGeneCount": 30049,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 515,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.4,
+     "count": 166
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.5,
+     "count": 349
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 578,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.7,
+     "count": 183
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 54.1,
+     "count": 395
+    }
+   },
+   "sGeneCount": 4774,
+   "samplingSite": "Inferior segment of left upper lobe, 1 cm below the pleural surface.",
+   "tissueSite": "Lung",
+   "tissueSiteDetail": "Lung",
+   "tissueSiteDetailAbbr": "LUNG",
+   "ontologyId": "UBERON:0008952",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0008952"
+  },
+  {
+   "tissueSiteDetailId": "Minor_Salivary_Gland",
+   "colorHex": "99BB88",
+   "colorRgb": "153,187,136",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 4836,
+   "expressedGeneCount": 30270,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 144,
+    "female": {
+     "ageMax": 68,
+     "ageMin": 24,
+     "ageMean": 52.8,
+     "count": 40
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.6,
+     "count": 104
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 162,
+    "female": {
+     "ageMax": 68,
+     "ageMin": 24,
+     "ageMean": 53.1,
+     "count": 47
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.1,
+     "count": 115
+    }
+   },
+   "sGeneCount": 1648,
+   "samplingSite": "Inner surface of lower lip.",
+   "tissueSite": "Salivary Gland",
+   "tissueSiteDetail": "Minor Salivary Gland",
+   "tissueSiteDetailAbbr": "SLVRYG",
+   "ontologyId": "UBERON:0006330",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0006330"
+  },
+  {
+   "tissueSiteDetailId": "Muscle_Skeletal",
+   "colorHex": "AAAAFF",
+   "colorRgb": "170,170,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 13532,
+   "expressedGeneCount": 25586,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 706,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.0,
+     "count": 237
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.6,
+     "count": 469
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 803,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.3,
+     "count": 260
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 53.1,
+     "count": 543
+    }
+   },
+   "sGeneCount": 4056,
+   "samplingSite": "The gastrocnemius muscle, 2 cm below the patella.",
+   "tissueSite": "Muscle",
+   "tissueSiteDetail": "Muscle - Skeletal",
+   "tissueSiteDetailAbbr": "MSCLSK",
+   "ontologyId": "UBERON:0011907",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0011907"
+  },
+  {
+   "tissueSiteDetailId": "Nerve_Tibial",
+   "colorHex": "FFD700",
+   "colorRgb": "255,215,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 17285,
+   "expressedGeneCount": 30082,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 532,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.3,
+     "count": 177
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.2,
+     "count": 355
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 619,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.8,
+     "count": 200
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.8,
+     "count": 419
+    }
+   },
+   "sGeneCount": 5297,
+   "samplingSite": "Left tibial. Peripheral tibial nerve from gastrocnemius region",
+   "tissueSite": "Nerve",
+   "tissueSiteDetail": "Nerve - Tibial",
+   "tissueSiteDetailAbbr": "NERVET",
+   "ontologyId": "UBERON:0001323",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001323"
+  },
+  {
+   "tissueSiteDetailId": "Ovary",
+   "colorHex": "FFAAFF",
+   "colorRgb": "255,170,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 5542,
+   "expressedGeneCount": 29523,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 167,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.8,
+     "count": 167
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 180,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.2,
+     "count": 180
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "sGeneCount": 1998,
+   "samplingSite": "Most normal regions of the left ovary (and right if necessary to obtain sufficient aliquots).",
+   "tissueSite": "Ovary",
+   "tissueSiteDetail": "Ovary",
+   "tissueSiteDetailAbbr": "OVARY",
+   "ontologyId": "UBERON:0000992",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0000992"
+  },
+  {
+   "tissueSiteDetailId": "Pancreas",
+   "colorHex": "995522",
+   "colorRgb": "153,85,34",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 9660,
+   "expressedGeneCount": 27435,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 305,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.9,
+     "count": 116
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.9,
+     "count": 189
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 328,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.1,
+     "count": 121
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.3,
+     "count": 207
+    }
+   },
+   "sGeneCount": 2250,
+   "samplingSite": "Mid-portion (not tail).",
+   "tissueSite": "Pancreas",
+   "tissueSiteDetail": "Pancreas",
+   "tissueSiteDetailAbbr": "PNCREAS",
+   "ontologyId": "UBERON:0001150",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001150"
+  },
+  {
+   "tissueSiteDetailId": "Pituitary",
+   "colorHex": "AAFF99",
+   "colorRgb": "170,255,153",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 9146,
+   "expressedGeneCount": 31187,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 237,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.2,
+     "count": 71
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.2,
+     "count": 166
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 283,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 24,
+     "ageMean": 57.0,
+     "count": 79
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 58.7,
+     "count": 204
+    }
+   },
+   "sGeneCount": 2901,
+   "samplingSite": "Entire pituitary gland.",
+   "tissueSite": "Pituitary",
+   "tissueSiteDetail": "Pituitary",
+   "tissueSiteDetailAbbr": "PTTARY",
+   "ontologyId": "UBERON:0000007",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0000007"
+  },
+  {
+   "tissueSiteDetailId": "Prostate",
+   "colorHex": "DDDDDD",
+   "colorRgb": "221,221,221",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 7356,
+   "expressedGeneCount": 30385,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 221,
+    "female": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.0,
+     "count": 221
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 245,
+    "female": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.6,
+     "count": 245
+    }
+   },
+   "sGeneCount": 2463,
+   "samplingSite": "Non-nodular region of representative region.",
+   "tissueSite": "Prostate",
+   "tissueSiteDetail": "Prostate",
+   "tissueSiteDetailAbbr": "PRSTTE",
+   "ontologyId": "UBERON:0002367",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002367"
+  },
+  {
+   "tissueSiteDetailId": "Skin_Not_Sun_Exposed_Suprapubic",
+   "colorHex": "0000FF",
+   "colorRgb": "0,0,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 15483,
+   "expressedGeneCount": 29686,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 517,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.1,
+     "count": 169
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.7,
+     "count": 348
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 604,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 53.3,
+     "count": 193
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 53.3,
+     "count": 411
+    }
+   },
+   "sGeneCount": 4652,
+   "samplingSite": "Extension of the abdominal incision to the suprapubic area avoiding pubic hair. ",
+   "tissueSite": "Skin",
+   "tissueSiteDetail": "Skin - Not Sun Exposed (Suprapubic)",
+   "tissueSiteDetailAbbr": "SKINNS",
+   "ontologyId": "UBERON:0036149",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0036149"
+  },
+  {
+   "tissueSiteDetailId": "Skin_Sun_Exposed_Lower_leg",
+   "colorHex": "7777FF",
+   "colorRgb": "119,119,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 16967,
+   "expressedGeneCount": 29629,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 605,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.3,
+     "count": 208
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.3,
+     "count": 397
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 701,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.9,
+     "count": 234
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.9,
+     "count": 467
+    }
+   },
+   "sGeneCount": 5134,
+   "samplingSite": "Left or right leg 2 cm below patella on medial side.",
+   "tissueSite": "Skin",
+   "tissueSiteDetail": "Skin - Sun Exposed (Lower leg)",
+   "tissueSiteDetailAbbr": "SKINS",
+   "ontologyId": "UBERON:0004264",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0004264"
+  },
+  {
+   "tissueSiteDetailId": "Small_Intestine_Terminal_Ileum",
+   "colorHex": "555522",
+   "colorRgb": "85,85,34",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 6681,
+   "expressedGeneCount": 30321,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 174,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 48.4,
+     "count": 63
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 48.0,
+     "count": 111
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 187,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 48.6,
+     "count": 67
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 48.4,
+     "count": 120
+    }
+   },
+   "sGeneCount": 2084,
+   "samplingSite": "Thickened mucosa corresponding to lymphoid nodules (Peyer Patches) just proximal to the ileocecal valve in the most distal part of the small intestine.",
+   "tissueSite": "Small Intestine",
+   "tissueSiteDetail": "Small Intestine - Terminal Ileum",
+   "tissueSiteDetailAbbr": "SNTTRM",
+   "ontologyId": "UBERON:0001211",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0001211"
+  },
+  {
+   "tissueSiteDetailId": "Spleen",
+   "colorHex": "778855",
+   "colorRgb": "119,136,85",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 10783,
+   "expressedGeneCount": 29856,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 227,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 23,
+     "ageMean": 49.5,
+     "count": 86
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.8,
+     "count": 141
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 241,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 23,
+     "ageMean": 49.7,
+     "count": 87
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.9,
+     "count": 154
+    }
+   },
+   "sGeneCount": 2837,
+   "samplingSite": "Central region, 5 mm below capsule.",
+   "tissueSite": "Spleen",
+   "tissueSiteDetail": "Spleen",
+   "tissueSiteDetailAbbr": "SPLEEN",
+   "ontologyId": "UBERON:0002106",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002106"
+  },
+  {
+   "tissueSiteDetailId": "Stomach",
+   "colorHex": "FFDD99",
+   "colorRgb": "255,221,153",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 8771,
+   "expressedGeneCount": 28254,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 324,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 48.4,
+     "count": 122
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 48.8,
+     "count": 202
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 359,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.2,
+     "count": 132
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.3,
+     "count": 227
+    }
+   },
+   "sGeneCount": 2638,
+   "samplingSite": "Body (Gently rinse mucosa with normal saline before aliquot preparation)",
+   "tissueSite": "Stomach",
+   "tissueSiteDetail": "Stomach",
+   "tissueSiteDetailAbbr": "STMACH",
+   "ontologyId": "UBERON:0000945",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0000945"
+  },
+  {
+   "tissueSiteDetailId": "Testis",
+   "colorHex": "AAAAAA",
+   "colorRgb": "170,170,170",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 18795,
+   "expressedGeneCount": 40180,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 322,
+    "female": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 51.6,
+     "count": 322
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 361,
+    "female": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.2,
+     "count": 361
+    }
+   },
+   "sGeneCount": 8626,
+   "samplingSite": "Left testis (and right testis if necessary to obtain sufficient tissue for aliquots).",
+   "tissueSite": "Testis",
+   "tissueSiteDetail": "Testis",
+   "tissueSiteDetailAbbr": "TESTIS",
+   "ontologyId": "UBERON:0000473",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0000473"
+  },
+  {
+   "tissueSiteDetailId": "Thyroid",
+   "colorHex": "006600",
+   "colorRgb": "0,102,0",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 17684,
+   "expressedGeneCount": 30166,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 574,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.9,
+     "count": 196
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 53.1,
+     "count": 378
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 653,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.2,
+     "count": 219
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 53.6,
+     "count": 434
+    }
+   },
+   "sGeneCount": 5358,
+   "samplingSite": "Most grossly non-nodular normal regions from either side (whichever side is observed to be more normal).",
+   "tissueSite": "Thyroid",
+   "tissueSiteDetail": "Thyroid",
+   "tissueSiteDetailAbbr": "THYROID",
+   "ontologyId": "UBERON:0002046",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0002046"
+  },
+  {
+   "tissueSiteDetailId": "Uterus",
+   "colorHex": "FF66FF",
+   "colorRgb": "255,102,255",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 3577,
+   "expressedGeneCount": 29192,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": true,
+   "eqtlSampleSummary": {
+    "totalCount": 129,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 47.4,
+     "count": 129
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 142,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 47.8,
+     "count": 142
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "sGeneCount": 1524,
+   "samplingSite": "Corpus. Bivalve uterus along endocervical canal to fundus.",
+   "tissueSite": "Uterus",
+   "tissueSiteDetail": "Uterus",
+   "tissueSiteDetailAbbr": "UTERUS",
+   "ontologyId": "UBERON:0000995",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0000995"
+  },
+  {
+   "tissueSiteDetailId": "Vagina",
+   "colorHex": "FF5599",
+   "colorRgb": "255,85,153",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 3730,
+   "expressedGeneCount": 29727,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 141,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 49.8,
+     "count": 141
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 156,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 50.4,
+     "count": 156
+    },
+    "male": {
+     "ageMax": null,
+     "ageMin": null,
+     "ageMean": null,
+     "count": 0
+    }
+   },
+   "sGeneCount": 1460,
+   "samplingSite": "Anterior.",
+   "tissueSite": "Vagina",
+   "tissueSiteDetail": "Vagina",
+   "tissueSiteDetailAbbr": "VAGINA",
+   "ontologyId": "UBERON:0000996",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0000996"
+  },
+  {
+   "tissueSiteDetailId": "Whole_Blood",
+   "colorHex": "FF00BB",
+   "colorRgb": "255,0,187",
+   "datasetId": "gtex_v8",
+   "eGeneCount": 12360,
+   "expressedGeneCount": 24144,
+   "hasEGenes": true,
+   "hasSGenes": true,
+   "mappedInHubmap": false,
+   "eqtlSampleSummary": {
+    "totalCount": 670,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 51.6,
+     "count": 229
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.0,
+     "count": 441
+    }
+   },
+   "rnaSeqSampleSummary": {
+    "totalCount": 755,
+    "female": {
+     "ageMax": 70,
+     "ageMin": 21,
+     "ageMean": 52.1,
+     "count": 254
+    },
+    "male": {
+     "ageMax": 70,
+     "ageMin": 20,
+     "ageMean": 52.6,
+     "count": 501
+    }
+   },
+   "sGeneCount": 3013,
+   "samplingSite": "Femoral vein; subclavian vein and heart are other possible sites.",
+   "tissueSite": "Blood",
+   "tissueSiteDetail": "Whole Blood",
+   "tissueSiteDetailAbbr": "WHLBLD",
+   "ontologyId": "UBERON:0013756",
+   "ontologyIri": "http://purl.obolibrary.org/obo/UBERON_0013756"
+  }
+ ],
+ "paging_info": {
+  "numberOfPages": 1,
+  "page": 0,
+  "maxItemsPerPage": 100,
+  "totalNumberOfItems": 54
+ }
+}

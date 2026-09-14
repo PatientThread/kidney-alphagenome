@@ -1,0 +1,27 @@
+# ---------------------------------------------------------------------------
+# SECRETS. The API key lives at ~/.alphagenome/api_key (mode 600), OUTSIDE this
+# tree, because this tree is covered by OneDrive snapshots and a private repo.
+# These patterns are belt and braces in case anything is ever pasted in here.
+# ---------------------------------------------------------------------------
+*api_key*
+*apikey*
+*.key
+*.pem
+*secret*
+*credential*
+*token*
+.env
+.env.*
+*.rtf
+
+# Large downloaded data. Regenerable via analysis/05_fetch_eqtl_catalogue.py
+data/eqtl_catalogue/
+
+# Run logs may capture incidental environment detail
+*.log
+
+# Python noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

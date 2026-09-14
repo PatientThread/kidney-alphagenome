@@ -1,0 +1,21 @@
+biosample_name,ATAC,CAGE,CHIP_HISTONE,CHIP_TF,DNASE,RNA_SEQ,SPLICE_JUNCTIONS,SPLICE_SITE_USAGE,TOTAL
+kidney,1,2,5,0,1,5,2,4,20
+epithelial cell of proximal tubule,0,2,1,1,1,2,1,2,10
+kidney epithelial cell,0,0,2,1,1,2,1,2,9
+renal cortical epithelial cell,0,2,0,0,1,2,1,2,8
+mesangial cell,0,2,0,0,0,2,1,2,7
+glomerular endothelial cell,0,2,0,0,0,2,1,2,7
+left renal cortex interstitium,0,0,0,0,1,1,1,2,5
+renal cortex interstitium,0,0,0,0,1,1,1,2,5
+metanephros,0,0,0,0,0,2,1,2,5
+right renal cortex interstitium,0,0,0,0,1,1,1,2,5
+left kidney,0,0,0,0,1,1,1,2,5
+outer medulla of kidney,0,0,0,0,0,1,1,2,4
+cortex of kidney,0,0,0,0,0,1,1,2,4
+nephron progenitor cell,0,0,0,1,1,0,0,0,2
+nephron tubule epithelial cell,0,2,0,0,0,0,0,0,2
+kidney tubule cell,0,0,0,0,1,0,0,0,1
+nephron,0,0,0,1,0,0,0,0,1
+kidney capillary endothelial cell,0,0,0,0,1,0,0,0,1
+glomerular visceral epithelial cell,0,0,0,0,1,0,0,0,1
+right kidney,0,0,0,0,1,0,0,0,1

@@ -1,0 +1,27 @@
+assay,tissue_or_primary,cell_line,total
+TF ChIP-seq,7,221,228
+DNase-seq,85,8,93
+long read RNA-seq,58,0,58
+Control ChIP-seq,10,42,52
+Histone ChIP-seq,22,6,28
+polyA plus RNA-seq,27,0,27
+Mint-ChIP-seq,24,0,24
+DNAme array,8,4,12
+total RNA-seq,8,2,10
+genotyping array,6,4,10
+RNA microarray,4,2,6
+RRBS,4,2,6
+PRO-cap,2,3,5
+RAMPAGE,5,0,5
+Repli-seq,0,4,4
+ChIA-PET,0,4,4
+Control Mint-ChIP-seq,4,0,4
+in situ Hi-C,0,3,3
+FAIRE-seq,1,2,3
+snATAC-seq,2,0,2
+snRNA-seq,2,0,2
+ATAC-seq,2,0,2
+WGS,0,1,1
+intact Hi-C,1,0,1
+microRNA-seq,1,0,1
+small RNA-seq,1,0,1

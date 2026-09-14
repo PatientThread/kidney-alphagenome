@@ -1,0 +1,30 @@
+klass,biosample_name,biosample_type,biosample_life_stage,n_tracks
+KIDNEY_CELL_LINE,HEK293,cell_line,embryonic,109
+KIDNEY_CELL_LINE,HEK293T,cell_line,embryonic,5
+KIDNEY_PARENCHYMA,kidney,tissue,adult,15
+KIDNEY_PARENCHYMA,epithelial cell of proximal tubule,primary_cell,unknown,7
+KIDNEY_PARENCHYMA,glomerular endothelial cell,primary_cell,embryonic,4
+KIDNEY_PARENCHYMA,kidney epithelial cell,primary_cell,"embryonic,newborn",4
+KIDNEY_PARENCHYMA,kidney epithelial cell,primary_cell,unknown,4
+KIDNEY_PARENCHYMA,left kidney,tissue,embryonic,4
+KIDNEY_PARENCHYMA,left renal cortex interstitium,tissue,embryonic,4
+KIDNEY_PARENCHYMA,mesangial cell,primary_cell,"unknown,embryonic",4
+KIDNEY_PARENCHYMA,metanephros,tissue,embryonic,4
+KIDNEY_PARENCHYMA,renal cortex interstitium,tissue,embryonic,4
+KIDNEY_PARENCHYMA,renal cortical epithelial cell,primary_cell,adult,4
+KIDNEY_PARENCHYMA,right renal cortex interstitium,tissue,embryonic,4
+KIDNEY_PARENCHYMA,cortex of kidney,tissue,adult,3
+KIDNEY_PARENCHYMA,outer medulla of kidney,tissue,adult,3
+KIDNEY_PARENCHYMA,nephron progenitor cell,in_vitro_differentiated_cells,embryonic,2
+KIDNEY_PARENCHYMA,glomerular visceral epithelial cell,primary_cell,child,1
+KIDNEY_PARENCHYMA,kidney,tissue,embryonic,1
+KIDNEY_PARENCHYMA,kidney capillary endothelial cell,primary_cell,embryonic,1
+KIDNEY_PARENCHYMA,kidney tubule cell,primary_cell,adult,1
+KIDNEY_PARENCHYMA,nephron,organoid,embryonic,1
+KIDNEY_PARENCHYMA,renal cortical epithelial cell,primary_cell,unknown,1
+KIDNEY_PARENCHYMA,right kidney,tissue,embryonic,1
+URINARY_TRACT,ureter,tissue,adult,6
+URINARY_TRACT,left renal pelvis,tissue,embryonic,4
+URINARY_TRACT,renal pelvis,tissue,embryonic,4
+URINARY_TRACT,right renal pelvis,tissue,embryonic,4
+URINARY_TRACT,urothelium cell line,cell_line,child,1
