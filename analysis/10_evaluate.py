@@ -165,7 +165,16 @@ def main() -> None:
             "ci_width": float(k["spearman_ci_width"]),
             "sign_agreement": float(k["sign_agreement"]),
             "sign_ci": [float(k["sign_lo"]), float(k["sign_hi"])],
-            "rank_by_spearman": int((m["spearman"] < k["spearman"]).sum()) + 1,
+            # Rank convention, stated explicitly because the earlier key
+            # "rank_by_spearman" was ASCENDING (1 = weakest) and was misread as
+            # a performance rank. Report the descending rank, 1 = strongest, and
+            # carry the counts either side so the direction cannot be mistaken.
+            "rank_descending_1_is_strongest": int(
+                (m["spearman"] > k["spearman"]).sum()) + 1,
+            "n_tissues_ranked": int(len(m)),
+            "n_tissues_below_kidney": int((m["spearman"] < k["spearman"]).sum()),
+            "n_tissues_above_kidney": int((m["spearman"] > k["spearman"]).sum()),
+            "median_spearman_all_tissues": round(float(m["spearman"].median()), 4),
             "median_ci_width_other_tissues": (
                 round(float(others["spearman_ci_width"].median()), 4)
                 if len(others) else None),
@@ -205,7 +214,12 @@ def main() -> None:
         print()
         print(f"  KIDNEY rho = {k['spearman']:.3f}, 95% CI "
               f"[{k['ci'][0]:.3f}, {k['ci'][1]:.3f}], width {k['ci_width']:.3f}")
-        print(f"    rank {k['rank_by_spearman']} of {len(m)} tissues")
+        print(f"    rank {k['rank_descending_1_is_strongest']} of "
+              f"{k['n_tissues_ranked']} tissues, 1 = strongest "
+              f"({k['n_tissues_above_kidney']} above, "
+              f"{k['n_tissues_below_kidney']} below)")
+        print(f"    median rho across all tissues: "
+              f"{k['median_spearman_all_tissues']}")
         print(f"    median CI width in other tissues: "
               f"{k['median_ci_width_other_tissues']}")
         print(f"    sign agreement {k['sign_agreement']:.2f} "

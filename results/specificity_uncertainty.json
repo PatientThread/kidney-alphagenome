@@ -1,27 +1,27 @@
 {
   "n_pairs": 58,
-  "n_tracks": 55,
+  "n_tracks": 54,
   "bootstrap_iterations": 10000,
   "resampling": "with replacement over the 58 variant-gene pairs, paired across tracks",
   "kidney_rho": 0.5054292657417947,
-  "tracks_distinguishable_from_kidney": 11,
+  "tracks_distinguishable_from_kidney": 10,
   "best_track": "Pituitary",
-  "best_diff": 0.06081397930067296,
+  "best_diff": 0.06081397930067295,
   "best_diff_ci": [
     -0.035593033519854884,
     0.19428872593457827
   ],
   "pairwise_prediction_rho": {
-    "median": 0.8268171890860994,
+    "median": 0.8271863176351165,
     "iqr": [
-      0.7029130394659941,
-      0.9115321910855456
+      0.7024516287797227,
+      0.9148851087391185
     ],
     "min": 0.316250884370482,
     "max": 0.997785228705897
   },
   "kidney_vs_others_rho": {
-    "median": 0.9007044203143746,
+    "median": 0.9028576701836416,
     "min": 0.6018948598849551,
     "max": 0.990033529176536
   },

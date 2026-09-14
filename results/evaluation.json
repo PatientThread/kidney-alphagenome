@@ -24,7 +24,11 @@
       0.6534,
       0.8641
     ],
-    "rank_by_spearman": 32,
+    "rank_descending_1_is_strongest": 18,
+    "n_tissues_ranked": 49,
+    "n_tissues_below_kidney": 31,
+    "n_tissues_above_kidney": 17,
+    "median_spearman_all_tissues": 0.495,
     "median_ci_width_other_tissues": 0.1282
   }
 }

@@ -57,6 +57,42 @@ SEQ_1MB = 1_048_576
 KIDNEY_TRACK = "Kidney_Cortex"
 
 
+META_COLS = ("variant", "gene", "observed_beta")
+
+
+def tissue_columns(d: pd.DataFrame) -> list[str]:
+    """The named GTEx tissue columns, and nothing else.
+
+    Guards the failure that produced an unnamed 55th "tissue": a blank label
+    survives dropna() and pandas reads a blank TSV header back as "Unnamed: N".
+    Both forms are rejected here, so neither the summary nor script 13 can pick
+    one up again.
+    """
+    cols = [c for c in d.columns if c not in META_COLS]
+    bad = [c for c in cols
+           if str(c).strip() == "" or str(c).startswith("Unnamed:")]
+    if bad:
+        print(f"  dropping {len(bad)} unlabelled prediction column(s): {bad}")
+    return [c for c in cols if c not in bad]
+
+
+def summarise(d: pd.DataFrame) -> pd.DataFrame:
+    """Per-tissue correlation with the observed kidney effect."""
+    res = []
+    for t in tissue_columns(d):
+        s = d[[t, "observed_beta"]].dropna()
+        if len(s) < 10:
+            continue
+        rho, p = stats.spearmanr(s[t], s["observed_beta"])
+        agree = float((np.sign(s[t]) == np.sign(s["observed_beta"])).mean())
+        res.append({"tissue_track": t, "n": len(s), "spearman": float(rho),
+                    "p": float(p), "sign_agreement": agree})
+    m = (pd.DataFrame(res).sort_values("spearman", ascending=False)
+         .reset_index(drop=True))
+    m["rank"] = m.index + 1
+    return m
+
+
 def main() -> None:
     from alphagenome.models import dna_client, variant_scorers
     from alphagenome.data import genome
@@ -99,9 +135,15 @@ def main() -> None:
 
         if "gtex_tissue" not in ad.var.columns:
             raise SystemExit("no gtex_tissue column in result metadata")
+        # Tracks that are NOT GTEx carry an EMPTY STRING here, not NaN, so
+        # dropna() alone leaves them in and they pool into one unnamed
+        # pseudo-tissue: a mean over 613 RNA-seq tracks from 262 unrelated
+        # biosamples. That is not a tissue and must not enter the comparison.
+        # Filter on the label being non-blank, not merely non-null.
+        labels = ad.var["gtex_tissue"].astype("string").str.strip()
         rec = {"variant": r.variant, "gene": gene, "observed_beta": r.beta}
-        for t in ad.var["gtex_tissue"].dropna().unique():
-            cols = np.where(ad.var["gtex_tissue"].values == t)[0]
+        for t in labels[labels.notna() & (labels != "")].unique():
+            cols = np.where(labels.values == t)[0]
             rec[t] = float(np.nanmean(X[gi[:, None], cols]))
         rows.append(rec)
         time.sleep(0.15)
@@ -116,19 +158,7 @@ def main() -> None:
              index=False, compression="gzip")
     print(f"\nscored {len(d)}/{len(bench)}, {fails} failures\n")
 
-    tissues = [c for c in d.columns
-               if c not in ("variant", "gene", "observed_beta")]
-    res = []
-    for t in tissues:
-        s = d[[t, "observed_beta"]].dropna()
-        if len(s) < 10:
-            continue
-        rho, p = stats.spearmanr(s[t], s["observed_beta"])
-        agree = float((np.sign(s[t]) == np.sign(s["observed_beta"])).mean())
-        res.append({"tissue_track": t, "n": len(s), "spearman": float(rho),
-                    "p": float(p), "sign_agreement": agree})
-    m = pd.DataFrame(res).sort_values("spearman", ascending=False).reset_index(drop=True)
-    m["rank"] = m.index + 1
+    m = summarise(d)
     m.to_csv(RESULTS / "specificity_by_tissue.csv", index=False)
 
     kr = m[m["tissue_track"] == KIDNEY_TRACK]
@@ -180,5 +210,38 @@ def main() -> None:
     print(f"\n  Wrote {RESULTS}/specificity_control.json")
 
 
+def recompute_from_cache() -> None:
+    """Rebuild the summary from the persisted matrix, no API calls.
+
+    The scoring run is expensive and its raw output is committed, so a fix to
+    how tracks are SELECTED should not require re-scoring. Run with --from-cache.
+    """
+    src = RESULTS / "specificity_predictions.tsv.gz"
+    if not src.exists():
+        raise SystemExit(f"{src} not found; run the full script first")
+    d = pd.read_csv(src, sep="\t")
+    m = summarise(d)
+    m.to_csv(RESULTS / "specificity_by_tissue.csv", index=False)
+    kr = m[m["tissue_track"] == KIDNEY_TRACK]
+    krank = int(kr["rank"].iloc[0])
+    krho = float(kr["spearman"].iloc[0])
+    out = {"n_variants": int(len(d)), "n_tissue_tracks": int(len(m)),
+           "kidney_rank": krank, "kidney_rho": krho,
+           "kidney_percentile": round(100 * (1 - (krank - 1) / len(m)), 1),
+           "best_track": m.iloc[0]["tissue_track"],
+           "best_rho": float(m.iloc[0]["spearman"]),
+           "spread_sd": float(m["spearman"].std()),
+           "range": [float(m["spearman"].min()), float(m["spearman"].max())]}
+    (RESULTS / "specificity_control.json").write_text(json.dumps(out, indent=2))
+    print(f"  {len(m)} named GTEx tissue tracks")
+    print(f"  kidney ranks {krank} of {len(m)} (rho {krho:.3f})")
+    print(f"  best: {out['best_track']} (rho {out['best_rho']:.3f})")
+    print(f"  range {out['range'][0]:.3f} to {out['range'][1]:.3f}")
+    print(f"  Wrote {RESULTS}/specificity_by_tissue.csv and specificity_control.json")
+
+
 if __name__ == "__main__":
-    main()
+    if "--from-cache" in sys.argv:
+        recompute_from_cache()
+    else:
+        main()

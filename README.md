@@ -11,21 +11,26 @@ ORCID [0000-0002-8159-0879](https://orcid.org/0000-0002-8159-0879).
 
 Everything needed to reproduce the paper: the frozen benchmark set, the curated
 tissue mapping, the per-tissue prediction tables, the output-track manifests and
-the twelve numbered analysis scripts that produce every number and figure.
+the thirteen numbered analysis scripts that produce every number and figure.
 
 ## The three findings
 
 1. **Kidney is sparsely represented.** Kidney parenchyma accounts for 103 of
    5563 human output tracks (1.85%; 1.97% counting splice junctions per strand),
    across 20 of 715 biosample labels. All four kidney transcription-factor tracks
-   assay CTCF, and no cell-type-resolved kidney accessibility track is exposed.
+   assay CTCF, and cell-type-resolved accessibility is limited to seven DNase
+   tracks, only one of them from an adult donor.
 2. **Kidney is the least well evidenced tissue in this benchmark.** Kidney cortex
    yields 59 usable fine-mapped eQTLs against a median of 616, and is the
    smallest tissue at all 36 threshold settings tested.
-3. **Kidney predictions are not driven by the kidney track.** Scoring the same
-   kidney variants with every tissue track in turn, kidney ranks 6th of 55, and
-   the spread across tracks is narrow. At this task the model largely does not
-   resolve tissue identity.
+3. **Kidney performance is insensitive to the choice of tissue output.** Scoring
+   the same kidney variants with every tissue track in turn, the kidney track
+   ranks 6th of 54, and no higher-ranked track is distinguishable from it by
+   paired bootstrap over the same 58 pairs. Kidney was nonetheless better than 10
+   of 53 comparators, and the tracks' prediction vectors are substantially but
+   not wholly shared (median pairwise rank correlation 0.827). Whether the
+   insensitivity reflects genuinely shared regulatory effects or limited tissue
+   resolution cannot be separated by this design.
 
 ## What this repository does *not* claim
 
@@ -58,10 +63,11 @@ Scripts are numbered in dependency order.
 | `10_evaluate.py` | no | no | per-tissue metrics, figures' input |
 | `11_review_robustness.py` | no | no | independence, downsampling, max-selection |
 | `12_specificity_control.py` | yes | **yes** | **the specificity control** |
+| `13_specificity_uncertainty.py` | no | no | paired bootstrap, pairwise predictions |
 | `publication/make_figures.py` | no | no | Figures 1-4 |
 
-Scripts 01, 02, 06, 07, 10 and 11 run offline from what is committed here, and
-reproduce every headline number including the specificity result summary.
+Scripts 01, 02, 06, 07, 10, 11 and 13 run offline from what is committed here,
+and reproduce every headline number including the specificity result summary.
 
 ### The API key
 

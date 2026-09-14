@@ -92,6 +92,11 @@ def figure1() -> None:
     t = pd.read_csv(RESULTS / "tracks_by_modality.csv", index_col=0)
     t = t[t.index.astype(str) != ""]
     t = t[t["TOTAL"] > 0].copy()
+    # SPLICE_SITES carries no biosample at all (4 donor/acceptor tracks, one per
+    # strand): it is an annotation-level output, not a tissue-specific one. A
+    # "0/4" kidney share there is meaningless, so it is excluded from an
+    # organ-coverage comparison rather than shown as missing coverage.
+    t = t.drop(index="SPLICE_SITES", errors="ignore")
     t["pct"] = 100 * t["KIDNEY_PARENCHYMA"] / t["TOTAL"]
     t = t.sort_values("pct")
 
@@ -125,14 +130,15 @@ def figure1() -> None:
         ax.text(pct + 0.12, i, f"{int(n)}/{int(tot)}", va="center",
                 fontsize=6.8, color=INK2)
 
-    ax.set_title("Kidney is a rounding error in every modality",
+    ax.set_title("Kidney representation across AlphaGenome output modalities",
                  loc="left", pad=8, fontweight="bold")
+    # annotation sits inside the plot, clear of the axis
     ax.annotate("all 4 kidney TF tracks are CTCF;\nHEK293 alone carries 111",
-                xy=(t.loc["CHIP_TF", "pct"], list(t.index).index("CHIP_TF") - 0.34),
-                xytext=(1.45, -0.55), fontsize=6.8, color=ACCENT,
-                va="center",
+                xy=(t.loc["CHIP_TF", "pct"], list(t.index).index("CHIP_TF")),
+                xytext=(2.05, list(t.index).index("CHIP_TF") + 1.15),
+                fontsize=6.8, color=ACCENT, va="center",
                 arrowprops=dict(arrowstyle="-", color=ACCENT, linewidth=0.7,
-                                shrinkA=0, shrinkB=2))
+                                shrinkA=0, shrinkB=3))
     save(fig, "figure1")
 
 
@@ -151,7 +157,7 @@ def figure2() -> None:
                label="Kidney cortex")
 
     ax.set_xscale("log")
-    ax.set_xlabel("Fine-mapped variants available (log scale)")
+    ax.set_xlabel("Successfully scored variant-gene pairs (log scale)")
     ax.set_ylabel("Width of 95% CI on Spearman's $\\rho$")
     ax.grid(color=GRID, linewidth=0.5, zorder=0)
     ax.set_axisbelow(True)
@@ -165,12 +171,15 @@ def figure2() -> None:
                     arrowprops=dict(arrowstyle="-", color=ACCENT, linewidth=0.8))
         med = oth["spearman_ci_width"].median()
         ax.axhline(med, color=INK2, linewidth=0.7, linestyle=(0, (4, 3)), zorder=2)
-        ax.text(oth["n"].min() * 0.92, med + 0.006,
+        # Sit the label ABOVE the line at the right-hand edge. Below the line on
+        # that side is where the large-n, narrow-interval tissues are, and the
+        # text landed on top of them.
+        ax.text(oth["n"].max() * 1.02, med + 0.010,
                 f"median across other tissues  {med:.2f}",
-                ha="left", fontsize=6.8, color=INK2)
+                ha="right", va="bottom", fontsize=6.8, color=INK2)
 
     ax.legend(loc="upper right", fontsize=7.2)
-    ax.set_title("We are least certain about the tissue with least data",
+    ax.set_title("Kidney cortex has the smallest benchmark and widest interval",
                  loc="left", pad=8, fontweight="bold")
     save(fig, "figure2")
 
@@ -214,13 +223,22 @@ def figure3() -> None:
     ax.set_ylim(-0.9, len(m) + 1.4)
     ax.grid(axis="x", color=GRID, linewidth=0.5, zorder=0)
     ax.set_axisbelow(True)
-    ax.set_title("Kidney sits mid-pack, but with by far the widest interval",
+    ax.set_title("Per-tissue prediction correlations and uncertainty",
                  loc="left", pad=10, fontweight="bold")
     # y=0 is the BOTTOM in matplotlib and the sort is ascending, so the tissue
     # with fewest variants is at the bottom. Say that, do not invert the claim.
+    # scored sample size printed beside each tissue, so the ordering is
+    # self-explanatory without consulting Figure 2
+    xr = ax.get_xlim()
+    for i, nn in enumerate(m["n"]):
+        ax.text(xr[1] + 0.004 * (xr[1] - xr[0]), i, f"{int(nn)}",
+                va="center", ha="left", fontsize=5.8, color=INK2)
+    ax.text(xr[1] + 0.004 * (xr[1] - xr[0]), len(m) + 0.2, "n",
+            va="center", ha="left", fontsize=6.2, color=INK2, fontweight="bold")
+    ax.set_xlim(xr)
     ax.set_xlabel("Spearman's $\\rho$, predicted vs observed eQTL effect\n"
-                  "tissues ordered by number of fine-mapped variants, "
-                  "fewest at the bottom", linespacing=1.7)
+                  "tissues ordered by scored pairs, fewest at the bottom",
+                  linespacing=1.7)
     save(fig, "figure3")
 
 
@@ -228,49 +246,63 @@ def figure3() -> None:
 
 # --------------------------------------------------------------- figure 4
 def figure4() -> None:
-    """Specificity control: which tissue track best predicts kidney eQTLs?
+    """Sensitivity to the choice of tissue output, with paired uncertainty.
 
-    This is the paper's central result, so the figure has to make one thing
-    obvious: kidney is not at the top and the whole distribution is narrow.
-    Ranking every track on a single axis does that; a bar chart of 55 tissues
-    would bury it.
+    Panel A is the ranking. Panel B is the part that matters: paired bootstrap
+    differences from the kidney track, with a zero reference. Showing only the
+    ranking invites the inference that the higher-ranked tracks are better, which
+    the paired analysis does not support.
     """
-    m = pd.read_csv(RESULTS / "specificity_by_tissue.csv").sort_values("spearman")
+    m = pd.read_csv(RESULTS / "specificity_by_tissue.csv")
+    pr = pd.read_csv(RESULTS / "specificity_paired.csv")
     kid = m[m["tissue_track"] == "Kidney_Cortex"]
     oth = m[m["tissue_track"] != "Kidney_Cortex"]
 
-    fig, ax = plt.subplots(figsize=(4.6, 3.2))
-    y = np.zeros(len(oth))
-    ax.scatter(oth["spearman"], y, s=30, color=NEUTRAL, alpha=0.75,
-               edgecolor=SURFACE, linewidth=0.5, zorder=3,
-               label="Other tissue tracks")
-    ax.scatter(kid["spearman"], [0], s=130, color=ACCENT, marker="D",
-               edgecolor=SURFACE, linewidth=1.0, zorder=5,
-               label="Kidney cortex track")
+    fig, (axA, axB) = plt.subplots(
+        2, 1, figsize=(4.8, 4.3), gridspec_kw={"height_ratios": [1, 2.1]})
 
-    ax.set_yticks([])
-    ax.set_ylim(-0.6, 1.05)
+    # ---- A: distribution
+    axA.scatter(oth["spearman"], np.zeros(len(oth)), s=22, color=NEUTRAL,
+                alpha=0.75, edgecolor=SURFACE, linewidth=0.5, zorder=3,
+                label="Other tissue outputs")
+    axA.scatter(kid["spearman"], [0], s=85, color=ACCENT, marker="D",
+                edgecolor=SURFACE, linewidth=0.9, zorder=5,
+                label="Kidney cortex")
+    axA.set_yticks([]); axA.set_ylim(-0.5, 0.5)
     for sp in ("left", "right", "top"):
-        ax.spines[sp].set_visible(False)
-    ax.set_xlabel("Spearman $\\rho$ with observed kidney cortex eQTL effects")
-    ax.grid(axis="x", color=GRID, linewidth=0.5, zorder=0)
-    ax.set_axisbelow(True)
+        axA.spines[sp].set_visible(False)
+    axA.set_xlabel("Spearman $\\rho$ with observed kidney eQTL effects", fontsize=7.6)
+    axA.grid(axis="x", color=GRID, linewidth=0.5, zorder=0)
+    axA.set_axisbelow(True)
+    axA.legend(loc="upper left", fontsize=6.6, ncol=2,
+               bbox_to_anchor=(0.0, 1.45))
+    axA.set_title("A", loc="left", fontweight="bold", fontsize=9)
 
-    if len(kid):
-        k = kid.iloc[0]
-        ax.annotate(f"Kidney cortex\nrank {int(k['rank'])} of {len(m)}",
-                    xy=(k["spearman"], 0.05), xytext=(k["spearman"], 0.62),
-                    ha="center", fontsize=7.4, color=ACCENT, fontweight="bold",
-                    arrowprops=dict(arrowstyle="-", color=ACCENT, linewidth=0.8))
-    top = m.iloc[-1]
-    ax.annotate(top["tissue_track"].replace("_", " "),
-                xy=(top["spearman"], -0.05), xytext=(top["spearman"], -0.40),
-                ha="center", fontsize=6.8, color=INK2,
-                arrowprops=dict(arrowstyle="-", color=INK2, linewidth=0.6))
+    # ---- B: paired differences
+    top = pr.nlargest(8, "diff_vs_kidney").iloc[::-1]
+    y = np.arange(len(top))
+    axB.axvline(0, color=INK2, linewidth=0.8, zorder=2)
+    for i, r in enumerate(top.itertuples()):
+        axB.plot([r.lo, r.hi], [i, i], color=NEUTRAL, linewidth=1.6,
+                 solid_capstyle="round", zorder=3)
+        axB.scatter([r.diff_vs_kidney], [i], s=26, color=NEUTRAL,
+                    edgecolor=SURFACE, linewidth=0.6, zorder=4)
+    axB.set_yticks(y, [t.replace("_", " ") for t in top["tissue_track"]],
+                   fontsize=6.8)
+    axB.set_xlabel("Difference in $\\rho$ from the kidney cortex output\n"
+                   "(paired bootstrap over the same 58 pairs, 95% CI, unadjusted)",
+                   fontsize=7.6, linespacing=1.6)
+    axB.grid(axis="x", color=GRID, linewidth=0.5, zorder=0)
+    axB.set_axisbelow(True)
+    for sp in ("right", "top"):
+        axB.spines[sp].set_visible(False)
+    axB.text(0.0, len(top) - 0.35, "  favours kidney  |  favours other output",
+             fontsize=6.2, color=INK2, ha="center")
+    axB.set_title("B", loc="left", fontweight="bold", fontsize=9)
 
-    ax.legend(loc="upper left", fontsize=7.2, bbox_to_anchor=(0.0, 1.02))
-    ax.set_title("Kidney eQTLs are not best predicted by the kidney track",
-                 loc="left", pad=8, fontweight="bold")
+    fig.suptitle("Kidney eQTL prediction across tissue outputs",
+                 x=0.02, ha="left", fontweight="bold", fontsize=9.5)
+    fig.tight_layout(rect=[0, 0, 1, 0.95])
     save(fig, "figure4")
 
 

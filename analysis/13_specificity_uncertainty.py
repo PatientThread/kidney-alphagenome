@@ -31,14 +31,17 @@ Analysis B is the one that can distinguish the two explanations, and it is
 reported whichever way it comes out.
 
 Output: results/specificity_uncertainty.json,
-        results/specificity_pairwise.csv
+        results/specificity_pairwise.csv,
+        results/specificity_paired.csv  (Figure 4 panel B)
 
 Author: Christopher Lawrence
 """
 
 from __future__ import annotations
 
+import importlib.util
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -61,8 +64,16 @@ def main() -> None:
             "it must persist the per-variant prediction matrix, not only the "
             "per-tissue summary.")
     d = pd.read_csv(src, sep="\t")
-    tissues = [c for c in d.columns
-               if c not in ("variant", "gene", "observed_beta")]
+    # Same guard as script 12. Non-GTEx tracks carry a blank label, which
+    # survives dropna() upstream and returns from the TSV as "Unnamed: N"; left
+    # in, it enters both the paired comparison and the pairwise prediction
+    # correlations as if it were a 55th tissue.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    spec = importlib.util.spec_from_file_location(
+        "spec12", Path(__file__).resolve().parent / "12_specificity_control.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    tissues = mod.tissue_columns(d)
     obs = d["observed_beta"].values
     n = len(d)
     print(f"{n} kidney variant-gene pairs, {len(tissues)} tissue tracks\n")
@@ -89,6 +100,10 @@ def main() -> None:
                      "lo": float(lo), "hi": float(hi),
                      "excludes_zero": bool(lo > 0 or hi < 0)})
     pr = pd.DataFrame(rows).sort_values("diff_vs_kidney", ascending=False)
+    # Figure 4 panel B is built from this table, so it must be written by a
+    # numbered script rather than produced by hand, or the figure cannot be
+    # reproduced from the repository.
+    pr.to_csv(RESULTS / "specificity_paired.csv", index=False)
     n_better = int(pr["excludes_zero"].sum())
     print(f"  kidney rho {stats.spearmanr(d[KID], obs).statistic:.3f}")
     print(f"  {'track':<34}{'rho':>7}{'diff':>8}{'95% CI of difference':>26}")
