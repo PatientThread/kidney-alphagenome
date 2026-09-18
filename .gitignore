@@ -25,3 +25,11 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
+
+# The manuscript and the cover letter are deliberately NOT in this repository.
+# The cover letter is private correspondence with the editors, and the paper is
+# under review and changing. They live on disk here but are never committed.
+publication/MANUSCRIPT.*
+publication/COVER_LETTER.*
+publication/~$*
+*.docx.bak-*
