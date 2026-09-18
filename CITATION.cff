@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: If you use this software or data, please cite it as below.
+title: >-
+  Kidney representation and uncertainty in AlphaGenome regulatory variant
+  prediction: analysis code and data
+abstract: >-
+  Analysis code, frozen benchmark set, curated tissue mapping, output-track
+  manifests and per-tissue prediction tables supporting the manuscript of the
+  same name. Thirteen numbered scripts reproduce every reported number and
+  figure. Seven run offline from the deposited files; the remainder require an
+  AlphaGenome interface key obtained from the developers.
+type: software
+authors:
+  - family-names: Lawrence
+    given-names: Christopher
+    orcid: https://orcid.org/0000-0002-8159-0879
+    affiliation: Consultant Nephrologist, 9 Harley Street, London, United Kingdom
+    email: Christopher.lawrence3@nhs.net
+repository-code: https://github.com/PatientThread/kidney-alphagenome
+license-url: https://github.com/PatientThread/kidney-alphagenome/blob/main/LICENSE
+keywords:
+  - kidney
+  - regulatory genomics
+  - AlphaGenome
+  - expression quantitative trait loci
+  - benchmarking
+  - tissue representation
