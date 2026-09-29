@@ -94,14 +94,29 @@ mpl.rcParams.update({
 
 
 def save(fig, name: str) -> None:
-    """PDF for submission, PNG for reading on screen.
+    """Vector EPS and PDF, plus 600 dpi TIFF, plus PNG for reading on screen.
 
-    EJHG rejects TIFF for line art: "We cannot use bitmapped file types such as
-    BMP, GIF, GIMP, JPG, PNG, Tex or TIFF for vector art." Plots are vector art,
-    so the submission file is PDF. Fonts are embedded as TrueType (42) rather
-    than the default Type 3, which many production systems reject.
+    OUP's checklist asks for "a common image format (e.g. .eps or .tif)", so
+    both are now produced. EPS is the better of the two for line art, because
+    these plots are vector and a raster loses that; the TIFF is supplied at
+    600 dpi with LZW compression for any system that insists on a bitmap.
+    Fonts are embedded as TrueType (42) rather than the default Type 3, which
+    many production systems reject.
     """
     fig.savefig(FIGS / f"{name}.pdf", bbox_inches="tight")
+    fig.savefig(FIGS / f"{name}.eps", bbox_inches="tight")
+    tif = FIGS / f"{name}.tif"
+    fig.savefig(tif, bbox_inches="tight", dpi=600,
+                pil_kwargs={"compression": "tiff_lzw"})
+    # Flatten the alpha channel onto white. Matplotlib writes RGBA, which some
+    # print production systems reject or render with a black background.
+    from PIL import Image
+    im = Image.open(tif)
+    if im.mode in ("RGBA", "LA", "P"):
+        im = im.convert("RGBA")
+        flat = Image.new("RGB", im.size, (255, 255, 255))
+        flat.paste(im, mask=im.split()[-1])
+        flat.save(tif, dpi=(600, 600), compression="tiff_lzw")
     fig.savefig(FIGS / f"{name}.png", dpi=600, bbox_inches="tight")
     plt.close(fig)
     print(f"  wrote {name}.pdf (submission) and {name}.png (screen)")
