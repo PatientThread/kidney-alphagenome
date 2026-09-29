@@ -1,0 +1,523 @@
+<!-- DRAFT 9. REFORMATTED FOR EUROPEAN JOURNAL OF HUMAN GENETICS, Article type.
+     Abstract is now unstructured, 249/250 words. Key learning points box removed
+     (NDT-only). Methods renamed "Materials and Methods". References restyled to
+     EJHG Vancouver: ", et al." after six authors, period after the journal
+     abbreviation, Year;Volume:pages, en-dashed page ranges, terminal period.
+     Thousands separated by commas, not spaces. Running title dropped; keywords
+     moved to the abstract page. Section 2.9 removed as it duplicated the new
+     mandatory statements. Added, all mandatory at EJHG: Data availability (with
+     persistent identifiers), Code availability, Author contributions, Funding
+     with an explicit no-funding statement, Ethical approval with the required
+     justification of why approval was not needed, and Competing interests after
+     the references. Section order now matches EJHG's prescribed list. Body 3,127
+     of 4,000; 27 of 50 references; 4 of 4 figures, none with more than three
+     panels so none counts double. Figures are greyscale vector PDFs at 88 mm and
+     180 mm. -->
+
+# Kidney representation and uncertainty in AlphaGenome regulatory variant prediction
+
+**Christopher Lawrence** BSc, MBBS, LLM, MD(Res), FRCP
+Consultant Nephrologist, 9 Harley Street, London W1G 9QY, United Kingdom
+ORCID 0000-0002-8159-0879
+Correspondence: Christopher.lawrence3@nhs.net
+
+---
+
+## Abstract
+
+Sequence-to-function models predict regulatory activity from DNA and are proposed
+for interpreting non-coding variants, but their behaviour in kidney has received
+little attention. We asked what AlphaGenome exposes for kidney, how it performs
+on kidney expression quantitative trait loci (eQTL), and whether performance
+depends on choosing the kidney output. We audited the model's human output tracks
+against three developer sources and selected 32,818 fine-mapped variant-gene
+pairs across all 49 GTEx tissues in the EMBL-EBI eQTL Catalogue, of which 31,934
+were scored. Kidney parenchyma accounts for 103 of 5,563 output tracks (1.85%).
+All four kidney transcription-factor tracks assay CTCF, and cell-type-resolved
+accessibility is limited to seven DNase tracks, only one from a documented adult
+donor. Kidney cortex yielded the fewest eligible pairs of any tissue, 59 against
+a median of 616, at all 36 thresholds tested. Predicted and observed effects
+correlated at rho 0.505 (95% CI 0.269 to 0.684), unremarkable once other tissues
+are downsampled to the same size. Re-scoring the same variants with every tissue
+output in turn, kidney ranked sixth of 54; no comparator showed a significantly
+higher correlation in paired comparisons, and kidney was nominally higher than 10
+of 53 on intervals unadjusted for multiplicity. Kidney is sparsely represented
+and is the least well evidenced tissue in this benchmark. Whether that reflects
+shared regulatory effects or limited use of tissue identity cannot be determined
+from these data.
+
+**Keywords:** chronic kidney disease; gene expression regulation; genomics;
+machine learning; quantitative trait loci
+
+---
+
+## 1. Introduction
+
+Most of the heritable variation in kidney function is mediated by variants in
+regulatory elements rather than in protein-coding sequence [1], and their
+interpretation depends on knowing which element is disrupted and in which cell
+type. Coding and regulatory signals converge on the same genes: across 1026 loci
+in 2.2 million individuals, 1363 coding variants disrupted 782 genes, of which
+601 were also targeted by regulatory variants [2]. Fine-mapping rarely resolves a
+single causal variant, and in a meta-analysis of 1,201,909 individuals only 44 of
+634 independent signals did so [3].
+
+Sequence-to-function models trained on large compendia of functional genomic data
+predict regulatory activity from DNA alone [4-6], and are increasingly proposed
+as a route to interpreting such variants [7]. Earlier models of this family
+perform less well in regions that distinguish one cell type from another [8],
+but that work evaluated Enformer and Sei and predates the model examined here.
+
+The question matters for nephrology because kidney traits are moderately to
+highly heritable [9] and that heritability is compartment-specific: 56% of
+common-variant kidney function heritability localises to candidate regulatory
+elements of the tubule epithelium and a further 7% to podocyte elements [1].
+
+We asked three questions. What does AlphaGenome expose for kidney? How does it
+perform on kidney eQTLs relative to other tissues? And does prediction
+performance depend on choosing the kidney output?
+
+## 2. Materials and Methods
+
+### 2.1 Model, versions and dates
+
+AlphaGenome [6] was accessed through its programmatic interface (alphagenome
+Python package v0.9.0) between 13 and 14 September 2026, under the developers'
+non-commercial research terms. Coordinates are GRCh38 and gene identifiers follow
+the annotation returned by the interface. All scoring used the recommended
+RNA-seq variant scorer (GeneMaskLFCScorer) with the model's maximum context of
+1,048,576 bases centred on the variant; shorter contexts were not used. Stranded
+gene tracks were merged, which is the interface default.
+
+### 2.2 Output track inventory
+
+The human output manifest was obtained from three developer sources: the
+dataframe embedded in the published notebook, the protobuf manifest shipped with
+the research code, and the deployed interface. These are three representations of
+the same developer metadata; their agreement establishes internal consistency,
+not independent biological validation.
+
+The protobuf manifest contains 6126 entries, of which 563 are placeholders named
+"Padding" that pad each output head to a round size. After their removal the
+manifest reconciles exactly, modality by modality, with the notebook dataframe
+and the live interface, at 5563 tracks.
+
+**Reconciliation with the primary publication.** AlphaGenome is reported as
+predicting 5930 human tracks [6]. The difference of 367 is exactly the
+splice-junction count. Splice junctions are the only splice modality the
+interface exposes unstranded, whereas splice site usage is exposed as 734 tracks,
+being 367 per strand. Counting junctions per strand gives 5563 + 367 = 5930,
+reconciling the totals exactly. Kidney's share is 103/5563 (1.85%) as exposed and
+117/5930 (1.97%) under the publication's convention; we report both.
+
+Track counts are not measures of training influence. Tracks differ in redundancy,
+assay type and contribution to training, and biosample labels are not necessarily
+independent donors or experiments. We report output track coverage, which is what
+these sources permit, and make no inference about training weight.
+
+### 2.3 Biosample classification
+
+Biosamples were assigned by explicit curated name, never by substring matching.
+Matching on "renal" captures adrenal gland (27 tracks) and perirenal adipose (4
+tracks); testing for renal papilla with the unqualified term "papilla" returns
+false positives from fungiform papilla and hair follicle dermal papilla.
+
+*Kidney parenchyma* comprises the nephron-bearing organ and its resident cell
+types. *Urinary tract* (ureter, renal pelvis, urothelium) is reported separately.
+*Kidney cell line* covers HEK293 and HEK293T, reported separately because HEK293,
+although derived from embryonic kidney [10], expresses neurofilament subunits and
+other neuronal proteins and is of debated lineage [11]. A guard function fails the
+analysis if an uncurated kidney-like name appears in a future release.
+
+### 2.4 ENCODE inventory
+
+Human experiments were retrieved from the ENCODE portal [12] on 13 September 2026
+using the organ facet biosample_ontology.organ_slims=kidney, restricted to Homo
+sapiens and released status, and classified into tissue or primary cell versus
+cell line by the same curated approach. Conclusions are restricted to the
+experiments this query returns. A facet query cannot establish that no further
+kidney data exist in ENCODE, still less in other repositories or publications.
+
+### 2.5 Benchmark variant set
+
+Ground truth came from the EMBL-EBI eQTL Catalogue [13], which re-quantifies all
+49 GTEx tissues [14] through one pipeline under a CC BY 4.0 licence. The
+catalogue's GTEx is version 8. We used version 8 for comparability with the
+benchmark reported in the primary publication, not because later releases were
+unavailable.
+
+Positives were variants in a SuSiE [15] credible set with posterior inclusion
+probability at least 0.9 and credible-set size at most 5, taken from the
+catalogue's susie files using the reported per-variant pip and cs_size fields
+without aggregation across components. The probability threshold selects variants
+with strong posterior support for inclusion. The size cap is a separate and more
+conservative restriction requiring that fine-mapping resolved the signal; it is
+not implied by the probability threshold. Sensitivity to both is reported for
+the number of eligible pairs, not for the correlations.
+The unit of observation is the variant-gene pair within a tissue. This yielded
+32,818 pairs across 49 tissues. The benchmark set was constructed and frozen
+before any variant was scored.
+
+### 2.6 Scoring and accounting
+
+For each pair the prediction was taken for the eQTL's own target gene in the
+output track corresponding to that variant's own GTEx tissue. Tissue
+correspondence was curated by hand for the 16 of 49 catalogue sample groups that
+do not match a track label by normalisation alone.
+
+**Allele orientation.** The catalogue's variant identifier encodes reference and
+alternate alleles, and these were passed unchanged as the reference and alternate
+bases of the scored variant. The catalogue reports the effect size with respect
+to the alternate allele, and the scorer returns the log fold change of alternate
+against reference, so both quantities are oriented to the same allele by
+construction. No sign reversals were applied and no pairs were excluded on
+orientation grounds. Direction is compared as the sign of the predicted log fold
+change against the sign of the reported coefficient; no rescaling was attempted
+and the two are not on a common scale (section 4).
+
+Of 32,818 pairs, 32,759 were submitted in a run covering 48 tissues and 59 in a
+separate run for kidney cortex; 31,876 and 58 respectively returned a usable
+prediction, giving 31,934 analysed pairs and 884 failures (2.69%). Failures
+comprised pairs where the target gene was absent from the returned annotation and
+pairs where the request did not complete within three attempts; these were not
+recorded separately and are reported together.
+
+### 2.7 Statistics
+
+Agreement is Spearman's rank correlation between predicted log fold change and
+observed effect size, with directional agreement as the proportion sharing a
+sign. Intervals use the Fisher z transform with the Bonett-Wright standard error
+[16] and Wilson intervals for proportions [17]. Because observations may share a
+gene or credible set, kidney's interval was additionally estimated by bootstrap
+resampling of whole credible sets. To test whether kidney's interval width simply
+reflects its size, every other tissue was downsampled to kidney's n over 200
+replicates each. To test whether kidney's rank on directional agreement could
+arise by chance, tissue proportions were simulated under a common pooled rate at
+the observed sample sizes: 5000 simulations drawing a binomial count per tissue at
+its own n with success probability equal to the sample-size-weighted pooled rate
+(0.693), recording how often kidney attained the highest proportion, with ties
+resolved to the first tissue encountered. Bootstraps used 5000 resamples for the
+credible-set analysis and 10,000 for the paired track comparison, both with
+replacement. The simulation describes the stability of the ranking; it is not a
+hypothesis test of kidney's observed directional agreement.
+
+### 2.8 Sensitivity to the choice of tissue output
+
+For each kidney benchmark variant the predicted effect on the same target gene
+was extracted from every GTEx tissue track the model exposes, and each track's
+predictions were correlated against the observed kidney effect. The model exposes
+GTEx-labelled RNA-seq tracks for 54 tissues, five more than the 49 with eQTLs in
+the catalogue; the additional tracks are tissues for which GTEx reports expression
+but no eQTLs at this release, including kidney medulla, and they are retained as
+comparators. RNA-seq tracks carrying no GTEx tissue label were excluded rather
+than pooled, since a mean across unrelated biosamples is not a tissue.
+
+Because a difference in correlation between two tracks on the same observations
+requires an interval, differences from the kidney track were estimated by
+bootstrap resampling of the variant-gene pairs, paired across tracks. To
+distinguish similar performance from similar predictions, the tracks' prediction
+vectors were also correlated directly with one another.
+
+## 3. Results
+
+### 3.1 Kidney occupies under two per cent of the model's output
+
+Kidney parenchyma accounts for 103 of 5563 output tracks (1.85%), or 117 of 5930
+(1.97%) counting splice junctions per strand, across 20 of 715 biosample labels.
+Urinary tract structures contribute a further 25 tracks and are excluded. HEK293
+and HEK293T together contribute 116 tracks.
+
+Coverage is uneven across assay types (Figure 1): 0.25% of transcription-factor
+ChIP tracks, 0.60% of ATAC and 0.72% of histone ChIP, against 3.45% of RNA-seq
+and 4.26% of DNase. No kidney contact map or PRO-cap track is exposed.
+
+### 3.2 The only kidney transcription factor represented is CTCF
+
+All four kidney transcription-factor tracks assay CTCF, a factor relevant to
+kidney biology but not one that characterises kidney regulatory identity. No
+other regulatory factor is directly assayed in kidney. HEK293 alone carries 111
+transcription-factor tracks covering 110 distinct factors.
+
+### 3.3 Cell-type-resolved coverage, and a developmental skew
+
+Cell-type-resolved kidney accessibility comprises seven DNase tracks:
+glomerular visceral epithelial cell (podocyte, paediatric donor), proximal tubule
+epithelial cell, kidney epithelial cell, renal cortical epithelial cell, kidney
+tubule cell, kidney capillary endothelial cell and nephron progenitor cell. Only
+the kidney tubule cell track is from a documented adult donor; three are of
+unrecorded stage and two embryonic. The single kidney ATAC track is whole organ. Each of
+these seven cell types is represented by one experiment.
+
+No explicitly annotated track was identified for any of twelve queried kidney
+cell types and anatomical structures: collecting duct, thick ascending limb, loop
+of Henle, distal convoluted tubule, principal cell, intercalated cell, macula
+densa, juxtaglomerular apparatus, parietal epithelial cell, connecting tubule,
+inner medulla and renal papilla. These are not twelve independent omissions; they
+overlap, and they mix cell types with anatomical structures and nephron segments
+(the parietal epithelial cell, for instance, is glomerular rather than distal
+nephron). Absence of an explicitly annotated track does not establish that the
+corresponding signal is absent from bulk kidney measurements, nor that relevant
+features cannot be learned through shared information.
+
+Kidney tracks are developmentally skewed: 37% derive from embryonic tissue against
+15% across all tracks, and 25% are adult against 46% overall. Because biosample
+labels need not be independent donors, these percentages may reflect repeated
+assays from few donors.
+
+### 3.4 Within the ENCODE query, kidney transcription-factor data are sparse
+
+Of 592 human experiments returned under the kidney organ facet, 284 were tissue
+or primary cell and 308 cell lines, of which 285 were HEK293 or HEK293T. Of 228
+transcription-factor ChIP experiments, 221 were in cell lines covering 218
+distinct factors, and 7 were in kidney tissue or primary cells, all assaying
+CTCF, deposited between 2011 and 2021.
+
+This describes the experiments the defined query returns. It does not establish
+that no further kidney transcription-factor occupancy data exist. ENCODE also
+holds one intact Hi-C and two PRO-cap kidney experiments that the model does not
+expose, and cell-type-resolved kidney accessibility data exist outside ENCODE
+[18, 19] and are likewise not represented. Data availability and model data
+selection are therefore both contributors, and this study does not apportion
+between them.
+
+### 3.5 Kidney yields the fewest eligible pairs of any tissue
+
+Kidney cortex yielded 59 eligible variant-gene pairs, against a median of 616 across 49
+tissues and a maximum of 1756. It was the smallest tissue at every one of 36
+combinations of posterior probability (0.5 to 0.99) and credible-set size (1 to
+uncapped), consistently 27 to 33-fold below the largest. That sweep establishes
+the stability of the count ranking; sensitivity of the correlation and directional
+agreement to those thresholds was not assessed.
+
+### 3.6 Performance in kidney, and its uncertainty
+
+Across 31,934 pairs, predicted and observed effects correlated at rho 0.505 in
+kidney cortex (95% CI 0.269-0.684), against a median of 0.495 across the
+49 tissues (Figure 2). Kidney's
+observations were one per gene and one per credible set, and a credible-set
+bootstrap gave a similar interval (0.290-0.662). Repeated genes and credible sets
+therefore do not inflate precision; dependence between separate credible sets
+sharing a locus or correlated variants was not assessed.
+
+Kidney's interval was 0.415 wide against a median of 0.128 elsewhere. Interval
+width across tissues tracks the number of pairs scored (Figure 3), and the
+difference is the expected consequence of sample size rather than a
+kidney-specific property: downsampling every other tissue to n = 58 placed
+kidney's correlation at the 56th percentile and its interval width at the 44th
+percentile of size-matched replicates. Directional agreement in kidney was 0.776
+(95% CI 0.653-0.864), nominally the highest of 49 tissues, but simulation under a
+common pooled rate of 0.693 produced kidney as the top tissue in 18.9% of runs.
+Neither the apparent precision deficit nor the apparent directional advantage is
+interpretable as a kidney-specific effect.
+
+### 3.7 Comparison of kidney eQTL prediction across tissue outputs
+
+Scoring the same kidney pairs with every tissue track in turn, the kidney cortex
+track ranked 6th of 54 (rho 0.505; Figure 4). Pituitary (0.566),
+thyroid (0.549), endocervix (0.541), tibial nerve (0.539) and fallopian tube
+(0.512) gave nominally higher correlations, and the range across all 54 tracks
+was 0.320 to 0.566.
+
+Paired bootstrap over the same 58 pairs shows that none of those five differences
+excludes zero: the largest, pituitary, is +0.061 (95% CI -0.036 to +0.194). No
+comparator therefore showed a significantly higher correlation than kidney.
+Kidney's own advantage excluded zero against 10 of the 53 comparators. All 53
+intervals are unadjusted for multiplicity, so these are exploratory comparisons.
+The kidney output is not uninformative; it is simply not uniquely best on these
+variants.
+
+Similar correlations need not mean similar predictions, so the prediction vectors
+were compared directly. Their pairwise rank correlation had a median of
+0.827 (interquartile range 0.702-0.915, minimum 0.316), and kidney against the
+others a median of 0.903 (range 0.602-0.990). Outputs are therefore substantially
+but not wholly shared: tissue-level variation exists in the predictions, and did
+not give kidney a detectable advantage over the highest-ranked alternatives.
+
+### 3.8 Weighting of the tissue average is immaterial here
+
+In GTEx version 8 kidney cortex has the fewest eQTL samples (73 against a median
+of 233) and eGenes (1260 against 9642) of 49 tissues, and is down-weighted
+7.71-fold in an eGene-weighted average. The unweighted mean correlation was
+0.4915 and the eGene-weighted mean 0.4910. Performance was near-uniform across
+tissues (standard deviation 0.0399, range 0.395-0.560), so these two schemes
+return nearly the same mean; we do not claim this of every possible weighting.
+
+## 4. Discussion
+
+Kidney is sparsely represented in this model's output, and is the tissue about
+which this benchmark can say least. Those are the secure findings.
+
+The more informative result is that no comparator output predicted kidney eQTLs
+significantly better than the kidney output, though kidney was nominally better
+than 10 of 53 on unadjusted intervals. The tracks' predictions were substantially
+though not wholly shared.
+
+Two explanations are compatible with this, and our data do not separate them. The
+eQTLs were detected in kidney but need not be kidney-specific, and a model that
+predicts shared regulatory effects well would behave exactly this way. Or the
+model may under-use tissue identity. Distinguishing these would require ground
+truth on variants with demonstrably different effects between tissues. An eQTL
+significant in kidney but not elsewhere will not serve, because unequal
+statistical power produces that pattern. We therefore report the pattern and
+decline to attribute it. For the same reason we do not claim that the
+near-uniform performance in section 3.8 reflects limited tissue differentiation:
+similar accuracy on different tissue-specific datasets does not establish a common
+mechanism. Our observations are consistent with reports on
+earlier models of this family, which capture promoter determinants while largely
+ignoring distal enhancers [20] and explain individual expression differences
+poorly, often predicting the wrong direction of effect [21, 22], and produce tracks more
+sequence-determined than the data they model [23]. A preprint reports that
+AlphaGenome underestimates the effect sizes of causal fine-mapped eQTLs [24].
+
+Three boundaries on what follows. A correlation of 0.505 among selected
+fine-mapped eQTLs is not a statement of adequacy, which would require a defined
+task and threshold, and is not evidence of diagnostic or clinical utility.
+Kidney's estimate is too imprecise, and no equivalence margin was specified, to
+support a claim that kidney matches other tissues. And limited experimental data
+is not the only constraint, since cell-type-resolved kidney accessibility data
+that do exist [18, 19] are also not represented.
+
+Direction of predicted effect is a mechanistic quantity useful for prioritising
+experiments. It is not sufficient for clinical action, which depends additionally
+on the target gene, disease mechanism, dosage sensitivity, effect magnitude and
+tissue context.
+
+Several limitations bound these results. We evaluated one model on one task;
+splicing and chromatin tasks may behave differently. Rank correlation is
+insensitive to calibration, so our analysis cannot address reported effect-size
+attenuation [24]; relatedly, predicted log fold change and a regression
+coefficient on normalised expression are not on a common scale, and we compare
+rank and sign only. Bulk kidney cortex eQTLs are a coarse readout of
+compartment-specific biology [25], with 12% of glomerular and 26% of
+tubulointerstitial eQTLs compartment-specific in one series [26], so a model could
+perform adequately in bulk and still be wrong in a specific cell type. Each tissue
+contributes a different selection of variants, so cross-tissue comparisons are not
+like-for-like beyond the size matching performed here. Our positives require
+fine-mapping to have resolved a signal, biasing toward larger effects. We did not
+search systematically for prior kidney-specific evaluations, so our statement
+that we are not aware of one describes our knowledge, not a documented absence.
+
+Two directions follow. Generating cell-type-resolved kidney regulatory data and
+larger kidney eQTL studies [27] would reduce the uncertainty documented here. The
+second is evaluation against effects demonstrably specific to a tissue, since a
+benchmark of eQTLs merely detected in kidney cannot show whether a tissue-labelled
+output uses tissue identity. Whether the model itself requires modification is a
+question such an evaluation would have to answer first. Until then, predictions
+in kidney should be treated as hypothesis-generating, and tissue-labelled outputs
+should not be assumed to carry tissue-specific information without a control of
+the kind reported here.
+
+## Data availability
+
+All data analysed in this study are publicly available. Fine-mapped associations
+came from the EMBL-EBI eQTL Catalogue release 7 (https://www.ebi.ac.uk/eqtl/,
+CC BY 4.0), which re-processes GTEx v8 (dbGaP phs000424). Kidney experiment
+records came from the ENCODE portal (https://www.encodeproject.org). The frozen
+benchmark set, the curated tissue mapping, the output-track manifests and the
+per-tissue prediction tables generated during this study are available in the
+kidney-alphagenome repository,
+https://github.com/PatientThread/kidney-alphagenome, which will be deposited with
+a persistent identifier on publication. Model predictions were obtained under
+AlphaGenome's non-commercial research terms and are redistributed subject to
+those terms; model weights are not redistributed and were not accessed.
+
+## Code availability
+
+All analysis code is available in the same repository,
+https://github.com/PatientThread/kidney-alphagenome, as thirteen numbered scripts
+that reproduce every reported number and figure. Seven of them run offline from
+the files deposited there; the remainder require an AlphaGenome API key, which is
+obtained directly from the developers and is not included.
+
+## References
+
+1. Loeb GB, Kathail P, Shuai RW, et al. Variants in tubule epithelial regulatory elements mediate most heritable differences in human kidney function. Nat Genet. 2024;56:2078–2092.
+2. Liu H, Abedini A, Ha E, et al. Kidney multiome-based genetic scorecard reveals convergent coding and regulatory variants. Science. 2025;387:eadp4753.
+3. Stanzick KJ, Li Y, Schlosser P, et al. Discovery and prioritization of variants and genes for kidney function in >1.2 million individuals. Nat Commun. 2021;12:4350.
+4. Avsec Ž, Agarwal V, Visentin D, et al. Effective gene expression prediction from sequence by integrating long-range interactions. Nat Methods. 2021;18:1196–1203.
+5. Linder J, Srivastava D, Yuan H, Agarwal V, Kelley DR. Predicting RNA-seq coverage from DNA sequence as a unifying model of gene regulation. Nat Genet. 2025;57:949–961.
+6. Avsec Ž, Latysheva N, Cheng J, et al. Advancing regulatory variant effect prediction with AlphaGenome. Nature. 2026;649:1206–1218.
+7. Barbadilla-Martínez L, Klaassen N, van Steensel B, de Ridder J. Predicting gene expression from DNA sequence using deep learning models. Nat Rev Genet. 2025;26:666–680.
+8. Kathail P, Shuai RW, Chung R, Ye CJ, Loeb GB, Ioannidis NM. Current genomic deep learning models display decreased performance in cell type-specific accessible regions. Genome Biol. 2024;25:202.
+9. Zhang J, Thio CH, Gansevoort RT, Snieder H. Familial aggregation of CKD and heritability of kidney biomarkers in the general population: the Lifelines Cohort Study. Am J Kidney Dis. 2021;77:869–878.
+10. Graham FL, Smiley J, Russell WC, Nairn R. Characteristics of a human cell line transformed by DNA from human adenovirus type 5. J Gen Virol. 1977;36:59–74.
+11. Shaw G, Morse S, Ararat M, Graham FL. Preferential transformation of human neuronal cells by human adenoviruses and the origin of HEK 293 cells. FASEB J. 2002;16:869–871.
+12. ENCODE Project Consortium. Expanded encyclopaedias of DNA elements in the human and mouse genomes. Nature. 2020;583:699–710.
+13. Kerimov N, Hayhurst JD, Peikova K, et al. A compendium of uniformly processed human gene expression and splicing quantitative trait loci. Nat Genet. 2021;53:1290–1299.
+14. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science. 2020;369:1318–1330.
+15. Wang G, Sarkar A, Carbonetto P, Stephens M. A simple new approach to variable selection in regression, with application to genetic fine mapping. J R Stat Soc Series B Stat Methodol. 2020;82:1273–1300.
+16. Bonett DG, Wright TA. Sample size requirements for estimating Pearson, Kendall and Spearman correlations. Psychometrika. 2000;65:23–28.
+17. Wilson EB. Probable inference, the law of succession, and statistical inference. J Am Stat Assoc. 1927;22:209–212.
+18. Muto Y, Wilson PC, Ledru N, et al. Single cell transcriptional and chromatin accessibility profiling redefine cellular heterogeneity in the adult human kidney. Nat Commun. 2021;12:2190.
+19. Gisch DL, Brennan M, Lake BB, et al. The chromatin landscape of healthy and injured cell types in the human kidney. Nat Commun. 2024;15:433.
+20. Karollus A, Mauermeier T, Gagneur J. Current sequence-based models capture gene expression determinants in promoters but mostly ignore distal enhancers. Genome Biol. 2023;24:56.
+21. Sasse A, Ng B, Spiro AE, et al. Benchmarking of deep neural networks for predicting personal gene expression from DNA sequence highlights shortcomings. Nat Genet. 2023;55:2060–2064.
+22. Huang C, Shuai RW, Baokar P, et al. Personal transcriptome variation is poorly explained by current genomic deep learning models. Nat Genet. 2023;55:2056–2059.
+23. Cakmakci D, Li Y. DNA-aware evaluation and debiasing of sequence-to-function models. Bioinformatics. 2026;42:btag266.
+24. Drusinsky S, Pollard KS. Causal variant underestimation is a major overlooked driver of sequence-to-function model underperformance. bioRxiv. 2026. Preprint at https://doi.org/10.64898/2026.09.08.750172. Not peer reviewed.
+25. Qiu C, Huang S, Park J, et al. Renal compartment-specific genetic variation analyses identify new pathways in chronic kidney disease. Nat Med. 2018;24:1721–1731.
+26. Gillies CE, Putler R, Menon R, et al. An eQTL landscape of kidney tissue in human nephrotic syndrome. Am J Hum Genet. 2018;103:232–244.
+27. Sheng X, Guan Y, Ma Z, et al. Mapping the genetic architecture of human traits to cell types in the kidney identifies mechanisms of disease and potential treatments. Nat Genet. 2021;53:1322–1333.
+
+---
+
+## Acknowledgements
+
+This work used data generated by the ENCODE Consortium, the GTEx Consortium and
+the EMBL-EBI eQTL Catalogue. I thank the participants and investigators of those
+projects.
+
+## Author contributions
+
+CL is the sole author. CL conceived the study, designed the analyses, wrote the
+analysis code, performed the analyses, prepared the figures, and wrote and
+approved the manuscript.
+
+## Funding
+
+No funding was received in support of this study.
+
+## Ethical approval
+
+Ethical approval was not required. This study is a secondary analysis of publicly
+available, de-identified, summary-level data released by the ENCODE Consortium,
+the GTEx Consortium and the EMBL-EBI eQTL Catalogue, together with predictions
+generated by a computational model. No individual-level data were accessed, no
+human participants were recruited, and no identifiable personal information was
+processed.
+
+## Competing interests
+
+The author declares no competing interests.
+
+## Figure legends
+
+**Figure 1.** Kidney share of AlphaGenome human output tracks by assay modality.
+Bars show kidney parenchyma tracks as a percentage of all tracks of that
+modality, with counts to the right of each bar. Transcription-factor ChIP and
+ATAC are highlighted. Kidney parenchyma excludes urinary tract structures and the
+HEK293 lineage, both reported separately in the text. The four splice-site
+tracks are annotation-derived, carry no biosample and are not shown.
+
+**Figure 2.** Per-tissue Spearman correlation between predicted and observed eQTL
+effects, with 95% confidence intervals, for all 49 GTEx tissues. Tissues are
+ordered by the number of successfully scored variant-gene pairs, fewest at the
+bottom, and that number is given in the right-hand column. Kidney cortex is
+highlighted. The dashed vertical line is the unweighted mean across tissues.
+
+**Figure 3.** Width of the 95% confidence interval on Spearman's rho against the
+number of successfully scored variant-gene pairs, one point per GTEx tissue, log
+scale on the horizontal axis. Kidney cortex is shown as a filled diamond and the
+dashed line marks the median interval width across the other tissues. Interval
+width is governed by the number of pairs scored; kidney's position reflects its
+sample size (section 3.6).
+
+**Figure 4.** Specificity control, using the same 58 scored kidney variant-gene
+pairs throughout. (A) Spearman correlation between observed kidney cortex eQTL
+effects and predictions taken from each of 54 GTEx tissue outputs in turn, kidney
+cortex highlighted. (B) Paired bootstrap difference in rho between each of the
+eight highest-ranked comparator outputs and the kidney output, with 95%
+confidence intervals, unadjusted for multiplicity. Each of the eight intervals
+shown includes zero. Across all 53 comparators none showed a significantly higher
+correlation than kidney, while kidney's advantage excluded zero against 10 of
+them.

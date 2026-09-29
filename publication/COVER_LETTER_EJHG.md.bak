@@ -1,0 +1,75 @@
+Christopher Lawrence BSc, MBBS, LLM, MD(Res), FRCP
+Consultant Nephrologist
+9 Harley Street, London W1G 9QY, United Kingdom
+Christopher.lawrence3@nhs.net
+ORCID 0000-0002-8159-0879
+
+The Editors
+European Journal of Human Genetics
+
+Dear Editors,
+
+I am submitting **"Kidney representation and uncertainty in AlphaGenome
+regulatory variant prediction"** for consideration as an Article.
+
+Sequence-to-function models are increasingly offered as a route to interpreting
+non-coding variants, and AlphaGenome is the most capable of them. The claim
+implicit in a tissue-labelled output is that it carries information about that
+tissue. This paper tests that claim directly, and finds it is not supported by
+the evidence usually cited for it.
+
+Three findings follow from one another. First, an audit of the model's 5,563
+human output tracks against three independent developer sources shows kidney
+occupies 1.85% of them, that all four kidney transcription-factor tracks assay
+the same generic factor, CTCF, and that cell-type-resolved kidney accessibility
+amounts to seven DNase tracks of which only one is from a documented adult donor.
+Second, benchmarking 31,934 successfully scored fine-mapped eQTLs across all 49
+GTEx tissues shows kidney cortex yields the fewest eligible variant-gene pairs of
+any tissue, 59 against a median of 616, and remains the smallest at every one of
+36 threshold settings. The tissue with the least representation inside the model
+is therefore also the tissue about which the standard benchmark can say least.
+
+The third finding is the one I believe is of general interest, and it is a
+control rather than an observation. Re-scoring the same kidney variants using
+every one of the model's 54 GTEx tissue outputs in turn, the kidney output ranks
+sixth, no comparator shows a significantly higher correlation in paired
+bootstrap over the same variant-gene pairs, and the outputs' prediction vectors
+are largely shared. Two explanations fit equally well: these eQTLs were detected
+in kidney but need not be kidney-specific, or the model makes limited use of
+tissue identity. The design cannot separate them, and the paper says so rather
+than choosing. The methodological consequence generalises well beyond kidney: a
+benchmark built from eQTLs merely detected in a tissue cannot establish that a
+tissue-labelled output is using tissue identity, because an eQTL significant in
+one tissue and not another usually reflects unequal power rather than genuine
+specificity.
+
+I think this fits the journal's stated interests in statistical and computational
+genetics and in bioinformatics, and that it will matter to readers on both sides
+of the journal's readership: to those building or applying these models, because
+the control is transferable and cheap to run, and to those working on kidney
+genetics, because it bears directly on how much weight a tissue-labelled
+prediction can carry.
+
+The work reports no new experimental data. It is a secondary analysis of public
+resources from ENCODE, GTEx and the EMBL-EBI eQTL Catalogue, together with model
+predictions obtained under AlphaGenome's non-commercial research terms. The
+benchmark set was constructed and frozen before any variant was scored. All
+analysis code and the frozen benchmark are deposited, and every reported number
+and figure is reproducible from thirteen numbered scripts, seven of which run
+without model access.
+
+Earlier drafts claimed that performance in kidney was adequate, that it was
+equivalent to other tissues, and that missing experiments were the decisive
+constraint. Each was tested and each was withdrawn. The paper is shorter and less
+comfortable as a result, and I would rather submit it that way.
+
+The material is original research. It has not been previously published, is not
+under consideration elsewhere, and has not previously been submitted to another
+journal, so there are no prior reviewer comments to disclose. I am the sole
+author. I declare no competing interests. No funding was received. Ethical
+approval was not required, as the study analyses only publicly available,
+de-identified, summary-level data and generates no individual-level information.
+
+Yours faithfully,
+
+Christopher Lawrence
